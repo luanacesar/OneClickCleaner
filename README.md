@@ -1,13 +1,12 @@
 # OneClickCleaner
 
-<<<<<<< HEAD
 PLEASE, DON'T PUSH INTO THE MAIN. 
-=======
-__User Story__
 
-LUANA
 
-JHENNIFER
+
+__User Story 01__
+
+LUANA / JHENNIFER
 
 __Acceptance Test:__ Two services will be displayed on the main page when the user opens the main page then the user can choose one of them and proceed to a new page.
 __Acceptance Test:__ Each service will have different color and will have a separate section in the main page.
@@ -15,8 +14,10 @@ __Acceptance Test:__
 __Acceptance Test:__ 
 __Acceptance Test:__ 
 __Acceptance Test:__ 
-
 >>>>>>> US1
+
+
+
 
 
 For Variable name, go to ERD.

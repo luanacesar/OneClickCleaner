@@ -15,8 +15,12 @@ namespace OCC
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+<<<<<<< HEAD
             //Jhennifer 2 test
             //luana 2 test
+=======
+            
+>>>>>>> main
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -26,12 +30,16 @@ namespace OCC
             {
                 app.UseDeveloperExceptionPage();
             }
-            //Raphael create
+            
             
             app.UseMvcWithDefaultRoute();
+<<<<<<< HEAD
             //luana
             //raphael 2
             //raphael 3
+=======
+            
+>>>>>>> main
         }
     }
 }

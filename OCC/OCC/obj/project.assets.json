@@ -11880,11 +11880,44 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\molin\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "C:\\Users\\celoe\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\molin\\.nuget\\packages\\": {}
+>>>>>>> User_Story01
+=======
+    "C:\\Users\\celoe\\.nuget\\packages\\": {}
+>>>>>>> User_Story01
+>>>>>>> jhennifer
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> User_Story01
+      "projectUniqueName": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+>>>>>>> jhennifer
+      "projectName": "OCC",
+      "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+<<<<<<< HEAD
+        "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+=======
       "projectUniqueName": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
       "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
@@ -11893,6 +11926,10 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> User_Story01
+=======
+>>>>>>> User_Story01
+>>>>>>> jhennifer
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

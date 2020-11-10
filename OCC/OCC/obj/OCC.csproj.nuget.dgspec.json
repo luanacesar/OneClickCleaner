@@ -3,8 +3,24 @@
   "restore": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+    "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectName": "OCC",
+        "projectPath": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "packagesPath": "C:\\Users\\celoe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
->>>>>>> main
+=======
+>>>>>>> User_Story01
+<<<<<<< HEAD
     "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
@@ -16,7 +32,6 @@
         "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
-<<<<<<< HEAD
 =======
     "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
@@ -30,11 +45,13 @@
         "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
 >>>>>>> Luana
-=======
->>>>>>> main
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+>>>>>>> User_Story01
+=======
+>>>>>>> User_Story01
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

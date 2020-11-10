@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
@@ -17,6 +18,8 @@
         "configFilePaths": [
           "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
 =======
+=======
+>>>>>>> User_Story01
 <<<<<<< HEAD
     "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
@@ -45,6 +48,9 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+<<<<<<< HEAD
+>>>>>>> User_Story01
+=======
 >>>>>>> User_Story01
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

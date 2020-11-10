@@ -1,6 +1,7 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "ppCjbeizvSN4jV52thoyGjYaPCSdhOF7RoMGS/GvbZf9TsbDUM5MP1FhB9ew8mW2R0Hd28HHXX4tjqcLDUkViw==",
   "success": true,
   "projectFilePath": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
@@ -283,6 +284,8 @@
     "C:\\Users\\celoe\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\celoe\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
 =======
+=======
+>>>>>>> User_Story01
 <<<<<<< HEAD
   "dgSpecHash": "Uncr5UPGlTBhyyn5vFxlKbbFOhJ1Yt2+d3zYXHGtKisibHXF4/tPM89odvN1l1ZZpIFJV0KKPTzS0YZy4ji7Kw==",
   "success": true,
@@ -570,6 +573,9 @@
     "C:\\Users\\molin\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
     "C:\\Users\\molin\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\molin\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+<<<<<<< HEAD
+>>>>>>> User_Story01
+=======
 >>>>>>> User_Story01
   ],
   "logs": []

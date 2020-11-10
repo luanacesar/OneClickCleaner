@@ -13,5 +13,15 @@ namespace OCC.Controllers
         {
             return View();
         }
+
+        public ViewResult Emergency()
+        {
+            return View();
+        }
+
+        public ViewResult Booking()
+        {
+            return View();
+        }
     }
 }

@@ -25,9 +25,12 @@ namespace OCC
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            
+
+            //www.root folder
+            app.UseStatusCodePages();
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+
 
         }
     }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
@@ -15,6 +16,36 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+    "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectName": "OCC",
+        "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
+=======
+    "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectName": "OCC",
+        "projectPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+>>>>>>> Luana
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> User_Story01
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,7 +97,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

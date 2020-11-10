@@ -11880,11 +11880,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\celoe\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\molin\\.nuget\\packages\\": {}
+>>>>>>> User_Story01
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
       "projectPath": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
@@ -11893,6 +11898,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectName": "OCC",
+      "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> User_Story01
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11944,7 +11959,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

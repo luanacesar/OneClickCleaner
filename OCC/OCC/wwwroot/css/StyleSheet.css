@@ -1,30 +1,47 @@
-﻿
+﻿#mainpage {
+    background-color: #4e89ae;
+    text-align: center;
+    font-size: 50px;
+}
 
+#aboutus {
+    background-color: #4e89ae;
+    text-align: center;
+    font-size: 50px;
+}
 
 #features {
-    margin: 7% 15%;
     font-size: 1.5rem;
-    display:inline-block;
+    text-align: center;
+    padding: 2em;
+    color: #4e89ae;
 }
+
+#contactus {
+    background-color: #4e89ae;
+    text-align: center;
+    font-size: 50px;
+}
+
 
 .fa-ambulance {
     margin: 5% 15%;
-    color: #5591E6;
+    color: #ea5455;
     text-align: center;
 }
 
     .fa-ambulance:hover {
-        color: #264166;
+        color: #decdc3;
     }
 
 .fa-calendar-alt {
     margin: 5% 15%;
-    color: #5591E6;
+    color: #2d4059;
     text-align: center;
 }
 
     .fa-calendar-alt:hover {
-        color: #264166;
+        color: #decdc3;
     }
 
 h3 {
@@ -39,3 +56,4 @@ h3 {
     margin-left: 8%;
     color: #8f8f8f;
 }
+

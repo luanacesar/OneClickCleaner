@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
+=======
+    "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectName": "OCC",
+        "projectPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+>>>>>>> Luana
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",

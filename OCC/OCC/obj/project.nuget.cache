@@ -1,8 +1,20 @@
 {
   "version": 2,
+<<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "Uncr5UPGlTBhyyn5vFxlKbbFOhJ1Yt2+d3zYXHGtKisibHXF4/tPM89odvN1l1ZZpIFJV0KKPTzS0YZy4ji7Kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+=======
+  "dgSpecHash": "l/MW9OeQvzmyIYw34xuaPuhq2GyW7N2ENjmo6Iytip91AeDCPgFwGu+QJvnAfpnDPalZkKEEo1n1KZJKaF9vVA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+>>>>>>> Luana
+=======
+  "dgSpecHash": "Uncr5UPGlTBhyyn5vFxlKbbFOhJ1Yt2+d3zYXHGtKisibHXF4/tPM89odvN1l1ZZpIFJV0KKPTzS0YZy4ji7Kw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+>>>>>>> main
   "expectedPackageFiles": [
     "C:\\Users\\molin\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\molin\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

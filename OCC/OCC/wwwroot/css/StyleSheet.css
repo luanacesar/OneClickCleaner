@@ -1,0 +1,41 @@
+﻿
+
+
+#features {
+    margin: 7% 15%;
+    font-size: 1.5rem;
+    display:inline-block;
+}
+
+.fa-ambulance {
+    margin: 5% 15%;
+    color: #5591E6;
+    text-align: center;
+}
+
+    .fa-ambulance:hover {
+        color: #264166;
+    }
+
+.fa-calendar-alt {
+    margin: 5% 15%;
+    color: #5591E6;
+    text-align: center;
+}
+
+    .fa-calendar-alt:hover {
+        color: #264166;
+    }
+
+h3 {
+    font-family: "Montserrat-bold";
+    text-align: center;
+    /*color:black;*/
+}
+
+.p1 {
+    width: 85%;
+    text-align: center;
+    margin-left: 8%;
+    color: #8f8f8f;
+}

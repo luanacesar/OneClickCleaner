@@ -11880,56 +11880,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\molin\\.nuget\\packages\\": {}
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "C:\\Users\\celoe\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\molin\\.nuget\\packages\\": {}
->>>>>>> User_Story01
-=======
-    "C:\\Users\\celoe\\.nuget\\packages\\": {}
->>>>>>> User_Story01
->>>>>>> jhennifer
+    "C:\\Users\\luana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> User_Story01
-      "projectUniqueName": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
->>>>>>> jhennifer
+      "projectUniqueName": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
-      "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-      "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "projectPath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
-<<<<<<< HEAD
-=======
-      "projectUniqueName": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-      "projectName": "OCC",
-      "projectPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-      "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\molin\\OneDrive\\Documents\\OneClickCleaner\\OCC\\OCC\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\molin\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> User_Story01
-=======
->>>>>>> User_Story01
->>>>>>> jhennifer
+        "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11981,8 +11944,16 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

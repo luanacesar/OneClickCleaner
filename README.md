@@ -13,11 +13,20 @@ __Acceptance Test:__ The user's location choices will be store in memory to allo
 
 __Acceptance Test:__ Dropdown list start display no area (in blank) when the user click down a list contains 5 GTA areas.
 
-__Acceptance Test:__ User must pick one area display a functional button. If no area selected, button is faded and not functional.
+__Acceptance Test:__ User must pick one area display a functional button. 
+
+__Acceptance Test:__ If no area selected, when the user click button will display a error message.
 
 __Acceptance Test:__ Dropdwon list will allow user chouse only one Area.
 
 __Acceptance Test:__ It wll have label to dropdown list and the button will be in the right or below drowpdown list.
+
+__Acceptance Test:__ After click in the button, will load a page containing input as in open containing fields to customer's information as Name, Adress and Location.
+
+__Acceptance Test:__ In customer's information forms will be required to fill ALL fields out, any field left in blank will display message.
+
+__Acceptance Test:__ Button will submit POST all contact information.
+
 
 >>>>>>> US2
 

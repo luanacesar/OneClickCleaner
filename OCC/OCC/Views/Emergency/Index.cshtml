@@ -1,44 +1,23 @@
 <link rel="stylesheet" href="css/Emergency.css">
+
+@model OCC.Models.Customer
 <div class="container">
-    <h1 > Customer Contact Information</h1>
-    <table id="customers">
+    <h1> Customer Contact Information</h1>
+    <form method="post">
+        <label for="uname">User Name</label>
+        <input type="text" asp-for="@Model.Name" placeholder="Your name..">
 
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Email</th>
-            <th>Phone</th>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
+        <label for="address">Address</label>
+        <input type="text" asp-for="@Model.Address" placeholder="Your address..">
 
-        <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-        <tr>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-        </tr>
-    </table>
+        <label for="email">E-mail</label>
+        <input type="email" asp-for="@Model.Emeil" placeholder="Your email..">
 
+        <label for="address">Phone</label>
+        <input type="number" asp-for="@Model.Phone" placeholder="Your phone number..">
+
+
+
+        <input type="submit" value="Payment">
+    </form>
 </div>

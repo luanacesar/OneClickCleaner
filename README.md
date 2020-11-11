@@ -1,13 +1,15 @@
 # OneClickCleaner
 
-__User Story__
+__User Story 01__ As a Client, I want to see the main page when the application is opened so that I can see the emergency service as well as the booking service. 
 
-LUANA
+LUANA / JHENNIFER
 
-JHENNIFER
+
 
 __Acceptance Test:__ Two services will be displayed on the main page when the user opens the main page then the user can choose one of them and proceed to a new page.
+
 __Acceptance Test:__ Each service will have different color and will have a separate section in the main page.
+
 __Acceptance Test:__ 
 __Acceptance Test:__ 
 __Acceptance Test:__ 

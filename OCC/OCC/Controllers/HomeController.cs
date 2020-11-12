@@ -23,5 +23,10 @@ namespace OCC.Controllers
         {
             return View();
         }
+
+        public ActionResult CustomerForm()
+        {
+            return RedirectToAction("Get", "Emergency");
+        }
     }
 }

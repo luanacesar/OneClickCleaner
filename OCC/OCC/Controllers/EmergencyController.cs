@@ -18,6 +18,10 @@ namespace OCC.Controllers
         [HttpPost("Emergency")]
         public IActionResult Save(Customer customer)
         {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
             byte[] jsonCustomer = JsonSerializer.SerializeToUtf8Bytes(customer);
             HttpContext.Session.Set("customer",jsonCustomer);
             return RedirectToAction("Index", "Home");

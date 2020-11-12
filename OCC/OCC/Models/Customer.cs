@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace OCC.Models
 {
     public class Customer
@@ -7,9 +9,13 @@ namespace OCC.Models
         {
         }
         public long Id { get; set; }
+        [Required]
         public string Name { get; set; }
+        [Required]
         public string Address { get; set; }
-        public string Emeil { get; set; }
+        [Required]
+        public string Email { get; set; }
+        [Required]
         public string Phone { get; set; }
     }
 }

@@ -2,10 +2,22 @@
   "ExpandedNodes": [
     "",
     "\\OCC",
-    "\\OCC\\OCC",
-    "\\OCC\\OCC\\Views",
-    "\\OCC\\OCC\\Views\\Home"
+<<<<<<< HEAD
+    "\\OCC\\OCC"
   ],
-  "SelectedNode": "\\OCC\\OCC\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\OCC\\OCC.sln",
+=======
+    "\\OCC\\OCC",
+    "\\OCC\\OCC\\Controllers",
+    "\\OCC\\OCC\\Views",
+    "\\OCC\\OCC\\Views\\Home",
+    "\\OCC\\OCC\\wwwroot",
+    "\\OCC\\OCC\\wwwroot\\css",
+    "\\OCC\\OCC\\wwwroot\\images",
+    "\\OCC\\OCC\\wwwroot\\lib\\bootstrap",
+    "\\OCC\\OCC\\wwwroot\\lib\\bootstrap\\js"
+  ],
+  "SelectedNode": "\\OCC\\OCC\\Views\\Home\\Emergency.cshtml",
+>>>>>>> US2
   "PreviewInSolutionExplorer": false
 }

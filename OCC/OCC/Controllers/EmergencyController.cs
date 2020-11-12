@@ -1,14 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
+using OCC.Models;
+using System.Text.Json;
+
 
 namespace OCC.Controllers
 {
+
     public class EmergencyController : Controller
     {
         // GET
-        [Route("Emergency")]
-        public IActionResult Index()
+        [HttpGet("Emergency")]
+        public IActionResult Get()
         {
-            return View();
+            return View("Index");
         }
+
+        [HttpPost("Emergency")]
+        public IActionResult Save(Customer customer)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            byte[] jsonCustomer = JsonSerializer.SerializeToUtf8Bytes(customer);
+            HttpContext.Session.Set("customer",jsonCustomer);
+            return RedirectToAction("Index", "Home");
+        }        
     }
 }

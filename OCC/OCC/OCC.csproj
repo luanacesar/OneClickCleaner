@@ -7,7 +7,6 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Custom' " />
   <ItemGroup>
     <Folder Include="App_Start" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>

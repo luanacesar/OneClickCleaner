@@ -1,4 +1,4 @@
-﻿
+﻿@model OCC.Models.Order
 <section id="emergencypage">
     <div class="rowa">
         <section id="features">
@@ -21,13 +21,13 @@
                     <fieldset>
                         <legend>Select Location</legend>
                         <label>Location</label>
-                        <select id="myList" required>
+                        <select id="myList" asp-for="Location" required>
                             <option value=""></option>
-                            <option value="1">Downtown</option>
-                            <option value="2">North York</option>
-                            <option value="3">East York</option>
-                            <option value="4">Etobicoke</option>
-                            <option value="5">Scarborough</option>
+                            <option value="Downtown">Downtown</option>
+                            <option value="North_York">North York</option>
+                            <option value="East_York">East York</option>
+                            <option value="Etobicoke">Etobicoke</option>
+                            <option value="Scarborough">Scarborough</option>
                         </select>
                         <br />
                         <button class="button" type="submit">Continue</button>

@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="css/Emergency.css">
+@model Customer
 
-@model OCC.Models.Customer
 <div class="container">
     <h1> Customer Contact Information</h1>
     <form method="post">
@@ -25,8 +24,6 @@
             <input type="number" asp-for="@Model.Phone" placeholder="Your phone number..">
             <span asp-validation-for="@Model.Phone" class="text-danger"></span>
         </div>
-
-      
 
         <input type="submit" value="Submit">
     </form>

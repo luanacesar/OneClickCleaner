@@ -8,7 +8,7 @@ namespace OCC.Models
         public Customer()
         {
         }
-        public long Id { get; set; }
+        public long CustomerId { get; set; }
         [Required]
         public string Name { get; set; }
         [Required]

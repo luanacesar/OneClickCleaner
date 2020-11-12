@@ -12,7 +12,7 @@ namespace OCC.Controllers
         [HttpGet("Emergency")]
         public IActionResult Get()
         {
-            return View("Index");
+            return View("CustomerInfo");
         }
 
         [HttpPost("Emergency")]

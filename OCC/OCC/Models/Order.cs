@@ -7,7 +7,7 @@ namespace OCC.Models
 {
     public class Order
     {
-        public long Id { get; set; }
+        public long OrderId { get; set; }
 
         public long CustomerId { get; set; }
 

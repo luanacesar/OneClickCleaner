@@ -1,4 +1,4 @@
-﻿@model OCC.Models.Order
+﻿@model Order
 <section id="emergencypage">
     <div class="rowa">
         <section id="features">
@@ -17,7 +17,7 @@
         </section>
         <section id="form">
             <div class="justify-content-center">
-                <form id="AddLocation" asp-action="CustomerForm">
+                <form method="post" asp-action="CustomerInfo">
                     <fieldset>
                         <legend>Select Location</legend>
                         <label>Location</label>

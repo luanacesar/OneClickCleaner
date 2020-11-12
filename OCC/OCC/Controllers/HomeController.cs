@@ -14,7 +14,7 @@ namespace OCC.Controllers
             return View();
         }
 
-        public ViewResult Emergency()
+        public ViewResult ServiceDetail()
         {
             return View();
         }

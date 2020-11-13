@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace OCC.Models
 {
-    public class Test
+    interface IOrderRepository
     {
+        IQueryable<Order> Orders { get; }
+
+        void SaveOrder(Order order);
     }
 }

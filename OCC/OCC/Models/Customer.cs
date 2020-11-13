@@ -10,7 +10,7 @@ namespace OCC.Models
         }
         public long CustomerId { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string FullName { get; set; }
         [Required]
         public string Address { get; set; }
         [Required]

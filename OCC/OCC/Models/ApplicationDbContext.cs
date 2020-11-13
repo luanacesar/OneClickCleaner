@@ -16,5 +16,9 @@ namespace OCC.Models
 
         public DbSet<Customer> Customers { get; set; }
 
+        public DbSet<Cleaner> Cleaners { get; set; }
+
+        public DbSet<AvailabilityCleaner> AvailabilityCleaners { get; set; }
+
     }
 }

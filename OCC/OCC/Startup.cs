@@ -25,9 +25,12 @@ namespace OCC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:OneClickCleanerServices:ConnectionString"]));
+            
             services.AddTransient<ICustomerRepository, EFCustomerRepository>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
             services.AddTransient<IServiceRepository, EFServiceRepository>();
+            services.AddTransient<ICleanerRepository, EFCleanerRepository>();
+
             services.AddMvc();
             services.AddSession();
         }
@@ -47,6 +50,7 @@ namespace OCC
             app.UseMvcWithDefaultRoute();
 
             SeedService.EnsurePopulated(app);
+            SeedCleaner.EnsurePopulated(app);
         }
     }
 }

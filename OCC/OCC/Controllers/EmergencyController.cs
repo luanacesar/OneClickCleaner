@@ -55,7 +55,7 @@ namespace OCC.Controllers
             if (ModelState.IsValid)
             {
                 customerRepository.SaveCustomer(customer);
-                customerCreatedRepo = customerRepository.Customers.FirstOrDefault(r => r.Name == customer.Name);
+                customerCreatedRepo = customerRepository.Customers.FirstOrDefault(r => r.FullName == customer.FullName);
                 cartOrder.CustomerId = customerCreatedRepo.CustomerId;
                 return RedirectToAction("CheckOut");
             }

@@ -11,10 +11,18 @@ namespace OCC.Models
 
         public long CustomerId { get; set; }
 
-        public string Location { get; set; }
-        public int Duration { get; set; }
-        public int ShiftTime { get; set; }
-        public string OrderPaymentState { get; set; }
+        public long CleanerId { get; set; }
+
         public long ServiceId { get; set; }
+
+        public string Location { get; set; }
+
+        public int Duration { get; set; }
+       
+        //ShiftTime: Morning, Afternoon, Evening, Night
+        public string ShiftTime { get; set; }
+
+        public string OrderPaymentState { get; set; }
+        
     }
 }

@@ -16,6 +16,9 @@ namespace OCC.Controllers
         private ICustomerRepository customerRepository;
         private IServiceRepository serviceRepository;
 
+        private Order cartOrder=new Order();
+        private Customer customerCreatedRepo;
+
         public EmergencyController( IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {
             orderRepository = orderRepo;
@@ -30,6 +33,7 @@ namespace OCC.Controllers
         [HttpPost]
         public ActionResult ServiceDetail(Order order)
         {
+            cartOrder = order;
             return RedirectToAction("Get", "Emergency");
         }
 
@@ -42,19 +46,29 @@ namespace OCC.Controllers
         [HttpGet("Emergency")]
         public IActionResult Get()
         {
-            return View("CustomerInfo");
+            return View("CustomerInfo", new Customer());
         }        
 
         [HttpPost("Emergency")]
         public IActionResult Save(Customer customer)
-        {
-            if (!ModelState.IsValid)
+        {            
+            if (ModelState.IsValid)
+            {
+                customerRepository.SaveCustomer(customer);
+                customerCreatedRepo = customerRepository.Customers.FirstOrDefault(r => r.Name == customer.Name);
+                cartOrder.CustomerId = customerCreatedRepo.CustomerId;
+                return RedirectToAction("CheckOut");
+            }
+            else
             {
                 return View();
             }
-            byte[] jsonCustomer = JsonSerializer.SerializeToUtf8Bytes(customer);
-            HttpContext.Session.Set("customer",jsonCustomer);
-            return RedirectToAction("Index", "Home");
-        }        
+            
+        }   
+        
+        public ViewResult CheckOut()
+        {
+            return View(cartOrder);
+        }
     }
 }

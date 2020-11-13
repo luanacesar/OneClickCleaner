@@ -8,12 +8,22 @@ namespace OCC.Controllers
 
     public class EmergencyController : Controller
     {
+        public ViewResult ServiceDetail()
+        {
+            return View();
+        }
+
+        public ActionResult CustomerInfo()
+        {
+            return RedirectToAction("Get", "Emergency");
+        }
+
         // GET
         [HttpGet("Emergency")]
         public IActionResult Get()
         {
             return View("CustomerInfo");
-        }
+        }        
 
         [HttpPost("Emergency")]
         public IActionResult Save(Customer customer)

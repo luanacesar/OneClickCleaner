@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OCC.Models
 {
-    interface IOrderRepository
+     public interface IOrderRepository
     {
         IQueryable<Order> Orders { get; }
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace OCC.Models
 {
-    interface ICustomerRepository
+    public interface ICustomerRepository
     {
         IQueryable<Customer> Customers { get; }
 

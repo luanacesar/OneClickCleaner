@@ -12,6 +12,10 @@ namespace OCC.Controllers
         public ViewResult Index()
         {
             return View();
-        }
+        }    
+
+       
+
+        
     }
 }

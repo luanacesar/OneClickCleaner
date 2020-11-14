@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+    "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+    "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectUniqueName": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-        "projectPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectPath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "outputPath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -54,6 +58,14 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

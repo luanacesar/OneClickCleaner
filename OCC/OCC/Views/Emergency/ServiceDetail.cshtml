@@ -3,79 +3,74 @@
 @model Order
     <link href="~/css/Emergency.css" rel="stylesheet" />
     <br />
-    <br />
-    <section class="justify-content-start ">
-        <div class="col-lg-5">
-            <div class="rowa">
-                <div class="justify-content-center">
-                    <h2><img id="ambulance_emrgency" src="~/images/ambulance.png" /> Emergency Service</h2>
+
+        <div class="col-lg-12">
+            <div class="col-lg-6">
+                <div class="rowa">
+                    <div class="justify-content-center">
+                        <h2><img id="ambulance_emrgency" src="~/images/ambulance.png" /> Emergency Service</h2>
+                        <br />
+                    </div>
+                    <div class="justify-content-start">
+                        <p>
+                            Our Emergency service cleaner provides a very fast and quality of services<br />
+                            first, you have to pick one of the locations in the dropdown area,<br />
+                            then you select how long you need a cleaner, and you will see the total price<br />
+                            of the service and go to your locations as soon as possible
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="col-lg-4">
+                <form method="post" asp-action="ServiceDetail">
+                    <fieldset>
+                        <legend>Select Location</legend>
+                        <select id="myList" asp-for="@Model.Location" required>
+                            <option value=""></option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="York">York</option>
+                            <option value="Durkham">Durkham</option>
+                            <option value="Peel">Peel</option>
+                            <option value="Halton">Halton</option>
+                        </select>
+                        <br /><br />
+                        <button class="btn btn-danger" type="submit">Continue</button>
+
+                    </fieldset>
+                </form>
+            </div>
+            </div>  
+            <br /><br />
+            <div class="col-lg-12">
+                <div class="col-lg-5">
+                    <h4>How long do you need your cleaner for?</h4>
                     <br />
                 </div>
-                <div class="justify-content-start">
-                    <p>
-                        Our Emergency service cleaner provides a very fast and quality of services<br />
-                        first, you have to pick one of the locations in the dropdown area,<br />
-                        then you select how long you need a cleaner, and you will see the total price<br />
-                        of the service and go to your locations as soon as possible
-                    </p>
+                <div class="col-lg-5 col-sm-3">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-danger btn-lg">
+                            <input type="radio" name="options" id="option2"> 1 hour
+                        </label>
+                        <label class="btn btn-danger btn-lg">
+                            <input type="radio" name="options" id="option2"> 2 hours
+                        </label>
+                        <label class="btn btn-danger btn-lg">
+                            <input type="radio" name="options" id="option3"> 3 hours
+                        </label>
+                        <label class="btn btn-danger btn-lg">
+                            <input type="radio" name="options" id="option3"> 4 hours
+                        </label>
+                        <label class="btn btn-danger btn-lg">
+                            <input type="radio" name="options" id="option3"> 5 hours
+                        </label>
+                        <label class="btn btn-danger btn-lg">
+                            <input type="radio" name="options" id="option3"> 6 hours
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br /><br />
-        <div class="col-lg-4">
-            <form method="post" asp-action="ServiceDetail">
-                <fieldset>
-                    <legend>Select Location</legend>
-                    <select id="myList" asp-for="@Model.Location" required>
-                        <option value=""></option>
-                        <option value="Toronto">Toronto</option>
-                        <option value="York">York</option>
-                        <option value="Durkham">Durkham</option>
-                        <option value="Peel">Peel</option>
-                        <option value="Halton">Halton</option>
-                    </select>
-                    <br /><br />
-                    <button class="btn btn-danger" type="submit">Continue</button>
 
-                </fieldset>
-            </form>
-        </div>
-        <br /><br /><br /><br />
-        <div class="col-lg-12">
-            <div class="col-lg-4">
-                <h4>How long do you need your cleaner for?</h4>
-                <br />
-            </div>
-            <div class="col-lg-6 btn-lg">
-                <div class="form-check form-check-inline p-3">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label class="form-check-label" for="inlineCheckbox1">1</label>
-                </div>
-                <div class="form-check form-check-inline p-3">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">2</label>
-                </div>
-                <div class="form-check form-check-inline p-3">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">3</label>
-                </div>
-                <div class="form-check form-check-inline p-3">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">4</label>
-                </div>
-                <div class="form-check form-check-inline p-3">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">5</label>
-                </div>
-                <div class="form-check form-check-inline p-3">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label class="form-check-label" for="inlineCheckbox2">6</label>
-                </div>
-            </div>
-        </div>
-
-
-        <br /><br /><br /><br />
-    </section>
+            <br /><br /><br /><br />
 
 

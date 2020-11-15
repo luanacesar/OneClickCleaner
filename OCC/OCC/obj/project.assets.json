@@ -12705,20 +12705,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luana\\.nuget\\packages\\": {}
+    "C:\\Users\\jorge\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
-      "projectPath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-      "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "projectPath": "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -12781,7 +12786,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
       }
     }
   }

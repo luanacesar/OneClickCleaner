@@ -3,8 +3,11 @@
     "",
     "\\OCC",
     "\\OCC\\OCC",
+    "\\OCC\\OCC\\Controllers",
     "\\OCC\\OCC\\Views",
-    "\\OCC\\OCC\\Views\\Home"
+    "\\OCC\\OCC\\Views\\Emergency",
+    "\\OCC\\OCC\\Views\\Home",
+    "\\OCC\\OCC\\Views\\Shared"
   ],
   "SelectedNode": "\\OCC\\OCC\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false

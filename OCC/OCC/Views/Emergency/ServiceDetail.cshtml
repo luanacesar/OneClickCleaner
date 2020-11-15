@@ -1,29 +1,60 @@
 ﻿
 
 @model Order
+    <link href="~/css/Emergency.css" rel="stylesheet" />
+    <br />
+    <div class="col-lg-12">
+        <div class="col-lg-6">
 
-<section id="emergencypage">
-    <div class="rowa">
-        <section id="features">
-            <div class="justify-content-center">
-                <h2><img id="ambulance_emrgency" src="~/images/ambulance.png" /> Emergency Service</h2>
-                <br />
+            <div class="justify-content-lg-start">
+                <h2><i class="fas fa-ambulance fa-3x"></i>Emergency Service</h2>
             </div>
+        </div>
+        <div class="col-lg-6">
             <div class="justify-content-start">
-                <p>
+                <p class="font-weight-normal">
                     Our Emergency service cleaner provides a very fast and quality of services<br />
                     first, you have to pick one of the locations in the dropdown area,<br />
                     then you select how long you need a cleaner, and you will see the total price<br />
                     of the service and go to your locations as soon as possible
                 </p>
             </div>
-        </section>
-        <section id="form">
-            <div class="justify-content-center">
+        </div>
+        <br />
+    </div>
+        <div class="col-lg-12">
+            <div class="col-lg-5">
+                <h4>How long do you need your cleaner for?</h4>
+                <br />
+            </div>
+            <div class="col-lg-5 col-sm-3">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option2"> 1 hour
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option2"> 2 hours
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option3"> 3 hours
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option3"> 4 hours
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option3"> 5 hours
+                    </label>
+                    <label class="btn btn-danger">
+                        <input type="radio" name="options" id="option3"> 6 hours
+                    </label>
+                </div>
+            </div>
+            <br />    <br />
+        </div>
+            <div class="col-lg-6 m-2">
                 <form method="post" asp-action="ServiceDetail">
                     <fieldset>
                         <legend>Select Location</legend>
-                        <label>Location</label>
                         <select id="myList" asp-for="@Model.Location" required>
                             <option value=""></option>
                             <option value="Toronto">Toronto</option>
@@ -32,12 +63,12 @@
                             <option value="Peel">Peel</option>
                             <option value="Halton">Halton</option>
                         </select>
-                        <br />
-                        <button class="button" type="submit">Continue</button>
+                        <br /><br />
+                        <button class="btn btn-danger" type="submit">Continue</button>
 
                     </fieldset>
                 </form>
             </div>
-        </section>
-    </div>
-</section>
+            <br /><br />
+                  
+

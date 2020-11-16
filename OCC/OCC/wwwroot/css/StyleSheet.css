@@ -56,4 +56,19 @@ h3 {
     margin-left: 8%;
     color: #8f8f8f;
 }
+#form {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2em;
+    color: black;
+    text-align: left;
+    padding: 15px;
+    text-align: center;
+    background: rgba(56, 135, 152, 0.50);
+}
+
+#ambulance_emrgency {
+    width: 100px;
+    height: 100px;
+}
 

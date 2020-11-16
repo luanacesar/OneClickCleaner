@@ -61,6 +61,9 @@ namespace OCC.Controllers
                 if (isValueAvailable)
                 {Order orderContact = JsonSerializer.Deserialize<Order>(value);                    
                     orderContact.CustomerId = customerCreatedRepo.CustomerId;
+                    //Type of Service
+                    orderContact.ServiceId = 1;
+                    orderRepository.SaveOrder(orderContact);
                     return View("CheckOut", orderContact);
                 }
                 return View();

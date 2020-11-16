@@ -1,22 +1,6 @@
 # OneClickCleaner
 
-__User Story__
-
-LUANA
-
-JHENNIFER
-
-__Acceptance Tests:__
-Acceptance test: Two services will be displayed on the main page when the user opens the main page then the user can choose one of them and proceed to a new page.
-
-Acceptance Test:
-
-Acceptance Test:
-
-Acceptance Test:
-
-Acceptance Test: Each service will have different color and will have a separate section in the main page.
-
+PLEASE, DON'T PUSH INTO THE MAIN. 
 
 
 For Variable name, go to ERD.

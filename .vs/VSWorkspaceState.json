@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\OCC",
-    "\\OCC\\OCC"
+    "\\OCC\\OCC",
+    "\\OCC\\OCC\\Models",
+    "\\OCC\\OCC\\Views",
+    "\\OCC\\OCC\\Views\\Emergency"
   ],
   "SelectedNode": "\\OCC\\OCC.sln",
   "PreviewInSolutionExplorer": false

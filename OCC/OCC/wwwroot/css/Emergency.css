@@ -6,7 +6,6 @@
 
 }
 
-
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -59,4 +58,40 @@ div {
   
 }
 
+.header img{
+    float: left;
+    width:150px;
+    height: 150px;
+    margin-left:400px;
+}
+.header h1 {
+    position: relative;
+    top:30px;
+    left: 30px;
+}
+.title {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 25px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.center2 {
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 

@@ -1,24 +1,131 @@
-﻿
+﻿@model Order
+
+@{
+
+    ViewBag.Title = "Booking";
+
+    Layout = "_Layout";
+
+}
+
 <section id="bookingpage">
-    <div class="col-lg-12">
 
-        <div class="col-lg-6">
+    <div class="rowb">
 
-            <div class="justify-content-lg-start">
-                <h2><i class="far fa-calendar-alt fa-3x"></i>Booking Service</h2>
-            </div>
-        </div>
-        <div class="col-lg-6">
+        <h1>Booking Page</h1>
+
+    </div>
+
+</section>
+
+<link rel="stylesheet" href="~/css/Booking.css">
+
+<head>
+
+    <meta charset="utf-8">
+
+</head>
+
+<!--Service Details-->>
+
+<section id="bookingpage">
+
+    <div class="rowb">
+
+        <section id="features">
+                 
+
             <div class="justify-content-start">
-                <p class="font-weight-normal">
-                    Our Booking service cleaner provides a high quality of service,<br />
-                    first, you have to pick one of the locations in the Dropdown area,<br />
-                    then you pick how long you need a cleaner. After that,<br />
-                    you choose the day and we will provide the total Price for the service<br />
+
+                <p class="p1">
+
+                    Our booking service cleaner provides a high quality of <br />
+
+                    service. First, you have to pick one of the locations in <br />
+
+                    dropdown area, then you pick how long you need a cleaner, <br />
+
+                    after that, you choose the day and we will provide the total <br />
+
+                    price for the service.
 
                 </p>
+
             </div>
-        </div>
-        <br />
+
+        </section>
+
     </div>
+
 </section>
+
+<!--Choosing date-->
+
+
+
+<section>
+
+    <div>
+
+        <h1>when would you first booking be?</h1>
+
+
+
+        <form method="post" asp-action="ServiceDetail">
+
+
+
+            <input type="date" asp-for="@Model.ServiceDay" required>
+
+            <!--Choosing time-->
+
+            <section id="ChoosingTheTime">
+
+                <div class="justify-content-center">
+
+                    <fieldset>
+
+                        <legend>Select Time</legend>
+
+                        <label>Time Prefered</label>
+
+                        <select id="MyTime" asp-for="@Model.ShiftTime" required>
+
+                            <option disabled selected>--Choose The Time prefered--</option>
+
+                            <option value="Morning">Morning</option>
+
+                            <option value="AfterNoon">Afternoon</option>
+
+                            <option value="Evening">Evening</option>
+
+                            <option value="Night">Night</option>
+
+                        </select>
+
+                    </fieldset>
+                    <select id="myList" asp-for="@Model.Location" required>
+                        <option value=""></option>
+                        <option value="Toronto">Toronto</option>
+                        <option value="York">York</option>
+                        <option value="Durkham">Durkham</option>
+                        <option value="Peel">Peel</option>
+                        <option value="Halton">Halton</option>
+                    </select>
+
+                </div>
+
+            </section>
+
+            <button class="button" type="submit">SUBMIT</button>
+
+
+
+        </form>
+
+
+
+    </div>
+
+</section>
+

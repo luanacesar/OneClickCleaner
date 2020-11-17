@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OCC.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Intial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -66,6 +66,7 @@ namespace OCC.Migrations
                     Location = table.Column<string>(nullable: true),
                     Duration = table.Column<int>(nullable: false),
                     ShiftTime = table.Column<string>(nullable: true),
+                    ServiceDay = table.Column<DateTime>(nullable: false),
                     OrderPaymentState = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

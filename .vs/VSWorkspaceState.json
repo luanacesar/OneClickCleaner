@@ -2,13 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\OCC",
-    "\\OCC\\OCC",
-    "\\OCC\\OCC\\Controllers",
-    "\\OCC\\OCC\\Migrations",
-    "\\OCC\\OCC\\Models",
-    "\\OCC\\OCC\\Views",
-    "\\OCC\\OCC\\Views\\Emergency"
+    "\\OCC\\OCC"
   ],
-  "SelectedNode": "\\OCC\\OCC\\Controllers\\EmergencyController.cs",
+  "SelectedNode": "\\OCC\\OCC.sln",
   "PreviewInSolutionExplorer": false
 }

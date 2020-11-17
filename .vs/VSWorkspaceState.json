@@ -2,22 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\OCC",
-<<<<<<< HEAD
-    "\\OCC\\OCC"
-  ],
-  "SelectedNode": "\\OCC\\OCC.sln",
-=======
     "\\OCC\\OCC",
     "\\OCC\\OCC\\Controllers",
+    "\\OCC\\OCC\\Migrations",
+    "\\OCC\\OCC\\Models",
     "\\OCC\\OCC\\Views",
-    "\\OCC\\OCC\\Views\\Home",
-    "\\OCC\\OCC\\wwwroot",
-    "\\OCC\\OCC\\wwwroot\\css",
-    "\\OCC\\OCC\\wwwroot\\images",
-    "\\OCC\\OCC\\wwwroot\\lib\\bootstrap",
-    "\\OCC\\OCC\\wwwroot\\lib\\bootstrap\\js"
+    "\\OCC\\OCC\\Views\\Emergency"
   ],
-  "SelectedNode": "\\OCC\\OCC\\Views\\Home\\Emergency.cshtml",
->>>>>>> US2
+  "SelectedNode": "\\OCC\\OCC\\Controllers\\EmergencyController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -9,9 +9,13 @@ namespace OCC.Controllers
 {
     public class BookingController : Controller
     {
+
         private IOrderRepository orderRepository;
         private ICustomerRepository customerRepository;
         private IServiceRepository serviceRepository;
+
+        private Customer customerCreatedRepo;
+
 
         public BookingController(IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {
@@ -22,7 +26,19 @@ namespace OCC.Controllers
 
         public ViewResult ServiceDetail()
         {
-            return View();
+            return View(new Order());
         }
+
+        [HttpPost]
+        public IActionResult ServiceDetail(Order order)
+        {
+
+           /* byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
+            HttpContext.Session.Set("order", jsonOrder);
+
+            return RedirectToAction("Get", "Emergency");*/
+           return RedirectToAction( );
+        }
+        
     }
 }

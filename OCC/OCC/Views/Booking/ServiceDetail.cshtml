@@ -11,6 +11,7 @@
 
 <link href="~/css/Emergency.css" rel="stylesheet" />
 <script src="~/js/EmergencyPrice.js"></script>
+<script src="~/js/ServiceDetails.js"></script>
 
 <body>
     < id="all-page">
@@ -51,7 +52,7 @@
                                 </select>
                                 <br /><br /><br /><br />
                             </fieldset>
-                        </div>
+                        </div>0/
                     </div>
                     @*Calendar*@
                     <div class="card">
@@ -59,7 +60,7 @@
                             <h5 class="card-title">Select the date</h5>
                             <p class="card-text">Here you can select the preferred date of the service.</p>
                             @*<form method="post" asp-action="ServiceDetail">*@
-                            <input type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                            <input id="service-day" type="date" asp-for="@Model.ServiceDay" required>
                         </div>
                     </div>
 

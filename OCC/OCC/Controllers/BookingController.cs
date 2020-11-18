@@ -10,9 +10,13 @@ namespace OCC.Controllers
 {
     public class BookingController : Controller
     {
+
         private IOrderRepository orderRepository;
         private ICustomerRepository customerRepository;
         private IServiceRepository serviceRepository;
+
+        private Customer customerCreatedRepo;
+
 
         public BookingController(IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {

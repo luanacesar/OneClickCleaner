@@ -19,7 +19,7 @@ namespace OCC.Models
 
         public int Duration { get; set; }
 
-        public DateTime ServiceDay { get; set; }
+        
 
         //ShiftTime: Morning, Afternoon, Evening, Night
         public string ShiftTime { get; set; }

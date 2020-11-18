@@ -16,6 +16,8 @@
   <ItemGroup>
     <Compile Include="Migrations\20201117194726_Initial.cs" />
     <Compile Include="Migrations\20201117194726_Initial.Designer.cs" />
+    <Compile Include="Migrations\20201118015158_AvailabilityCleaners.cs" />
+    <Compile Include="Migrations\20201118015158_AvailabilityCleaners.Designer.cs" />
     <Compile Include="Migrations\ApplicationDbContextModelSnapshot.cs" />
   </ItemGroup>
   <ItemGroup>

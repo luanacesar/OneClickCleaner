@@ -1,6 +1,7 @@
 ﻿@model Order
 
 <link href="~/css/Booking.css" rel="stylesheet" />
+<script src="~/js/ServiceDetails.js"></script>
 
 <body>
     <div id="all-page">
@@ -44,10 +45,12 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Select the date</h5>
-                            <p class="card-text">Here you can select the preferred date of the service.</p>
+                            <p class="card-text ">Here you can select the preferred date of the service.</p>
                             @*<form method="post" asp-action="ServiceDetail">*@
-                            <input type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
-                            <br />
+                        <div class="center2">
+                            <input class="col-lg-8" id="service-day" type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                        </div>
+                                <br />
 
                             <span asp-validation-for="@Model.ServiceDay" class="text-danger field-validation-error"></span>
                         </div>

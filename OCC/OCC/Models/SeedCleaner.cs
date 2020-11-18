@@ -24,6 +24,7 @@ namespace OCC.Models
                         FullName = "Mary Smith",
                         Location = "Toronto",
                         ExperienceLevel = "High"
+                        // info
                     },
                     new Cleaner
                     {

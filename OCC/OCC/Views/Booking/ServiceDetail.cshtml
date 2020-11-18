@@ -60,6 +60,7 @@
                             <p class="card-text">Here you can select the preferred date of the service.</p>
                             @*<form method="post" asp-action="ServiceDetail">*@
                             <input type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                            <span asp-validation-for="@Model.ServiceDay" class="text-danger field-validation-error"></span>
                         </div>
                     </div>
 

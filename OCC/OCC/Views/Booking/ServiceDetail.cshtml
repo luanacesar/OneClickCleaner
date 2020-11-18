@@ -1,26 +1,14 @@
 ﻿@model Order
 
-@{
-
-    ViewBag.Title = "Booking";
-
-    Layout = "_Layout";
-
-}
-
-
-<link href="~/css/Emergency.css" rel="stylesheet" />
-<script src="~/js/EmergencyPrice.js"></script>
+<link href="~/css/Booking.css" rel="stylesheet" />
 <script src="~/js/ServiceDetails.js"></script>
 
 <body>
-    < id="all-page">
+    <div id="all-page">
         <article>
             <div class="text-md-left">
                 <div class="header">
-                    <img src="~/images/ambulance-emergency.png" />
-                    @*<i class="fas fa-ambulance fa-10x"></i>*@
-
+                    <img src="~/images/calendar.png" />
                     <h1 class="title">Booking Service</h1>
                 </div>
             </div>
@@ -39,9 +27,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Select Location</h5>
                             <p class="card-text">Here you can selec the desired location of the service.</p>
-                            @*<form method="post" asp-action="ServiceDetail">*@
                             <fieldset>
-                                @*<legend>Select Location</legend>*@
                                 <select id="myList" asp-for="@Model.Location" required>
                                     <option value=""></option>
                                     <option value="Toronto">Toronto</option>
@@ -50,6 +36,7 @@
                                     <option value="Peel">Peel</option>
                                     <option value="Halton">Halton</option>
                                 </select>
+                                <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
                                 <br /><br /><br /><br />
                             </fieldset>
                         </div>0/
@@ -58,13 +45,16 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Select the date</h5>
-                            <p class="card-text">Here you can select the preferred date of the service.</p>
+                            <p class="card-text ">Here you can select the preferred date of the service.</p>
                             @*<form method="post" asp-action="ServiceDetail">*@
-                            <input id="service-day" type="date" asp-for="@Model.ServiceDay" required>
+                        <div class="center2">
+                            <input class="col-lg-8" id="service-day" type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                        </div>
+                                <br />
+
+                            <span asp-validation-for="@Model.ServiceDay" class="text-danger field-validation-error"></span>
                         </div>
                     </div>
-
-
                     @*Time*@
                     <div class="card">
                         <div class="card-body">
@@ -84,54 +74,26 @@
                                     <option value="Night">Night</option>
 
                                 </select>
+                                <span asp-validation-for="@Model.ShiftTime" class="text-danger field-validation-error"></span>
+                                <br /><br /><br /><br />
+                                <div class="center">
+                                    <button class="btn btn-success col-lg-12 " type="submit">Continue</button>
+                                </div>
+
 
                             </fieldset>
-                            <div class="center">
-                                <button class="btn btn-danger col-lg-12 " type="submit">Continue</button>
-                            </div>
 
                         </div>
-                    </div>
 
-
-
-
-
-
-
-                    @*<div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Total Price</h5>
-                    <p class="card-text">The price is adjusted accoding to the duration</p>
-                    <div class="center2">
-                        <p class="btn-light col-lg-12 font-weight-bold " id="result">
-                        </p>
                     </div>
                 </div>
-            </div>*@
-
             </form>
-    </div>
-    </div>
-    </div>
-    </article>
-    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
-    </div>
+
+        </article>
+
+     </div>   <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-@*++++++++++++++++++++++++++++++++++*@
 
 
 

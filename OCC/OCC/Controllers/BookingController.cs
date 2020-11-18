@@ -34,13 +34,13 @@ namespace OCC.Controllers
         {
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
             HttpContext.Session.Set("order", jsonOrder);
-
+            orderRepository.SaveOrder(order);
             return RedirectToAction("Get", "Booking");
         }
-        ////[HttpGet("Booking")]
-        ////public IActionResult Get()
-        ////{
-        ////    return View("CustomerInfo", new Customer());
-        ////}
+        [HttpGet("Booking")]
+        public IActionResult Get()
+        {
+            return View("CustomerInfo", new Customer());
+        }
     }
 }

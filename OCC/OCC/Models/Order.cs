@@ -24,6 +24,7 @@ namespace OCC.Models
         //ShiftTime: Morning, Afternoon, Evening, Night
         public string ShiftTime { get; set; }
 
+        public DateTime ServiceDay { get; set; }
         public string OrderPaymentState { get; set; }
         
     }

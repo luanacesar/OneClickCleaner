@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using OCC.Models;
@@ -28,17 +29,18 @@ namespace OCC.Controllers
         {
             return View(new Order());
         }
-
         [HttpPost]
         public IActionResult ServiceDetail(Order order)
         {
-
-           /* byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
+            byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
             HttpContext.Session.Set("order", jsonOrder);
 
-            return RedirectToAction("Get", "Emergency");*/
-           return RedirectToAction( );
+            return RedirectToAction("Get", "Booking");
         }
-        
+        ////[HttpGet("Booking")]
+        ////public IActionResult Get()
+        ////{
+        ////    return View("CustomerInfo", new Customer());
+        ////}
     }
 }

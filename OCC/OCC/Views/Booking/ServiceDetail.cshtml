@@ -1,75 +1,136 @@
 ﻿@model Order
+
 @{
+
     ViewBag.Title = "Booking";
+
     Layout = "_Layout";
+
 }
-<section id="bookingpage">
-    <div class="rowb">
 
-        <h1>Booking Page</h1>
-        </div>
 
-</section>
+<link href="~/css/Emergency.css" rel="stylesheet" />
+<script src="~/js/EmergencyPrice.js"></script>
 
-<link rel="stylesheet" href="~/css/Booking.css">
+<body>
+    < id="all-page">
+        <article>
+            <div class="text-md-left">
+                <div class="header">
+                    <img src="~/images/ambulance-emergency.png" />
+                    @*<i class="fas fa-ambulance fa-10x"></i>*@
 
-<head>
-    <meta charset="utf-8">
-</head>
-<!--Service Details-->>
-<section id="bookingpage">
-    <div class="rowb">
-        <section id="features">
-            <div class="justify-content-center">
-               
+                    <h1 class="title">Booking Service</h1>
+                </div>
             </div>
-            <div class="justify-content-start">
-                <p class="p1">
-                    Our booking service cleaner provides a high quality of <br />
-                    service. First, you have to pick one of the locations in <br />
-                    dropdown area, then you pick how long you need a cleaner, <br />
-                    after that, you choose the day and we will provide the total <br />
-                    price for the service.
-                </p>
-            </div>
-        </section>
+            <br /><br />
+            <p class="font-weight-normal justify-content-center">
+                Our Booking service cleaner provides a high quality of service,
+                first, you have to pick one of the locations in the Dropdown area,
+                then you pick the day and the period of time you need a cleaner. After that,
+                you choose the day and we will provide the total Price for the service<br />
+            </p>
+            <form method="post" asp-action="ServiceDetail">
+                <div class="card-group">
+
+                    @*Location*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select Location</h5>
+                            <p class="card-text">Here you can selec the desired location of the service.</p>
+                            @*<form method="post" asp-action="ServiceDetail">*@
+                            <fieldset>
+                                @*<legend>Select Location</legend>*@
+                                <select id="myList" asp-for="@Model.Location" required>
+                                    <option value=""></option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="York">York</option>
+                                    <option value="Durkham">Durkham</option>
+                                    <option value="Peel">Peel</option>
+                                    <option value="Halton">Halton</option>
+                                </select>
+                                <br /><br /><br /><br />
+                            </fieldset>
+                        </div>
+                    </div>
+                    @*Calendar*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select the date</h5>
+                            <p class="card-text">Here you can select the preferred date of the service.</p>
+                            @*<form method="post" asp-action="ServiceDetail">*@
+                            <input type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                        </div>
+                    </div>
+
+
+                    @*Time*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select the period of time that you need</h5>
+                            <p class="card-text">Here you can choose the period of time that best fits you</p>
+                            <fieldset>
+                                <select id="MyTime" asp-for="@Model.ShiftTime" required>
+
+                                    <option disabled selected>--Choose The Time prefered--</option>
+
+                                    <option value="Morning">Morning</option>
+
+                                    <option value="AfterNoon">Afternoon</option>
+
+                                    <option value="Evening">Evening</option>
+
+                                    <option value="Night">Night</option>
+
+                                </select>
+
+                            </fieldset>
+                            <div class="center">
+                                <button class="btn btn-danger col-lg-12 " type="submit">Continue</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    @*<div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Price</h5>
+                    <p class="card-text">The price is adjusted accoding to the duration</p>
+                    <div class="center2">
+                        <p class="btn-light col-lg-12 font-weight-bold " id="result">
+                        </p>
+                    </div>
+                </div>
+            </div>*@
+
+            </form>
     </div>
-    </section>
-<!--Choosing date-->
-
-<section>
-<div>
-    <h1>when would you first booking be?</h1>
-
-    <form action="/action_page.php">
-       
-        <input type="date"  asp-for="@Model.ServiceDay" required>
-        <!--Choosing time-->
-        <section id="ChoosingTheTime">
-            <div class="justify-content-center">
-                <fieldset>
-                    <legend>Select Time</legend>
-                    <label>Time Prefered</label>
-                    <select id="MyTime" asp-for="@Model.ShiftTime" required>
-                        <option disabled selected>--Choose The Time prefered--</option>
-                        <option value="Morning">Morning</option>
-                        <option value="AfterNoon">Afternoon</option>
-                        <option value="Evening">Evening</option>
-                        <option value="Night">Night</option>
-                    </select>
-
-                </fieldset>
-            </div>
-        </section>
-        <button class="button" type="submit">SUBMIT</button>
-
-    </form>
-
-</div>
-</section>
+    </div>
+    </div>
+    </article>
+    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
+    </div>
+</body>
 
 
 
+
+
+
+
+
+
+
+
+
+
+@*++++++++++++++++++++++++++++++++++*@
 
 
 

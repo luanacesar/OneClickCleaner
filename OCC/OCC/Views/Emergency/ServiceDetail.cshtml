@@ -1,74 +1,90 @@
-﻿
+﻿@model Order
 
-@model Order
-    <link href="~/css/Emergency.css" rel="stylesheet" />
-    <br />
-    <div class="col-lg-12">
-        <div class="col-lg-6">
+<link href="~/css/Emergency.css" rel="stylesheet" />
+<script src="~/js/EmergencyPrice.js"></script>
 
-            <div class="justify-content-lg-start">
-                <h2><i class="fas fa-ambulance fa-3x"></i>Emergency Service</h2>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="justify-content-start">
-                <p class="font-weight-normal">
-                    Our Emergency service cleaner provides a very fast and quality of services<br />
-                    first, you have to pick one of the locations in the dropdown area,<br />
-                    then you select how long you need a cleaner, and you will see the total price<br />
-                    of the service and go to your locations as soon as possible
-                </p>
-            </div>
-        </div>
-        <br />
-    </div>
-        <div class="col-lg-12">
-            <div class="col-lg-5">
-                <h4>How long do you need your cleaner for?</h4>
-                <br />
-            </div>
-            <div class="col-lg-5 col-sm-3">
-                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="option2"> 1 hour
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="option2"> 2 hours
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="option3"> 3 hours
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="option3"> 4 hours
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="option3"> 5 hours
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" id="option3"> 6 hours
-                    </label>
+<body>
+    <div id="all-page">
+        <article>
+            <div class="text-md-left">
+                <div class="header">
+                    <img src="~/images/ambulance-emergency.png" />
+                    @*<i class="fas fa-ambulance fa-10x"></i>*@
+                    <h1 class="title">Emergency Service</h1>
                 </div>
             </div>
-            <br />    <br />
-        </div>
-            <div class="col-lg-6 m-2">
-                <form method="post" asp-action="ServiceDetail">
-                    <fieldset>
-                        <legend>Select Location</legend>
-                        <select id="myList" asp-for="@Model.Location" required>
-                            <option value=""></option>
-                            <option value="Toronto">Toronto</option>
-                            <option value="York">York</option>
-                            <option value="Durkham">Durkham</option>
-                            <option value="Peel">Peel</option>
-                            <option value="Halton">Halton</option>
-                        </select>
-                        <br /><br />
-                        <button class="btn btn-danger" type="submit">Continue</button>
-
-                    </fieldset>
-                </form>
-            </div>
             <br /><br />
-                  
+            <p class="font-weight-normal justify-content-center">
+                Our Emergency service cleaner provides a very fast and quality of services.
+                First, you have to select how long you need a cleaner, so you can see the price.
+                Then you pick one of the locations in the dropdown area and click in continue to finalize your order! <br />
+            </p>
+            <form method="post" asp-action="ServiceDetail">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">How long do you need your cleaner for?</h5>
+                            <p class="card-text">Here you can choose the time that best fits you</p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="1" id="option1" onclick="emergencyPrice()"> 1 hour
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="2" id="option2" onclick="emergencyPrice()"> 2 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="3" id="option3" onclick="emergencyPrice()"> 3 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="4" id="option4" onclick="emergencyPrice()"> 4 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="5" id="option5" onclick="emergencyPrice()"> 5 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="6" id="option6" onclick="emergencyPrice()"> 6 hours
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Total Price</h5>
+                            <p class="card-text">The price is adjusted accoding to the duration</p>
+                            <div class="center2">
+                                <p class="btn-light col-lg-12 font-weight-bold " id="result">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select Location</h5>
+                            <p class="card-text">Here you can selec the desired location of the service.</p>
+                            @*<form method="post" asp-action="ServiceDetail">*@
+                                <fieldset>
+                                    @*<legend>Select Location</legend>*@
+                                    <select id="myList" asp-for="@Model.Location" required>
+                                        <option value=""></option>
+                                        <option value="Toronto">Toronto</option>
+                                        <option value="York">York</option>
+                                        <option value="Durkham">Durkham</option>
+                                        <option value="Peel">Peel</option>
+                                        <option value="Halton">Halton</option>
+                                    </select>
+                                    <br /><br /><br /><br />
+                                    <div class="center">
+                                        <button class="btn btn-danger col-lg-12 " type="submit">Continue</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </article>
+        <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
+    </div>
+</body>
+
+
 

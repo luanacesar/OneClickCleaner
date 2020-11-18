@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+    "C:\\Users\\gunjo\\Downloads\\Ajlan Lien\\Githubwork\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+    "C:\\Users\\gunjo\\Downloads\\Ajlan Lien\\Githubwork\\OCC\\OCC\\OCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectUniqueName": "C:\\Users\\gunjo\\Downloads\\Ajlan Lien\\Githubwork\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-        "projectPath": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-        "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "projectPath": "C:\\Users\\gunjo\\Downloads\\Ajlan Lien\\Githubwork\\OCC\\OCC\\OCC.csproj",
+        "packagesPath": "C:\\Users\\gunjo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gunjo\\Downloads\\Ajlan Lien\\Githubwork\\OCC\\OCC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\jorge\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\gunjo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -30,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Microsoft.AspNet.WebApi.Client": {
               "target": "Package",
@@ -82,7 +80,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100-rc1-014190\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,74 @@
+﻿@model OCC.Models.PotentialCleaner
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PotentialCleanerForm</title>
+</head>
+<body>
+    <div>
+        <link rel="stylesheet" href="~/css/Emergency.css" />
+    </div>
+    <div class="container">
+        <h1>Potential Cleaner Registration Form</h1>
+        <form asp-action="PotentialCleanerForm" method="post">
+            <div>
+                <label asp-for="FirstName">First name</label>
+                <input type="text" placeholder="FirstName" data-val="true"
+                       data-val-required="The First name is required." id="FirstName" name="FirstName" />
+
+                <label asp-for="LastName">Last name</label>
+                <input type="text" placeholder="LastName" data-val="true"
+                       data-val-required="The Last name is required." id="LastName" name="LastName" />
+
+
+
+            </div>
+
+
+            <div>
+                <label asp-for="Address">Address</label>
+                <input type="text" placeholder="Address" data-val="true"
+                       data-val-required="The address is required." id="Address" name="Address" />
+                <label asp-for="City">City</label>
+                <input type="text" placeholder="City" data-val="true"
+                       data-val-required="The city is required." id="City" name="City" />
+
+            </div>
+
+            <div>
+                <label asp-for="Email">Email</label>
+                <input type="text" placeholder="Email" data-val="true"
+                       data-val-required="The email is required." id="Email" name="Email" />
+                <label asp-for="PostalCode">Postal code</label>
+                <input type="text" placeholder="PstalCode" data-val="true"
+                       data-val-required="The postal code is required." id="PostalCode" name="PostalCode" />
+
+          </div>
+            <div>
+                <label asp-for="Phone">Phone</label>
+                <input type="text" placeholder="Phone" data-val="true"
+                       data-val-required="The phone is required." id="Phone" name="Phone" />
+                <span class="text-danger field-validation-error" data-valmsg-for="Phone" data-valmsg-replace="true">
+                   
+                </span>
+                <label asp-for="CertificateNumber">Caertificate Number</label>
+                <input type="text" placeholder="CertificateNumber" data-val="true"
+                       data-val-required="The certificate number is required." id="CertificateNumber" name="CertificateNumber" />
+                <span asp-validation-for="@Model.CertificateNumber" class="text-danger field-validation-error"></span>
+            </div>
+            
+
+            <button class="btn btn-success col-lg-12 " type="submit">Continue</button>
+            
+        </form>
+    
+        </div>
+
+</body>
+</html>

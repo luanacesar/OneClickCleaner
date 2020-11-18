@@ -1,0 +1,99 @@
+﻿@model Order
+
+<link href="~/css/Booking.css" rel="stylesheet" />
+<script src="~/js/ServiceDetails.js"></script>
+
+<body>
+    <div id="all-page">
+        <article>
+            <div class="text-md-left">
+                <div class="header">
+                    <img src="~/images/calendar.png" />
+                    <h1 class="title">Booking Service</h1>
+                </div>
+            </div>
+            <br /><br />
+            <p class="font-weight-normal justify-content-center">
+                Our Booking service cleaner provides a high quality of service,
+                first, you have to pick one of the locations in the Dropdown area,
+                then you pick the day and the period of time you need a cleaner. After that,
+                you choose the day and we will provide the total Price for the service<br />
+            </p>
+            <form method="post" asp-action="ServiceDetail">
+                <div class="card-group">
+
+                    @*Location*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select Location</h5>
+                            <p class="card-text">Here you can selec the desired location of the service.</p>
+                            <fieldset>
+                                <select id="myList" asp-for="@Model.Location" required>
+                                    <option value=""></option>
+                                    <option value="Toronto">Toronto</option>
+                                    <option value="York">York</option>
+                                    <option value="Durkham">Durkham</option>
+                                    <option value="Peel">Peel</option>
+                                    <option value="Halton">Halton</option>
+                                </select>
+                                <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
+                                <br /><br /><br /><br />
+                            </fieldset>
+                        </div>
+                    </div>
+                    @*Calendar*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select the date</h5>
+                            <p class="card-text ">Here you can select the preferred date of the service.</p>
+                            @*<form method="post" asp-action="ServiceDetail">*@
+                        <div class="center2">
+                            <input class="col-lg-8" id="service-day" type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                        </div>
+                                <br />
+
+                            <span asp-validation-for="@Model.ServiceDay" class="text-danger field-validation-error"></span>
+                        </div>
+                    </div>
+                    @*Time*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Select the period of time that you need</h5>
+                            <p class="card-text">Here you can choose the period of time that best fits you</p>
+                            <fieldset>
+                                <select id="MyTime" asp-for="@Model.ShiftTime" required>
+
+                                    <option disabled selected>--Choose The Time prefered--</option>
+
+                                    <option value="Morning">Morning</option>
+
+                                    <option value="AfterNoon">Afternoon</option>
+
+                                    <option value="Evening">Evening</option>
+
+                                    <option value="Night">Night</option>
+
+                                </select>
+                                <span asp-validation-for="@Model.ShiftTime" class="text-danger field-validation-error"></span>
+                                <br /><br /><br /><br />
+                                <div class="center">
+                                    <button class="btn btn-success col-lg-12 " type="submit">Continue</button>
+                                </div>
+
+
+                            </fieldset>
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+        </article>
+
+     </div>   <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
+</body>
+
+
+
+

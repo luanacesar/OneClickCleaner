@@ -10,7 +10,7 @@ using OCC.Models;
 namespace OCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201118043128_Initial")]
+    [Migration("20201118170440_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

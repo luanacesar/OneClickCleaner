@@ -3,11 +3,8 @@
     "",
     "\\OCC",
     "\\OCC\\OCC",
-    "\\OCC\\OCC\\Controllers",
-    "\\OCC\\OCC\\Views\\Booking",
-    "\\OCC\\OCC\\Views\\Emergency",
-    "\\OCC\\OCC\\Views\\Home"
+    "\\OCC\\OCC\\Controllers"
   ],
-  "SelectedNode": "\\OCC\\OCC.sln",
+  "SelectedNode": "\\OCC\\OCC\\Controllers\\BookingController.cs",
   "PreviewInSolutionExplorer": false
 }

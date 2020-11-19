@@ -92,6 +92,8 @@ namespace OCC.Migrations
 
                     b.Property<string>("OrderPaymentState");
 
+                    b.Property<DateTime>("ServiceDay");
+
                     b.Property<long>("ServiceId");
 
                     b.Property<string>("ShiftTime");

@@ -4,9 +4,9 @@
     "\\OCC",
     "\\OCC\\OCC",
     "\\OCC\\OCC\\Controllers",
-    "\\OCC\\OCC\\Models",
-    "\\OCC\\OCC\\Views"
+    "\\OCC\\OCC\\Views",
+    "\\OCC\\OCC\\Views\\Cleaner"
   ],
-  "SelectedNode": "\\OCC\\OCC.sln",
+  "SelectedNode": "\\OCC\\OCC\\Views\\Cleaner\\CleanerCheckOut.cshtml",
   "PreviewInSolutionExplorer": false
 }

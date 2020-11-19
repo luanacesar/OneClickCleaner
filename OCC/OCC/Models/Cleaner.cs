@@ -22,6 +22,6 @@ namespace OCC.Models
         public string Certificate { get; set; }
         [Required]
         public long BankAccount { get; set; }
-
+        [Required]
     }
 }

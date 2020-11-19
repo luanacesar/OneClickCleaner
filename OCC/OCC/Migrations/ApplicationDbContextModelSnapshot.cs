@@ -42,9 +42,17 @@ namespace OCC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<long>("BankAccount");
+
+                    b.Property<string>("Certificate");
+
+                    b.Property<string>("Email");
+
                     b.Property<string>("ExperienceLevel");
 
-                    b.Property<string>("FullName");
+                    b.Property<string>("FirstName");
+
+                    b.Property<bool>("IsCleaner");
 
                     b.Property<string>("Location");
 

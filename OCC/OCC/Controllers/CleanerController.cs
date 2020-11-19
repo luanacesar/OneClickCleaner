@@ -33,17 +33,18 @@ namespace OCC.Controllers
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
             HttpContext.Session.Set("cleaner", jsonOrder);
             cleanerRepository.SaveCleaner(cleaner);
-            return RedirectToAction("CleanerCheckOut", "Cleaner");
+            //return RedirectToAction("CleanerCheckOut", cleaner);
+            return View("CleanerCheckOut", cleaner);
         }
         [HttpGet("CleanerDetail")]
-        public IActionResult Get()
+        public IActionResult CleanerDetail()
         {
             return View("CleanerDetail", new Cleaner());
         }
-        public ViewResult CleanerCheckOut(Cleaner cleaner)
-        {
-            return View();
-        }
+        //public ViewResult CleanerCheckOut(Cleaner cleaner)
+        //{
+        //    return View();
+        //}
     }
 
  }

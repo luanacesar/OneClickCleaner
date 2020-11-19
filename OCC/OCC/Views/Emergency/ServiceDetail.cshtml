@@ -62,30 +62,28 @@
                             <h5 class="card-title">Select Location</h5>
                             <p class="card-text">Here you can selec the desired location of the service.</p>
                             @*<form method="post" asp-action="ServiceDetail">*@
-                            <fieldset>
-                                @*<legend>Select Location</legend>*@
-                                <select id="myList" asp-for="@Model.Location" required>
-                                    <option value=""></option>
-                                    <option value="Toronto">Toronto</option>
-                                    <option value="York">York</option>
-                                    <option value="Durkham">Durkham</option>
-                                    <option value="Peel">Peel</option>
-                                    <option value="Halton">Halton</option>
-                                </select>
-                                <br /><br /><br /><br />
-                                <div class="center">
-                                    <button class="btn btn-danger col-lg-12 " type="submit">Continue</button>
-                                </div>
-                            </fieldset>
+                                <fieldset>
+                                    @*<legend>Select Location</legend>*@
+                                    <select id="myList" asp-for="@Model.Location" required>
+                                        <option value=""></option>
+                                        <option value="Toronto">Toronto</option>
+                                        <option value="York">York</option>
+                                        <option value="Durkham">Durkham</option>
+                                        <option value="Peel">Peel</option>
+                                        <option value="Halton">Halton</option>
+                                    </select>
+                                    <br /><br /><br /><br />
+                                    <div class="center">
+                                        <button class="btn btn-danger col-lg-12 " type="submit">Continue</button>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </form>
         </article>
+        <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
     </div>
-    
-    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
-   
 </body>
 
 

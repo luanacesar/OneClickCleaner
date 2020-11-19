@@ -10,6 +10,5 @@ window.onload = function () {
     if (elem.value < elem.min) {
         elem.value = elem.min;
     }
-    elem.max = maxDate.toISOString().slice(0,10);
+    elem.max = maxDate.toISOString().slice(0, 10);
 }
-

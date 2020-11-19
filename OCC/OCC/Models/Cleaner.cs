@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 namespace OCC.Models
 {
-    public class Cleaner 
+    public class Cleaner
     {
         public long CleanerId { get; set; }
         [Required]
@@ -21,7 +21,9 @@ namespace OCC.Models
         [Required]
         public string Certificate { get; set; }
         [Required]
-        public long BankAccount { get; set; }
-        [Required]
+        public double BankAccount { get; set; }
+        
+
     }
 }
+

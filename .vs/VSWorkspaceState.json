@@ -4,8 +4,9 @@
     "\\OCC",
     "\\OCC\\OCC",
     "\\OCC\\OCC\\Controllers",
-    "\\OCC\\OCC\\Migrations"
+    "\\OCC\\OCC\\Views",
+    "\\OCC\\OCC\\Views\\Cleaner"
   ],
-  "SelectedNode": "\\OCC\\OCC\\Controllers\\BookingController.cs",
+  "SelectedNode": "\\OCC\\OCC\\Views\\Cleaner\\CleanerCheckOut.cshtml",
   "PreviewInSolutionExplorer": false
 }

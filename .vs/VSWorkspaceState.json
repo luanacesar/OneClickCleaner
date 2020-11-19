@@ -4,8 +4,9 @@
     "\\OCC",
     "\\OCC\\OCC",
     "\\OCC\\OCC\\Controllers",
-    "\\OCC\\OCC\\Migrations"
+    "\\OCC\\OCC\\Models",
+    "\\OCC\\OCC\\Views"
   ],
-  "SelectedNode": "\\OCC\\OCC\\Controllers\\BookingController.cs",
+  "SelectedNode": "\\OCC\\OCC.sln",
   "PreviewInSolutionExplorer": false
 }

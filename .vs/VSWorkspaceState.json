@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\OCC",
-    "\\OCC\\OCC"
+    "\\OCC\\OCC",
+    "\\OCC\\OCC\\Controllers",
+    "\\OCC\\OCC\\Views",
+    "\\OCC\\OCC\\Views\\Booking"
   ],
-  "SelectedNode": "\\OCC\\OCC.sln",
+  "SelectedNode": "\\OCC\\OCC\\Controllers\\BookingController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -12,21 +12,14 @@ namespace OCC.Controllers
         public ViewResult Index()
         {
             return View();
-        }
+        }    
 
-        public ViewResult Emergency()
+        public ViewResult PotentialCleanerForm()
         {
             return View();
         }
+       
 
-        public ViewResult Booking()
-        {
-            return View();
-        }
-
-        public ActionResult CustomerForm()
-        {
-            return RedirectToAction("Get", "Emergency");
-        }
+        
     }
 }

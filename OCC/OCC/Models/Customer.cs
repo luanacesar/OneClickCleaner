@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
+
 namespace OCC.Models
 {
     public class Customer
@@ -8,9 +9,9 @@ namespace OCC.Models
         public Customer()
         {
         }
-        public long Id { get; set; }
+        public long CustomerId { get; set; }
         [Required]
-        public string Name { get; set; }
+        public string FullName { get; set; }
         [Required]
         public string Address { get; set; }
         [Required]

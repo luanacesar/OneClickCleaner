@@ -10,7 +10,7 @@ using OCC.Models;
 namespace OCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201113153930_Initial")]
+    [Migration("20201118043128_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -93,6 +93,8 @@ namespace OCC.Migrations
                     b.Property<string>("Location");
 
                     b.Property<string>("OrderPaymentState");
+
+                    b.Property<DateTime>("ServiceDay");
 
                     b.Property<long>("ServiceId");
 

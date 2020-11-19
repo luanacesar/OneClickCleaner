@@ -9,13 +9,27 @@ namespace OCC.Models
     {
         public long CleanerId { get; set; }
 
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string Email { get; set; }
+
+        public long Phone { get; set; }
+
+        public string City { get; set; }
+
+        public string PostalCode { get; set; }
 
         public string Location { get; set; }
 
+        public bool IsPontetialCleaner { get; set; }
+
         public string ExperienceLevel { get; set; }
-        //clearnersand potential
-        //bollean potentia cleaner or not
-        // certificado check bollean
+
+        public bool IsCertificate { get; set; }
+
+        public string certicate { get; set; }
+
     }
 }

@@ -17,19 +17,17 @@ namespace OCC.Models
 
         public long Phone { get; set; }
 
-        public string City { get; set; }
-
         public string PostalCode { get; set; }
 
         public string Location { get; set; }
 
-        public bool IsPontetialCleaner { get; set; }
+        public bool IsCleaner { get; set; }
 
         public string ExperienceLevel { get; set; }
 
-        public bool IsCertificate { get; set; }
+        public string Certificate { get; set; }
 
-        public string certicate { get; set; }
+        public long BankAccount { get; set; }
 
     }
 }

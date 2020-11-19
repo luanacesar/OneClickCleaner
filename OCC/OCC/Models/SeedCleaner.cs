@@ -21,34 +21,69 @@ namespace OCC.Models
                 context.Cleaners.AddRange(
                     new Cleaner
                     {
-                        FullName = "Mary Smith",
+                        FirstName = "Mary",
+                        LastName = "Smith",
+                        Email = "mary_smith@gmail.com",
+                        Phone = 4167298931,
                         Location = "Toronto",
-                        ExperienceLevel = "High"
-                        // info
+                        PostalCode = "M5C-2X5",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489001",
+                        BankAccount = 0046448300
+
                     },
                     new Cleaner
                     {
-                        FullName = "Peter Bell",
+                        FirstName = "Peter",
+                        LastName = "Bell",
+                        Email = "peter@gmail.com",
+                        Phone = 6473272224,
                         Location = "York",
-                        ExperienceLevel = "High"
+                        PostalCode = "M5C-2X5",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 0123456789
                     },
                     new Cleaner
                     {
-                        FullName = "Sophy Graham",
+                        FirstName = "Sophy",
+                        LastName = "Graham",
+                        Email = "sophy@gmail.com",
+                        Phone = 6475550990,
                         Location = "Durkham",
-                        ExperienceLevel = "Medium"
+                        PostalCode = "M5C-2X5",
+                        IsCleaner = true,
+                        ExperienceLevel = "Medium",
+                        Certificate = "CSC2489002",
+                        BankAccount = 3456234560
                     },
                     new Cleaner
                     {
-                        FullName = "Federic Diallo",
+                        FirstName = "Federic",
+                        LastName = "Diallo",
+                        Email = "diallo@gmail.com",
+                        Phone = 6475050304,
                         Location = "Peel",
-                        ExperienceLevel = "High"
+                        PostalCode = "M5C-2X5",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 0248286930
                     },
                     new Cleaner
                     {
-                        FullName = "Steven Thomas",
+                        FirstName = "Steven",
+                        LastName = "Thomas",
+                        Email = "thomas@gmail.com",
+                        Phone = 4026442020,
                         Location = "Halton",
-                        ExperienceLevel = "High"
+                        PostalCode = "M5C-2X5",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 4928472856
                     }
 
                 );

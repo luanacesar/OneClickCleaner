@@ -22,11 +22,8 @@ namespace OCC.Models
                     new Cleaner
                     {
                         FirstName = "Mary",
-                        LastName = "Smith",
                         Email = "mary_smith@gmail.com",
-                        Phone = 4167298931,
                         Location = "Toronto",
-                        PostalCode = "M5C-2X5",
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489001",
@@ -36,11 +33,8 @@ namespace OCC.Models
                     new Cleaner
                     {
                         FirstName = "Peter",
-                        LastName = "Bell",
                         Email = "peter@gmail.com",
-                        Phone = 6473272224,
                         Location = "York",
-                        PostalCode = "M5C-2X5",
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489002",
@@ -49,11 +43,8 @@ namespace OCC.Models
                     new Cleaner
                     {
                         FirstName = "Sophy",
-                        LastName = "Graham",
                         Email = "sophy@gmail.com",
-                        Phone = 6475550990,
                         Location = "Durkham",
-                        PostalCode = "M5C-2X5",
                         IsCleaner = true,
                         ExperienceLevel = "Medium",
                         Certificate = "CSC2489002",
@@ -62,11 +53,8 @@ namespace OCC.Models
                     new Cleaner
                     {
                         FirstName = "Federic",
-                        LastName = "Diallo",
                         Email = "diallo@gmail.com",
-                        Phone = 6475050304,
                         Location = "Peel",
-                        PostalCode = "M5C-2X5",
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489002",
@@ -75,11 +63,8 @@ namespace OCC.Models
                     new Cleaner
                     {
                         FirstName = "Steven",
-                        LastName = "Thomas",
                         Email = "thomas@gmail.com",
-                        Phone = 4026442020,
                         Location = "Halton",
-                        PostalCode = "M5C-2X5",
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489002",

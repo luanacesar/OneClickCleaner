@@ -10,14 +10,14 @@ using OCC.Models;
 namespace OCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201117194726_Initial")]
+    [Migration("20201119032216_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
+                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -44,9 +44,17 @@ namespace OCC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<long>("BankAccount");
+
+                    b.Property<string>("Certificate");
+
+                    b.Property<string>("Email");
+
                     b.Property<string>("ExperienceLevel");
 
-                    b.Property<string>("FullName");
+                    b.Property<string>("FirstName");
+
+                    b.Property<bool>("IsCleaner");
 
                     b.Property<string>("Location");
 

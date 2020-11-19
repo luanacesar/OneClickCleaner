@@ -13,9 +13,6 @@ namespace OCC.Controllers
         {
             return View();
         }    
-
-       
-
         
     }
 }

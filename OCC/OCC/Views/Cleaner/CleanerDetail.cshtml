@@ -17,35 +17,35 @@
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="fname">First Name:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" asp-for="@Model.FirstName">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" asp-for="@Model.FirstName" required>
                                 <span asp-validation-for="@Model.FirstName" class="text-danger field-validation-error"></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Email:</label>
                             <div class="col-sm-10">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" asp-for="@Model.Email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" asp-for="@Model.Email" required>
                                 <span asp-validation-for="@Model.Email" class="text-danger field-validation-error"></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Location:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="location" placeholder="Enter Location" asp-for="@Model.Location">
+                                <input type="text" class="form-control" id="location" placeholder="Enter Location" asp-for="@Model.Location" required>
                                 <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Certification number: </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="Certificate" placeholder="Enter certification number" asp-for="@Model.Certificate">
+                                <input type="text" class="form-control" id="Certificate" placeholder="Enter certification number" asp-for="@Model.Certificate" required>
                                 <span asp-validation-for="@Model.Certificate" class="text-danger field-validation-error"></span>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3">Bank Account: </label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="bank" placeholder="Enter your account" asp-for="@Model.BankAccount">
+                                <input type="text" class="form-control" id="bank" placeholder="Enter your account" asp-for="@Model.BankAccount" required>
                                 <span asp-validation-for="@Model.BankAccount" class="text-danger field-validation-error"></span>
                             </div>
                         </div>
@@ -56,8 +56,9 @@
                                 <option value="High">High</option>
                                 <option value="Intermediate">Intermediate</option>
                                 <option value="Beginner">Beginner</option>
+                                <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
                             </select>
-                            <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
+                            
                         </fieldset>
                     </div>
                     <div class="form-group">

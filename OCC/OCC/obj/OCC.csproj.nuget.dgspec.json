@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-        "projectPath": "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

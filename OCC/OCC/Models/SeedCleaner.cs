@@ -21,33 +21,54 @@ namespace OCC.Models
                 context.Cleaners.AddRange(
                     new Cleaner
                     {
-                        FullName = "Mary Smith",
+                        FirstName = "Mary",
+                        Email = "mary_smith@gmail.com",
                         Location = "Toronto",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489001",
+                        BankAccount = 0046448300
+
                     },
                     new Cleaner
                     {
-                        FullName = "Peter Bell",
+                        FirstName = "Peter",
+                        Email = "peter@gmail.com",
                         Location = "York",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 0123456789
                     },
                     new Cleaner
                     {
-                        FullName = "Sophy Graham",
+                        FirstName = "Sophy",
+                        Email = "sophy@gmail.com",
                         Location = "Durkham",
-                        ExperienceLevel = "Medium"
+                        IsCleaner = true,
+                        ExperienceLevel = "Medium",
+                        Certificate = "CSC2489002",
+                        BankAccount = 3456234560
                     },
                     new Cleaner
                     {
-                        FullName = "Federic Diallo",
+                        FirstName = "Federic",
+                        Email = "diallo@gmail.com",
                         Location = "Peel",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 0248286930
                     },
                     new Cleaner
                     {
-                        FullName = "Steven Thomas",
+                        FirstName = "Steven",
+                        Email = "thomas@gmail.com",
                         Location = "Halton",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 4928472856
                     }
 
                 );

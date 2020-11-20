@@ -34,7 +34,7 @@ namespace OCC.Migrations
                     Location = table.Column<string>(nullable: true),
                     IsCleaner = table.Column<bool>(nullable: false),
                     ExperienceLevel = table.Column<string>(nullable: true),
-                    Certificate = table.Column<string>(nullable: true),
+                    Certificate = table.Column<string>(nullable: false),
                     BankAccount = table.Column<long>(nullable: false)
                 },
                 constraints: table =>

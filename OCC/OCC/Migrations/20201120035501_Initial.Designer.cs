@@ -10,7 +10,7 @@ using OCC.Models;
 namespace OCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201119062145_Initial")]
+    [Migration("20201120035501_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,8 @@ namespace OCC.Migrations
 
                     b.Property<long>("BankAccount");
 
-                    b.Property<string>("Certificate");
+                    b.Property<string>("Certificate")
+                        .IsRequired();
 
                     b.Property<string>("Email");
 

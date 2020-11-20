@@ -23,6 +23,7 @@ namespace OCC.Models
         
         //[MinLength(7)]
         //[MaxLength(8)]
+        [Required]
         [RegularExpression("^[0-9]{7,8}$", ErrorMessage = "Write Valid Certificate (7 to 8 digits)")]
         public string Certificate { get; set; }
 

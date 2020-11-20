@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+    "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+    "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectUniqueName": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-        "projectPath": "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectPath": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorge\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "outputPath": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

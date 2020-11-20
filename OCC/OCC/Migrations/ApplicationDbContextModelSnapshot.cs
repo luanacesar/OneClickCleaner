@@ -44,7 +44,8 @@ namespace OCC.Migrations
 
                     b.Property<long>("BankAccount");
 
-                    b.Property<string>("Certificate");
+                    b.Property<string>("Certificate")
+                        .IsRequired();
 
                     b.Property<string>("Email");
 

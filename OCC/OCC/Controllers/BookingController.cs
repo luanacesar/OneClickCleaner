@@ -13,14 +13,12 @@ namespace OCC.Controllers
         private IOrderRepository orderRepository;
         private ICustomerRepository customerRepository;
         private IServiceRepository serviceRepository;
-        private ICleanerRepository cleanerRepository;
 
-        public BookingController(IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo, ICleanerRepository cleanerRepo)
+        public BookingController(IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {
             orderRepository = orderRepo;
             customerRepository = customerRepo;
             serviceRepository = serviceRepo;
-            cleanerRepository = cleanerRepo;
         }
 
         public ViewResult ServiceDetail()
@@ -28,47 +26,17 @@ namespace OCC.Controllers
             return View(new Order());
         }
         [HttpPost]
-        public ViewResult ServiceDetail(Order order)
+        public IActionResult ServiceDetail(Order order)
         {
-            const int BOOKING_SERV_ID = 2;
-            
-            if (ModelState.IsValid)
-            {
-                //Filling Order Information
-                order.ServiceId = BOOKING_SERV_ID;
-                order.OrderPaymentState = "no payed";
-
-                //Save in the Database the order created
-                orderRepository.SaveOrder(order);
-
-                //Serialize the order information in order to send to the next controller
-                byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
-                HttpContext.Session.Set("order", jsonOrder);
-
-                return View("SelectingCleaner", new Cleaner());
-            }
-            return View();
-
+            byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
+            HttpContext.Session.Set("order", jsonOrder);
+            orderRepository.SaveOrder(order);
+            return RedirectToAction("Get", "Booking");
         }
-        [HttpPost]
-        public IActionResult SelectingCleaner(Cleaner cleaner)
+        [HttpGet("Booking")]
+        public IActionResult Get()
         {
-            
-
-            cleanerRepository.SaveCleaner(cleaner);
-            byte[] value;
-            bool isValueAvailable = HttpContext.Session.TryGetValue("order", out value);
-            if (isValueAvailable)
-            {
-                Order orderContact = JsonSerializer.Deserialize<Order>(value);
-                //Filling Order Information
-                orderContact.CleanerId = cleaner.CleanerId;                
-
-                //orderRepository.SaveOrder(orderContact);
-                return View("CustomerInfo", new Customer());
-            }
-            return View();
+            return View("CustomerInfo", new Customer());
         }
-       
     }
 }

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+
+
 namespace OCC.Models
 {
-    public class Cleaner
+    public class Cleaner 
     {
         public long CleanerId { get; set; }
         [Required]
@@ -18,13 +20,10 @@ namespace OCC.Models
         public bool IsCleaner { get; set; }
         [Required]
         public string ExperienceLevel { get; set; }
-        [RegularExpression("^[0-9]{7,8}$", ErrorMessage = "Write Valid Certificate (7 to 8 digits)")]
-        public string Certificate { get; set; }
-        
         [Required]
-        public double BankAccount { get; set; }
-        
+        public string Certificate { get; set; }
+        [Required]
+        public long BankAccount { get; set; }
 
     }
 }
-

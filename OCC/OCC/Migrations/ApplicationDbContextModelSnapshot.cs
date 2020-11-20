@@ -15,7 +15,7 @@ namespace OCC.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
+                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -42,19 +42,23 @@ namespace OCC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long>("BankAccount");
+                    b.Property<double>("BankAccount");
 
                     b.Property<string>("Certificate");
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired();
 
-                    b.Property<string>("ExperienceLevel");
+                    b.Property<string>("ExperienceLevel")
+                        .IsRequired();
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("FirstName")
+                        .IsRequired();
 
                     b.Property<bool>("IsCleaner");
 
-                    b.Property<string>("Location");
+                    b.Property<string>("Location")
+                        .IsRequired();
 
                     b.HasKey("CleanerId");
 

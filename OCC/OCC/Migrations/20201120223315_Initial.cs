@@ -29,9 +29,13 @@ namespace OCC.Migrations
                 {
                     CleanerId = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    FullName = table.Column<string>(nullable: true),
-                    Location = table.Column<string>(nullable: true),
-                    ExperienceLevel = table.Column<string>(nullable: true)
+                    FirstName = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
+                    Location = table.Column<string>(nullable: false),
+                    IsCleaner = table.Column<bool>(nullable: false),
+                    ExperienceLevel = table.Column<string>(nullable: false),
+                    Certificate = table.Column<string>(nullable: false),
+                    BankAccount = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {

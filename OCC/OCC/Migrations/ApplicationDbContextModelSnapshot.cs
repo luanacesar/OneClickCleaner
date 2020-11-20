@@ -44,17 +44,22 @@ namespace OCC.Migrations
 
                     b.Property<long>("BankAccount");
 
-                    b.Property<string>("Certificate");
+                    b.Property<string>("Certificate")
+                        .IsRequired();
 
-                    b.Property<string>("Email");
+                    b.Property<string>("Email")
+                        .IsRequired();
 
-                    b.Property<string>("ExperienceLevel");
+                    b.Property<string>("ExperienceLevel")
+                        .IsRequired();
 
-                    b.Property<string>("FirstName");
+                    b.Property<string>("FirstName")
+                        .IsRequired();
 
                     b.Property<bool>("IsCleaner");
 
-                    b.Property<string>("Location");
+                    b.Property<string>("Location")
+                        .IsRequired();
 
                     b.HasKey("CleanerId");
 

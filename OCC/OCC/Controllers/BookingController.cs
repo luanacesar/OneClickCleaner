@@ -104,21 +104,35 @@ namespace OCC.Controllers
         [HttpPost]
         public IActionResult SelectingCleaner(long CleanerId)
         {
-            byte[] value;
-            bool isValueAvailable = HttpContext.Session.TryGetValue("order", out value);
-            if (isValueAvailable)
-            {
-                Order order = JsonSerializer.Deserialize<Order>(value);
-                //Filling Order Information
-                order.CleanerId = CleanerId;
-                //Save in the Database the order created
-                orderRepository.SaveOrder(order);
-
-                //orderRepository.SaveOrder(orderContact);
-                return View("CustomerInfo", new Customer());
-            }
             return View();
         }
-       
+
+        [HttpPost]
+        public IActionResult Save(Customer customer)
+        {
+            if (ModelState.IsValid)
+            {
+                customerRepository.SaveCustomer(customer);
+
+                byte[] value;
+                bool isValueAvailable = HttpContext.Session.TryGetValue("order", out value);
+                if (isValueAvailable)
+                {
+                    Order orderContact = JsonSerializer.Deserialize<Order>(value);
+                    //Filling Order Information
+                    orderContact.CustomerId = customer.CustomerId;                  
+
+                    orderRepository.SaveOrder(orderContact);
+                    return View("CheckOut", orderContact);
+                }
+                return View();
+            }
+            else
+            {
+                return View();
+            }
+
+        }
+
     }
 }

@@ -31,6 +31,9 @@ namespace OCC.Controllers
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
             HttpContext.Session.Set("order", jsonOrder);
             orderRepository.SaveOrder(order);
+
+            
+
             return RedirectToAction("Get", "Booking");
         }
         [HttpGet("Booking")]

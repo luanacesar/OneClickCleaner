@@ -1,12 +1,16 @@
 ﻿@model Order
+<link href="~/css/selectCleaner.css" rel="stylesheet" />
 
-<p>THANK YOU FOR YOUR ORDER!</p>
-@*<p>CustomerID: @Model.CustomerId</p>
-    <p>OrderID:@Model.OrderId</p>
-    <p>Location: @Model.Location</p>
-    <p>Duration: @Model.Duration</p>*@
-
-@*<p>@Model.CustomerId</p>
-    <p>@Model.OrderId</p>
-    <p>@Model.Location</p>*@
-<a href="/Home/Index">New Service</a>
+<section class="our-webcoderskull padding-lg">
+    <div class="container">
+        <div class="row heading heading-icon m-5 p-5">
+            <h2 class="card">THANK YOU FOR YOUR ORDER!</h2>
+        </div>
+    </div>
+</section>
+<div class="fig p-4">
+    <form asp-action="SelectingCleaner" method="post">
+       <a class="btn btn btn-info col-lg-12" href="/Home/Index">New Service</a>
+        <br />
+    </form>
+</div>

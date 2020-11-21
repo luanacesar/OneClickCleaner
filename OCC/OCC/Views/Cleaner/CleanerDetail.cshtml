@@ -30,7 +30,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-3">Location:</label>
                                         <div class="col-sm-10">
-                                            <select id="myList" asp-for="@Model.Location" required>
+                                            <select class="form-control" id="myList" asp-for="@Model.Location" required>
                                                 <option value=""></option>
                                                 <option value="Toronto">Toronto</option>
                                                 <option value="York">York</option>
@@ -59,15 +59,16 @@
                                     </div>
                                     <fieldset>
                                         <label class="control-label col-sm-3">Experience Level: </label>
-                                        <select id="myList" asp-for="@Model.ExperienceLevel" required>
-                                            <option value=""></option>
-                                            <option value="High">High</option>
-                                            <option value="Intermediate">Intermediate</option>
-                                            <option value="Beginner">Beginner</option>
+                                        <div class="col-sm-10">
+                                            <select class="form-control small" id="myList" asp-for="@Model.ExperienceLevel" required>
+                                                <option value=""></option>
+                                                <option value="High">High</option>
+                                                <option value="Intermediate">Intermediate</option>
+                                                <option value="Beginner">Beginner</option>
 
-                                        </select></br>
-                                        <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
-
+                                            </select>
+                                            <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
+                                        </div>
                                     </fieldset>
                                 </div>
                                 <div class="form-group">

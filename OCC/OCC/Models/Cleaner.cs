@@ -23,7 +23,12 @@ namespace OCC.Models
         
         [Required]
         public double BankAccount { get; set; }
-        
+
+        public bool Morning { get; set; }
+        public bool Afternoon { get; set; }
+        public bool Evening { get; set; }
+        public bool Night { get; set; }
+        public bool Weekends { get; set; }
 
     }
 }

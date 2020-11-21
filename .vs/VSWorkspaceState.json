@@ -4,8 +4,7 @@
     "\\OCC",
     "\\OCC\\OCC",
     "\\OCC\\OCC\\Controllers",
-    "\\OCC\\OCC\\Views",
-    "\\OCC\\OCC\\Views\\Cleaner"
+    "\\OCC\\OCC\\Views"
   ],
   "SelectedNode": "\\OCC\\OCC.sln",
   "PreviewInSolutionExplorer": false

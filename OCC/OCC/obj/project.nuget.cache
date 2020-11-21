@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K0OjteGpZ9CmDD+zNFeRUqZWEjQgP+dwXbrS+hXRnVzhZqtRBecKYWcGSPZCI9vPHHt5ZZ8Yp0dzyvX05r6Lhw==",
+  "dgSpecHash": "2YzcrkB+PgVhF+4a3rGtmRh4712AYPo5goGzhYyn9W7/F7xJ5wRr3IOBSWekeFmXEkE1jD42tupo3j//J0Vy7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luana\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+  "projectFilePath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luana\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\luana\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

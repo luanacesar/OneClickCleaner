@@ -1,48 +1,115 @@
 ﻿@model IEnumerable<Cleaner>
 
+<link href="~/css/selectCleaner.css" rel="stylesheet" />
+<section class="our-webcoderskull padding-lg">
+    <div class="container">
+        <div class="row heading heading-icon">
+            <h2>Cleaners availables</h2>
+        </div>
+        <ul class="row justify-content-center">
 
-<div class="header">
-    <h1 class="title">Cleaners available</h1>
-</div>
+            @foreach (var item in Model)
+            {
+            <form asp-action="SelectingCleaner" method="post">
 
-<div class="card-group">
+                @if (@item.CleanerId == 1) // Mary
+                {
+                    <figure class="fig">
+                        <img src="~/images/maria.jpg" />
+                    </figure>
+                }
 
-    @foreach (var item in Model)
-    {
+                else if (@item.CleanerId == 2) //Jhosua
+                {
+                    <figure class="fig">
+                        <img src="~/images/jhosua.jpg" />
+                    </figure>
+                }
+                else if (@item.CleanerId == 3) // Peter
+                {
+                    <figure class="fig"><img src="~/images/peter.jpg" /></figure>
+
+                }
+                else if (@item.CleanerId == 4) // Maria
+                {
+                    <figure class="fig"><img src="~/images/maria.jpg" /></figure>
+
+                }
+                else if (@item.CleanerId == 5) // Jake
+                {
+                    <figure class="fig"><img src="~/images/jake.JPG" /></figure>
+                }
+                else if (@item.CleanerId == 6) // Sophy
+                {
+                    <figure class="fig">
+                        <img src="~/images/sophy.JPG" />
+                    </figure>
+                }
+                else if (@item.CleanerId == 7) // Federic
+                {
+                    <figure class="fig">
+                        <img src="~/images/Federic.JPG" />
+                    </figure>
+                }
+                else if (@item.CleanerId == 8) // Steven
+                {
+                    <figure class="fig">
+                        <img src="~/images/steven.JPG" />
+                    </figure>
+                }
+                else
+                {
+                    <figure class="fig">
+                        <img src="~/images/cleaner2.jpg" />
+                    </figure>
+                }
+
+            <div class="fig">
+                <h4>@item.FirstName</h4>
+                <h5>@item.Email</h5>
+                <h5>Experience: @item.ExperienceLevel</h5>
+                <ul class="follow-us clearfix">
+                    <li>
+                        <button class="btn btn-info btn-lg p-3 align-content-md-start" type="submit">Select</button>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            </form>
+            }
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+<@*div class="card-group">
         <div class="card">
             <div class="card-body">
+
                 <form asp-action="SelectingCleaner" method="post">
-                    <input type="hidden" name="CleanerId" value="@item.CleanerId" />
                     <div class="col-lg-6">
-                        <h5 class="card-title">@item.FirstName </h5>
+                        <h5 class="card-title">I dont have any preference </h5>
                         <br />
-                        <i class="fas fa-user-circle fa-4x"></i>
+
                     </div>
-                    <p>@item.Email</p>
-                    <p>@item.Location</p>
-                    <button class="btn btn-info btn-lg" type="submit">Select</button>
+
+                    <input type="hidden" name="CleanerId" value=@Model.First().CleanerId />
+                    <button type="submit" class="btn btn-success col-lg-3">Choose For me</button>
                 </form>
             </div>
         </div>
-    }
-</div>
-<div class="card-group">
-    <div class="card">
-        <div class="card-body">
-
-            <form asp-action="SelectingCleaner" method="post">
-                <div class="col-lg-6">
-                    <h5 class="card-title">I dont have any preference </h5>
-                    <br />
-                    
-                </div>
-
-                <input type="hidden" name="CleanerId" value=@Model.First().CleanerId />
-                <button type="submit" class="btn btn-success col-lg-3">Choose For me</button>
-            </form>
-        </div>
     </div>
-</div>
 
+
+
+    </ul>
+    </div>*@
 
 

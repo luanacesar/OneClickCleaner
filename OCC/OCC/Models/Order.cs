@@ -25,6 +25,7 @@ namespace OCC.Models
         public string ShiftTime { get; set; }
 
         public DateTime ServiceDay { get; set; }
+
         public string OrderPaymentState { get; set; }
         
     }

@@ -27,7 +27,7 @@ namespace OCC.Controllers
             //serviceRepository = serviceRepo;
         }
 
-        [HttpPost("CleanerDetail")]
+        [HttpPost]
         public IActionResult CleanerDetail(Cleaner cleaner)
         {
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
@@ -36,7 +36,7 @@ namespace OCC.Controllers
             //return RedirectToAction("CleanerCheckOut", cleaner);
             return View("CleanerCheckOut", cleaner);
         }
-        [HttpGet("CleanerDetail")]
+        [HttpGet]
         public IActionResult CleanerDetail()
         {
             return View("CleanerDetail", new Cleaner());

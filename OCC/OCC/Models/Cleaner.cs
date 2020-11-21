@@ -18,12 +18,17 @@ namespace OCC.Models
         public bool IsCleaner { get; set; }
         [Required]
         public string ExperienceLevel { get; set; }
-        [Required]
-        [RegularExpression("^[0-9]{​​​​7,8}​​​​$", ErrorMessage = "Write Valid Certificate (7 to 8 digits)")]
+        [RegularExpression("^[0-9]{7,8}$", ErrorMessage = "Write Valid Certificate (7 to 8 digits)")]
         public string Certificate { get; set; }
+        
         [Required]
         public double BankAccount { get; set; }
-        
+
+        public bool Morning { get; set; }
+        public bool Afternoon { get; set; }
+        public bool Evening { get; set; }
+        public bool Night { get; set; }
+        public bool Weekends { get; set; }
 
     }
 }

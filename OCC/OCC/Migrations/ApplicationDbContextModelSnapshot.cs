@@ -42,13 +42,16 @@ namespace OCC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("Afternoon");
+
                     b.Property<double>("BankAccount");
 
-                    b.Property<string>("Certificate")
-                        .IsRequired();
+                    b.Property<string>("Certificate");
 
                     b.Property<string>("Email")
                         .IsRequired();
+
+                    b.Property<bool>("Evening");
 
                     b.Property<string>("ExperienceLevel")
                         .IsRequired();
@@ -60,6 +63,12 @@ namespace OCC.Migrations
 
                     b.Property<string>("Location")
                         .IsRequired();
+
+                    b.Property<bool>("Morning");
+
+                    b.Property<bool>("Night");
+
+                    b.Property<bool>("Weekends");
 
                     b.HasKey("CleanerId");
 

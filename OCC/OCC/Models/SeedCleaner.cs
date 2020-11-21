@@ -27,8 +27,27 @@ namespace OCC.Models
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489001",
-                        BankAccount = 0046448300
-
+                        BankAccount = 0046448300,
+                        Morning=true,
+                        Afternoon=true,
+                        Evening=true,
+                        Night=false,
+                        Weekends=false
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Jhosua",
+                        Email = "jhosua@gmail.com",
+                        Location = "Toronto",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489010",
+                        BankAccount = 0046448400,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = false,
+                        Weekends = false
                     },
                     new Cleaner
                     {
@@ -38,7 +57,42 @@ namespace OCC.Models
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489002",
-                        BankAccount = 0123456789
+                        BankAccount = 0123456789,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = true,
+                        Weekends = true
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Maria",
+                        Email = "maria@gmail.com",
+                        Location = "York",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489033",
+                        BankAccount = 2223456789,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = false,
+                        Night = false,
+                        Weekends = true
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Jake",
+                        Email = "jake@gmail.com",
+                        Location = "York",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489099",
+                        BankAccount = 5553456789,
+                        Morning = true,
+                        Afternoon = false,
+                        Evening = false,
+                        Night = true,
+                        Weekends = true
                     },
                     new Cleaner
                     {
@@ -48,7 +102,12 @@ namespace OCC.Models
                         IsCleaner = true,
                         ExperienceLevel = "Medium",
                         Certificate = "CSC2489002",
-                        BankAccount = 3456234560
+                        BankAccount = 3456234560,
+                        Morning = true,
+                        Afternoon = false,
+                        Evening = false,
+                        Night = true,
+                        Weekends = false
                     },
                     new Cleaner
                     {
@@ -58,7 +117,12 @@ namespace OCC.Models
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489002",
-                        BankAccount = 0248286930
+                        BankAccount = 0248286930,
+                        Morning = false,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = false,
+                        Weekends = true
                     },
                     new Cleaner
                     {
@@ -68,7 +132,12 @@ namespace OCC.Models
                         IsCleaner = true,
                         ExperienceLevel = "High",
                         Certificate = "CSC2489002",
-                        BankAccount = 4928472856
+                        BankAccount = 4928472856,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = true,
+                        Weekends = false
                     }
 
                 );

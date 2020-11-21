@@ -18,6 +18,7 @@ namespace OCC.Models
 
         public DbSet<Cleaner> Cleaners { get; set; }
 
+
         public DbSet<AvailabilityCleaner> AvailabilityCleaners { get; set; }
 
     }

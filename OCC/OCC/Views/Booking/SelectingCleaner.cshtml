@@ -1,1 +1,48 @@
-﻿
+﻿@model IEnumerable<Cleaner>
+
+
+<div class="header">
+    <h1 class="title">Cleaners available</h1>
+</div>
+
+<div class="card-group">
+
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-body">
+                <form asp-action="SelectingCleaner" method="post">
+                    <input type="hidden" name="CleanerId" value="@item.CleanerId" />
+                    <div class="col-lg-6">
+                        <h5 class="card-title">@item.FirstName </h5>
+                        <br />
+                        <i class="fas fa-user-circle fa-4x"></i>
+                    </div>
+                    <p>@item.Email</p>
+                    <p>@item.Location</p>
+                    <button class="btn btn-info btn-lg" type="submit">Select</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
+<div class="card-group">
+    <div class="card">
+        <div class="card-body">
+
+            <form asp-action="SelectingCleaner" method="post">
+                <div class="col-lg-6">
+                    <h5 class="card-title">I dont have any preference </h5>
+                    <br />
+                    
+                </div>
+
+                <input type="hidden" name="CleanerId" value=@Model.First().CleanerId />
+                <button type="submit" class="btn btn-success col-lg-3">Choose For me</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

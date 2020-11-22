@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace OCC.Migrations
 {
-    public partial class Initial : Migration
+    public partial class Initials : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -29,9 +29,18 @@ namespace OCC.Migrations
                 {
                     CleanerId = table.Column<long>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    FullName = table.Column<string>(nullable: true),
-                    Location = table.Column<string>(nullable: true),
-                    ExperienceLevel = table.Column<string>(nullable: true)
+                    FirstName = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
+                    Location = table.Column<string>(nullable: false),
+                    IsCleaner = table.Column<bool>(nullable: false),
+                    ExperienceLevel = table.Column<string>(nullable: false),
+                    Certificate = table.Column<string>(nullable: true),
+                    BankAccount = table.Column<double>(nullable: false),
+                    Morning = table.Column<bool>(nullable: false),
+                    Afternoon = table.Column<bool>(nullable: false),
+                    Evening = table.Column<bool>(nullable: false),
+                    Night = table.Column<bool>(nullable: false),
+                    Weekends = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -66,6 +75,7 @@ namespace OCC.Migrations
                     Location = table.Column<string>(nullable: true),
                     Duration = table.Column<int>(nullable: false),
                     ShiftTime = table.Column<string>(nullable: true),
+                    ServiceDay = table.Column<DateTime>(nullable: false),
                     OrderPaymentState = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

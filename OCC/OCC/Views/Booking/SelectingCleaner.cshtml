@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Cleaner>
+
+<link href="~/css/selectCleaner.css" rel="stylesheet" />
+<section class="our-webcoderskull padding-lg">
+    <div class="container">
+        <div class="row heading heading-icon">
+            <h2>Cleaners availables</h2>
+        </div>
+        <ul class="row justify-content-center">
+
+            @foreach (var item in Model)
+            {
+            <form asp-action="SelectingCleaner" class="card" method="post">
+
+                @if (@item.CleanerId == 1) // Mary
+                {
+                    <figure class="fig">
+                        <img src="~/images/mary.jpg" />
+                    </figure>
+                }
+
+                else if (@item.CleanerId == 2) //Jhosua
+                {
+                    <figure class="fig">
+                        <img src="~/images/jhosua.jpg" />
+                    </figure>
+                }
+                else if (@item.CleanerId == 3) // Peter
+                {
+                    <figure class="fig"><img src="~/images/peter.jpg" /></figure>
+
+                }
+                else if (@item.CleanerId == 4) // Maria
+                {
+                    <figure class="fig"><img src="~/images/maria.jpg" /></figure>
+
+                }
+                else if (@item.CleanerId == 5) // Jake
+                {
+                    <figure class="fig"><img src="~/images/jake.JPG" /></figure>
+                }
+                else if (@item.CleanerId == 6) // Sophy
+                {
+                    <figure class="fig">
+                        <img src="~/images/sophy.JPG" />
+                    </figure>
+                }
+                else if (@item.CleanerId == 7) // Federic
+                {
+                    <figure class="fig">
+                        <img src="~/images/Federic.JPG" />
+                    </figure>
+                }
+                else if (@item.CleanerId == 8) // Steven
+                {
+                    <figure class="fig">
+                        <img src="~/images/steven.JPG" />
+                    </figure>
+                }
+                @*else if (@item.CleanerId == 9) // Laura
+                {
+                    <figure class="fig">
+                        <img src="~/images/steven.JPG" />
+                    </figure>
+                }*@
+                else
+                {
+                    <figure class="fig">
+
+                        <img src="~/images/others.JPG" />
+                    </figure>
+                }
+
+                <div class="fig">
+                    <h4>@item.FirstName</h4>
+                    <h5>@item.Email</h5>
+                    <h5>Experience: @item.ExperienceLevel</h5>
+                    <ul class="follow-us clearfix">
+                        <li>
+                            <button class="btn btn-info btn-lg align-content-md-start" type="submit">Select</button><br /><br />
+                        </li>
+
+                    </ul>
+                </div>
+            </form>
+            }
+        </ul>
+    </div>
+</section>
+<section>
+<div class="fig p-4">
+    <form asp-action="SelectingCleaner" method="post">
+        <input type="hidden" name="CleanerId" value=@Model.First().CleanerId />
+        <button type="submit" class="btn btn-info col-lg-12">Choose For me</button>
+        <br />
+    </form>
+</div>
+     
+
+    </section>
+
+

@@ -21,33 +21,123 @@ namespace OCC.Models
                 context.Cleaners.AddRange(
                     new Cleaner
                     {
-                        FullName = "Mary Smith",
+                        FirstName = "Mary",
+                        Email = "mary_smith@gmail.com",
                         Location = "Toronto",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489001",
+                        BankAccount = 0046448300,
+                        Morning=true,
+                        Afternoon=true,
+                        Evening=true,
+                        Night=false,
+                        Weekends=false
                     },
                     new Cleaner
                     {
-                        FullName = "Peter Bell",
+                        FirstName = "Jhosua",
+                        Email = "jhosua@gmail.com",
+                        Location = "Toronto",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489010",
+                        BankAccount = 0046448400,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = false,
+                        Weekends = false
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Peter",
+                        Email = "peter@gmail.com",
                         Location = "York",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 0123456789,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = true,
+                        Weekends = true
                     },
                     new Cleaner
                     {
-                        FullName = "Sophy Graham",
+                        FirstName = "Maria",
+                        Email = "maria@gmail.com",
+                        Location = "York",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489033",
+                        BankAccount = 2223456789,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = false,
+                        Night = false,
+                        Weekends = true
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Jake",
+                        Email = "jake@gmail.com",
+                        Location = "York",
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489099",
+                        BankAccount = 5553456789,
+                        Morning = true,
+                        Afternoon = false,
+                        Evening = false,
+                        Night = true,
+                        Weekends = true
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Sophy",
+                        Email = "sophy@gmail.com",
                         Location = "Durkham",
-                        ExperienceLevel = "Medium"
+                        IsCleaner = true,
+                        ExperienceLevel = "Medium",
+                        Certificate = "CSC2489002",
+                        BankAccount = 3456234560,
+                        Morning = true,
+                        Afternoon = false,
+                        Evening = false,
+                        Night = true,
+                        Weekends = false
                     },
                     new Cleaner
                     {
-                        FullName = "Federic Diallo",
+                        FirstName = "Federic",
+                        Email = "diallo@gmail.com",
                         Location = "Peel",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 0248286930,
+                        Morning = false,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = false,
+                        Weekends = true
                     },
                     new Cleaner
                     {
-                        FullName = "Steven Thomas",
+                        FirstName = "Steven",
+                        Email = "thomas@gmail.com",
                         Location = "Halton",
-                        ExperienceLevel = "High"
+                        IsCleaner = true,
+                        ExperienceLevel = "High",
+                        Certificate = "CSC2489002",
+                        BankAccount = 4928472856,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = true,
+                        Weekends = false
                     }
 
                 );

@@ -49,18 +49,22 @@ namespace OCC.Controllers
 
         [HttpPost("Emergency")]
         public IActionResult Save(Customer customer)
-        {            
-            
+        {
+            const int EMERGENCY_SERV_ID = 1;
+
             if (ModelState.IsValid)
             {
                 customerRepository.SaveCustomer(customer);
-                customerCreatedRepo = customerRepository.Customers.FirstOrDefault(r => r.Email == customer.Email);
-                
+                                
                 byte[] value;                 
                 bool isValueAvailable = HttpContext.Session.TryGetValue("order", out value);
                 if (isValueAvailable)
-                {Order orderContact = JsonSerializer.Deserialize<Order>(value);                    
-                    orderContact.CustomerId = customerCreatedRepo.CustomerId;
+                {   Order orderContact = JsonSerializer.Deserialize<Order>(value);
+                    //Filling Order Information
+                    orderContact.CustomerId = customer.CustomerId;
+                    orderContact.ServiceId = EMERGENCY_SERV_ID;
+                    orderContact.OrderPaymentState = "no payed";
+
                     orderRepository.SaveOrder(orderContact);
                     return View("CheckOut", orderContact);
                 }

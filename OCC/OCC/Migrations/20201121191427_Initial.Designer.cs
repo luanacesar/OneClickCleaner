@@ -10,7 +10,7 @@ using OCC.Models;
 namespace OCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201119040022_Initial")]
+    [Migration("20201121191427_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -44,11 +44,33 @@ namespace OCC.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("ExperienceLevel");
+                    b.Property<bool>("Afternoon");
 
-                    b.Property<string>("FullName");
+                    b.Property<double>("BankAccount");
 
-                    b.Property<string>("Location");
+                    b.Property<string>("Certificate");
+
+                    b.Property<string>("Email")
+                        .IsRequired();
+
+                    b.Property<bool>("Evening");
+
+                    b.Property<string>("ExperienceLevel")
+                        .IsRequired();
+
+                    b.Property<string>("FirstName")
+                        .IsRequired();
+
+                    b.Property<bool>("IsCleaner");
+
+                    b.Property<string>("Location")
+                        .IsRequired();
+
+                    b.Property<bool>("Morning");
+
+                    b.Property<bool>("Night");
+
+                    b.Property<bool>("Weekends");
 
                     b.HasKey("CleanerId");
 

@@ -2,6 +2,8 @@
 
 <link href="~/css/Booking.css" rel="stylesheet" />
 <script src="~/js/ServiceDetails.js"></script>
+<script src="~/js/BookingPrice.js"></script>
+
 
 <body>
     <div id="all-page">
@@ -47,10 +49,10 @@
                             <h5 class="card-title">Select the date</h5>
                             <p class="card-text ">Here you can select the preferred date of the service.</p>
                             @*<form method="post" asp-action="ServiceDetail">*@
-                        <div class="center2">
-                            <input class="col-lg-8" id="service-day" type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
-                        </div>
-                                <br />
+                            <div class="center2">
+                                <input class="col-lg-8" id="service-day" type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
+                            </div>
+                            <br />
 
                             <span asp-validation-for="@Model.ServiceDay" class="text-danger field-validation-error"></span>
                         </div>
@@ -67,7 +69,7 @@
 
                                     <option value="Morning">Morning</option>
 
-                                    <option value="AfterNoon">Afternoon</option>
+                                    <option value="Afternoon">Afternoon</option>
 
                                     <option value="Evening">Evening</option>
 
@@ -76,22 +78,70 @@
                                 </select>
                                 <span asp-validation-for="@Model.ShiftTime" class="text-danger field-validation-error"></span>
                                 <br /><br /><br /><br />
-                                <div class="center">
-                                    <button class="btn btn-success col-lg-12 " type="submit">Continue</button>
-                                </div>
+
 
 
                             </fieldset>
 
                         </div>
-
                     </div>
                 </div>
+                @*Second row of cards*@
+                <div class="card-group">
+                    @*Duration*@
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">How long do you need your cleaner for?</h5>
+                            <p class="card-text">Here you can choose the time that best fits you</p>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="1" id="option1" onclick="bookingPrice()"> 1 hour
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="2" id="option2" onclick="bookingPrice()"> 2 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="3" id="option3" onclick="bookingPrice()"> 3 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="4" id="option4" onclick="bookingPrice()"> 4 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="5" id="option5" onclick="bookingPrice()"> 5 hours
+                                </label>
+                                <label class="btn btn-danger">
+                                    <input type="radio" asp-for="@Model.Duration" value="6" id="option6" onclick="bookingPrice()"> 6 hours
+                                </label>
+                            </div>
+                            <br />
+                            <span asp-validation-for="@Model.Duration" class="text-danger field-validation-error"></span>
+                        </div>
+                    </div>
+
+                    @*Calculation and display of total*@
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container">
+                                <h5 class="card-title">Total Price</h5>
+                                <div class="center2">
+                                    <p class="btn-light col-lg-12 font-weight-bold " id="result">
+
+                                    </p>
+                                </div>
+                                <br /><br />
+                            </div>
+                            <div class="center">
+                                <button class="btn btn-danger btn-lg " type="submit">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </form>
 
         </article>
 
-     </div>   <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
+    </div>   <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
 </body>
 
 

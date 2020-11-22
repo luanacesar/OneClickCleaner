@@ -3,7 +3,7 @@
     "",
     "\\OCC",
     "\\OCC\\OCC",
-    "\\OCC\\OCC\\Controllers",
+    "\\OCC\\OCC\\Models",
     "\\OCC\\OCC\\Views"
   ],
   "SelectedNode": "\\OCC\\OCC.sln",

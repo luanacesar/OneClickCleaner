@@ -80,3 +80,10 @@ h3 {
     width: 230px;
     border-radius: 200px 200px;
 }
+.button {
+    display: none;
+}
+
+img:hover + .button {
+    display: inline-block;
+}

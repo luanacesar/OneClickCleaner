@@ -10,5 +10,7 @@ namespace OCC.Models
         IQueryable<Cleaner> Cleaners { get; }
 
         void SaveCleaner(Cleaner cleaner);
+
+        //Cleaner DeleteProduct(int cleanerID);
     }
 }

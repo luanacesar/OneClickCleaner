@@ -52,12 +52,13 @@ namespace OCC.Controllers
                     default:
                         break;
                 }
-                
+
                 var filteCustomerCleaner = from f in cleanerRepository.Cleaners
-                            where f.Location==order.Location &&
-                            (f.Morning==orderCleaner.Morning || f.Afternoon == orderCleaner.Afternoon||f.Evening==orderCleaner.Evening||f.Night==orderCleaner.Night)
-                            && f.Weekends==(order.ServiceDay.DayOfWeek==DayOfWeek.Sunday || order.ServiceDay.DayOfWeek==DayOfWeek.Saturday)
-                            select f;
+                                           where f.Location == order.Location &&
+                                           (f.Morning == orderCleaner.Morning || f.Afternoon == orderCleaner.Afternoon || f.Evening == orderCleaner.Evening || f.Night == orderCleaner.Night)
+                                           && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                           && f.IsCleaner == true
+                                           select f;
                 var filterOrderCleaner = from cleanerTable in filteCustomerCleaner
                              join ordertable in orderRepository.Orders on cleanerTable.CleanerId equals ordertable.CleanerId
                              where ordertable.ServiceDay == order.ServiceDay && ordertable.ShiftTime==order.ShiftTime
@@ -104,10 +105,29 @@ namespace OCC.Controllers
         [HttpPost]
         public IActionResult SelectingCleaner(long CleanerId)
         {
+            byte[] value;
+            bool isValueAvailable = HttpContext.Session.TryGetValue("order", out value);
+            if (isValueAvailable)
+            {
+                Order order = JsonSerializer.Deserialize<Order>(value);
+                //Filling Order Information
+                order.CleanerId = CleanerId;
+                //Serialize the order information in order to send to the next controller
+                byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
+                HttpContext.Session.Set("order", jsonOrder);
+
+                //orderRepository.SaveOrder(orderContact);
+                return RedirectToAction("Get", "Booking");
+            }
             return View();
         }
+        [HttpGet("Booking")]
+        public IActionResult Get()
+        {
+            return View("CustomerInfo", new Customer());
+        }
 
-        [HttpPost]
+        [HttpPost("Booking")]
         public IActionResult Save(Customer customer)
         {
             if (ModelState.IsValid)

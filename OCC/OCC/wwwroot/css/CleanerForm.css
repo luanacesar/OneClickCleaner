@@ -3,7 +3,10 @@
     height: 800px;
     background-color: black;
     margin: 0 auto;
-    background-image: url(/images/cleaner-0.jpg)
+    background-image: url(/images/cleaner-0.jpg) ;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .transbox {

@@ -1,0 +1,98 @@
+﻿@model Cleaner
+
+<link href="~/css/CleanerForm.css" rel="stylesheet" />
+<div class="back-ground">
+    <div class="transbox">
+        <!--contact information-->
+        <div class="col-md-8">
+            <div class="contact-info">
+                <h2>Apply with Us</h2>
+                <h4>We would love to hear from you !</h4>
+                <form asp-action="Edit" method="post">
+                    <div class="container contact">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="contact-form">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-6" for="fname">First Name:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" asp-for="@Model.FirstName" required>
+                                            <span asp-validation-for="@Model.FirstName" class="text-danger field-validation-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-6">Email:</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" asp-for="@Model.Email" required>
+                                            <span asp-validation-for="@Model.Email" class="text-danger field-validation-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-3">Location:</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control" id="myList" asp-for="@Model.Location" required>
+                                                <option value=""></option>
+                                                <option value="Toronto">Toronto</option>
+                                                <option value="York">York</option>
+                                                <option value="Durkham">Durkham</option>
+                                                <option value="Peel">Peel</option>
+                                                <option value="Halton">Halton</option>
+                                            </select>
+                                            <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
+                                        </div><br />
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-6">Is a Cleaner?</label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control" id="myList" asp-for="@Model.IsCleaner" required>
+                                                    <option value=""></option>
+                                                    <option value="true">true</option>
+                                                    <option value="false">false</option>
+                                                </select>
+                                                <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3">Certification number: </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="Certificate" placeholder="Enter certification number" asp-for="@Model.Certificate" required>
+                                                <span asp-validation-for="@Model.Certificate" class="text-danger field-validation-error"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3">Bank Account: </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="bank" placeholder="Enter your account" value="" asp-for="@Model.BankAccount" required>
+                                                <span asp-validation-for="@Model.BankAccount" class="text-danger field-validation-error"></span>
+                                            </div>
+                                        </div>
+
+                                        <fieldset>
+                                            <label class="control-label col-sm-3">Experience Level: </label>
+                                            <div class="col-sm-10">
+                                                <select class="form-control small" id="myList" asp-for="@Model.ExperienceLevel" required>
+                                                    <option value=""></option>
+                                                    <option value="High">High</option>
+                                                    <option value="Intermediate">Intermediate</option>
+                                                    <option value="Beginner">Beginner</option>
+                                                </select>
+                                                <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <br />
+                                            <button class="btn btn-primary" type="submit">Save</button>
+                                            <a asp-action="DisplayCleanerList" class="btn btn-secondary">Cancel</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

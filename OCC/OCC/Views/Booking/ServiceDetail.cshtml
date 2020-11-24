@@ -113,6 +113,8 @@
                                     <input type="radio" asp-for="@Model.Duration" value="6" id="option6" onclick="bookingPrice()"> 6 hours
                                 </label>
                             </div>
+                            <br />
+                            <span asp-validation-for="@Model.Duration" class="text-danger field-validation-error"></span>
                         </div>
                     </div>
 
@@ -129,7 +131,7 @@
                                 <br /><br />
                             </div>
                             <div class="center">
-                                <button class="btn btn-success col-lg-12 " type="submit">Continue</button>
+                                <button class="btn btn-danger btn-lg " type="submit">Continue</button>
                             </div>
                         </div>
                     </div>

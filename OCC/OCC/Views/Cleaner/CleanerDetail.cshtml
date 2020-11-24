@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="contact-info">
                 <h2>Apply with Us</h2>
-                <h4>We would love to hear from you !</h4></br>
+                <h4>We would love to hear from you !</h4><br />
                 <form asp-action="CleanerDetail" method="post">
                     <div class="container contact">
                         <div class="row">
@@ -39,7 +39,7 @@
                                                 <option value="Halton">Halton</option>
                                             </select>
                                             <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
-                                        
+
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -75,6 +75,7 @@
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <br />
                                         <button type="submit" class="btn btn-info">Submit</button>
+                                        <button type="reset" class="btn btn-info">Clear</button>
 
                                     </div>
                                 </div>
@@ -82,7 +83,6 @@
                         </div>
                     </div>
                 </form>
-                </div>
             </div>
         </div>
     </div>

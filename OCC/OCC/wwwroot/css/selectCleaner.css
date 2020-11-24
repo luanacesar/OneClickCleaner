@@ -141,12 +141,14 @@ ul {
                         color: #025a8e;
                     }
 
-
-.fig{
-    padding-top:1rem;
-    padding-right:1rem;
-    padding-left:1rem;
+.button {
+    display: none;
 }
-a{
-   color:black;
+
+.wrapper:hover img {
+    /* Change the filter in here */
+}
+
+.wrapper:hover .button {
+    display: inline-block;
 }

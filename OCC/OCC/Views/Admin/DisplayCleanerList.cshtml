@@ -1,0 +1,125 @@
+﻿@model IEnumerable<Cleaner>
+@*<link href="~/css/selectCleaner.css" rel="stylesheet" />*@
+<div class="our-webcoderskull">
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success mt-1"><b>@TempData["message"]</b></div>
+    }
+    <h3 class="card-title bg-info">Cleaners</h3>
+    <table class="table table-striped table-bordered table-sm">
+        <tr>
+            <th class="text-right">CleanerId</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+            <th>IsCleaner</th>
+            <th>ExperienceLevel</th>
+            <th>Certificate</th>
+            <th>BankAccount</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+            <th>Evening</th>
+            <th>Night</th>
+            <th>Weekends</th>
+            <th>Actions</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            @if (@item.IsCleaner == true)
+            {
+                <tr>
+                    <td class="text-right">@item.CleanerId</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.Email</td>
+                    <td>@item.Location</td>
+                    <td>@item.IsCleaner</td>
+                    <td>@item.ExperienceLevel</td>
+                    <td>@item.Certificate</td>
+                    <td>@item.BankAccount</td>
+                    <td>@item.Morning</td>
+                    <td>@item.Afternoon</td>
+                     <td>@item.Evening</td>
+                    <td>@item.Night</td>
+                    <td>@item.Weekends</td>
+
+                    <td class="text-center">
+                        <form asp-action="Delete" method="post">
+                            <input type="hidden" name="CleanerId" value="@item.CleanerId" />
+
+                            <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-cleanerId="@item.CleanerId">
+                                Edit
+                            </a>
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+<div class="our-webcoderskull">
+    <h3 class="card-title bg-info">Potential Cleaners</h3>
+    <table class="table table-striped table-bordered table-sm">
+        <tr>
+            <th class="text-right">CleanerId</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Location</th>
+            <th>IsCleaner</th>
+            <th>ExperienceLevel</th>
+            <th>Certificate</th>
+            <th>BankAccount</th>
+            <th>Morning</th>
+            <th>Afternoon</th>
+             <th>Evening</th>
+            <th>Night</th>
+            <th>Weekends</th>
+            <th>Actions</th>
+        </tr>
+
+
+
+        @foreach (var item in Model)
+        {
+            @if (@item.IsCleaner == false)
+            {
+                <tr>
+                    <td class="text-right">@item.CleanerId</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.Email</td>
+                    <td>@item.Location</td>
+                    <td>@item.IsCleaner</td>
+                    <td>@item.ExperienceLevel</td>
+                    <td>@item.Certificate</td>
+                    <td>@item.BankAccount</td>
+                    <td>@item.Morning</td>
+                    <td>@item.Afternoon</td>
+                     <td>@item.Evening</td>
+                    <td>@item.Night</td>
+                    <td>@item.Weekends</td>
+                    <td class="text-center">
+                        <form asp-action="Delete" method="post">
+                            <input type="hidden" name="CleanerId" value="@item.CleanerId" />
+
+                            <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-cleanerId="@item.CleanerId">
+                                
+                                Edit
+                            </a>
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div class="d-flex justify-content-center">
+    <a asp-action="Create" class="btn btn-success btn-lg">
+        Add New Cleaners</a>
+</div>
+

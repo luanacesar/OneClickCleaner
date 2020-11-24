@@ -10,16 +10,16 @@ namespace OCC.Controllers
 {
     public class AdminController : Controller
     {
-        private ICleanerRepository repository;
+        private ICleanerRepository cleanerRepository;
 
         public AdminController(ICleanerRepository repo)
         {
-            repository = repo;
+            cleanerRepository = repo;
         }
-        public ViewResult DisplayCleanerList() => View(repository.Cleaners);
+        public ViewResult DisplayCleanerList() => View(cleanerRepository.Cleaners);
 
-        public ViewResult EditCleaners(int cleanerId) =>
-           View(repository.Cleaners
+        public ViewResult Edit(int cleanerId) =>
+           View(cleanerRepository.Cleaners
                .FirstOrDefault(p => p.CleanerId == cleanerId));
 
         [HttpPost]
@@ -27,7 +27,7 @@ namespace OCC.Controllers
         {
             if (ModelState.IsValid)
             {
-                repository.SaveCleaner(cleaner);
+                cleanerRepository.SaveCleaner(cleaner);
                 TempData["message"] = $"{cleaner.FirstName} has been saved!";
                 return RedirectToAction("DisplayCleanerList");
             }
@@ -37,20 +37,20 @@ namespace OCC.Controllers
             }
         }
 
-        public ViewResult Create() => View("EditCleaners", new Cleaner());
+        public ViewResult Create() => View("Edit", new Cleaner());
 
-        //[HttpPost]
-        //public IActionResult Delete(int productId)
-        //{
-        //    Product deletedProduct = repository.DeleteProduct(productId);
+        [HttpPost]
+        public IActionResult Delete(int CleanerId)
+        {
+            Cleaner deleteCleaner = cleanerRepository.DeleteCleaner(CleanerId);
 
-        //    if (deletedProduct != null)
-        //    {
-        //        TempData["message"] = $"{deletedProduct.Name} was deleted!";
-        //    }
+            if (deleteCleaner != null)
+            {
+                TempData["message"] = $"{deleteCleaner.FirstName} was deleted!";
+            }
 
-        //    return RedirectToAction("Index");
-        //}
+            return RedirectToAction("DisplayCleanerList");
+        }
 
 
     }

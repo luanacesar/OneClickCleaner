@@ -32,15 +32,15 @@
                     <td>@item.FirstName</td>
                     <td>@item.Email</td>
                     <td>@item.Location</td>
-                    <td>@item.IsCleaner</td>
+                    <td>@(item.IsCleaner ? "Yes":"No")</td>
                     <td>@item.ExperienceLevel</td>
                     <td>@item.Certificate</td>
                     <td>@item.BankAccount</td>
-                    <td>@item.Morning</td>
-                    <td>@item.Afternoon</td>
-                     <td>@item.Evening</td>
-                    <td>@item.Night</td>
-                    <td>@item.Weekends</td>
+                    <td>@(item.Morning ? "Yes":"No")</td>
+                    <td>@(item.Afternoon ? "Yes":"No")</td>
+                    <td>@(item.Evening ? "Yes":"No")</td>
+                    <td>@(item.Night ? "Yes":"No")</td>
+                    <td>@(item.Weekends ? "Yes":"No")</td>
 
                     <td class="text-center">
                         <form asp-action="Delete" method="post">

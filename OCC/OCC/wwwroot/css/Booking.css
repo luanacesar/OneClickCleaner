@@ -1,4 +1,4 @@
-﻿/* customer information*/
+/* customer information*/
 
 .container {
     max-width: 800px;
@@ -82,7 +82,7 @@ p {
 .center {
     margin: 0;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

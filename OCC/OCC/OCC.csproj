@@ -5,25 +5,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Custom' " />
-
-  <ItemGroup>
-    <Compile Remove="Migrations\**" />
-    <Compile Remove="NewFolder\**" />
-    <Content Remove="Migrations\**" />
-    <Content Remove="NewFolder\**" />
-    <EmbeddedResource Remove="Migrations\**" />
-    <EmbeddedResource Remove="NewFolder\**" />
-    <None Remove="Migrations\**" />
-    <None Remove="NewFolder\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Migrations\20201117194726_Initial.cs" />
-    <Compile Include="Migrations\20201117194726_Initial.Designer.cs" />
-    <Compile Include="Migrations\20201118015158_AvailabilityCleaners.cs" />
-    <Compile Include="Migrations\20201118015158_AvailabilityCleaners.Designer.cs" />
-    <Compile Include="Migrations\ApplicationDbContextModelSnapshot.cs" />
-  </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start" />
   </ItemGroup>

@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="contact-info">
                 <h2>Apply with Us</h2>
-                <h4>We would love to hear from you !</h4></br>
+                <h4>We would love to hear from you !</h4><br />
                 <form asp-action="CleanerDetail" method="post">
                     <div class="container contact">
                         <div class="row">
@@ -30,7 +30,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-sm-3">Location:</label>
                                         <div class="col-sm-10">
-                                            <select id="myList" asp-for="@Model.Location" required>
+                                            <select class="form-control" id="myList" asp-for="@Model.Location" required>
                                                 <option value=""></option>
                                                 <option value="Toronto">Toronto</option>
                                                 <option value="York">York</option>
@@ -39,7 +39,7 @@
                                                 <option value="Halton">Halton</option>
                                             </select>
                                             <span asp-validation-for="@Model.Location" class="text-danger field-validation-error"></span>
-                                        
+
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -59,21 +59,23 @@
                                     </div>
                                     <fieldset>
                                         <label class="control-label col-sm-3">Experience Level: </label>
-                                        <select id="myList" asp-for="@Model.ExperienceLevel" required>
-                                            <option value=""></option>
-                                            <option value="High">High</option>
-                                            <option value="Intermediate">Intermediate</option>
-                                            <option value="Beginner">Beginner</option>
+                                        <div class="col-sm-10">
+                                            <select class="form-control small" id="myList" asp-for="@Model.ExperienceLevel" required>
+                                                <option value=""></option>
+                                                <option value="High">High</option>
+                                                <option value="Intermediate">Intermediate</option>
+                                                <option value="Beginner">Beginner</option>
 
-                                        </select></br>
-                                        <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
-
+                                            </select>
+                                            <span asp-validation-for="@Model.ExperienceLevel" class="text-danger field-validation-error"></span>
+                                        </div>
                                     </fieldset>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-2 col-sm-10">
                                         <br />
                                         <button type="submit" class="btn btn-info">Submit</button>
+                                        <button type="reset" class="btn btn-info">Clear</button>
 
                                     </div>
                                 </div>
@@ -81,7 +83,6 @@
                         </div>
                     </div>
                 </form>
-                </div>
             </div>
         </div>
     </div>

@@ -17,11 +17,12 @@
     <nav class="navbar navbar-expand-xl navbar-light badge-pill">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" href="/Home/Index">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link active" href="/Home/Index">| Home |<span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="#">About Us</a>
-                <a class="nav-link" href="#">Work With Us</a>
-                <a class="nav-link" href="#">Company Police</a>
-                <a class="nav-link" href="#">Sign up/Login</a>
+                <a class="nav-link" asp-controller="Cleaner" asp-action="CleanerDetail">| Work With Us |</a>
+                <a class="nav-link" href="#">Company Police |</a>
+                <a class="nav-link" href="#"> Sign up/Login |</a>
+                <a class="nav-link" asp-controller="Admin" asp-action="DisplayCleanerList"> ADMIN (TESTING) |</a>
             </div>
         </div>
     </nav>

@@ -18,11 +18,14 @@ namespace OCC.Models
         public string Location { get; set; }
 
         public int Duration { get; set; }
-       
+
+        
+
         //ShiftTime: Morning, Afternoon, Evening, Night
         public string ShiftTime { get; set; }
 
         public DateTime ServiceDay { get; set; }
+
         public string OrderPaymentState { get; set; }
         
     }

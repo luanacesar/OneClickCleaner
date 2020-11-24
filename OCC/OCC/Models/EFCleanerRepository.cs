@@ -24,15 +24,15 @@ namespace OCC.Models
             }
             else
             {
-                Cleaner productEntry = context.Cleaners
+                Cleaner cleanerEntry = context.Cleaners
                     .FirstOrDefault(p => p.CleanerId == cleaner.CleanerId);
 
-                if (productEntry != null)
+                if (cleanerEntry != null)
                 {
-                    productEntry.FirstName = cleaner.FirstName;
-                    productEntry.IsCleaner = cleaner.IsCleaner;
-                    productEntry.Email = cleaner.Email;
-                    productEntry.ExperienceLevel = cleaner.ExperienceLevel;
+                    cleanerEntry.FirstName = cleaner.FirstName;
+                    cleanerEntry.IsCleaner = cleaner.IsCleaner;
+                    cleanerEntry.Email = cleaner.Email;
+                    cleanerEntry.ExperienceLevel = cleaner.ExperienceLevel;
                 }
             }
             context.SaveChanges();

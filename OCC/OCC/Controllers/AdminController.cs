@@ -18,7 +18,7 @@ namespace OCC.Controllers
         }
         public ViewResult DisplayCleanerList() => View(repository.Cleaners);
 
-        public ViewResult EditCleaners(int cleanerId) =>
+        public ViewResult Edit(int cleanerId) =>
            View(repository.Cleaners
                .FirstOrDefault(p => p.CleanerId == cleanerId));
 
@@ -37,20 +37,20 @@ namespace OCC.Controllers
             }
         }
 
-        public ViewResult Create() => View("EditCleaners", new Cleaner());
+        public ViewResult Create() => View("Edit", new Cleaner());
 
-        //[HttpPost]
-        //public IActionResult Delete(int productId)
-        //{
-        //    Product deletedProduct = repository.DeleteProduct(productId);
+        [HttpPost]
+        public IActionResult Delete(int CleanerId)
+        {
+            Cleaner deleteCleaner = repository.DeleteCleaner(CleanerId);
 
-        //    if (deletedProduct != null)
-        //    {
-        //        TempData["message"] = $"{deletedProduct.Name} was deleted!";
-        //    }
+            if (deleteCleaner != null)
+            {
+                TempData["message"] = $"{deleteCleaner.FirstName} was deleted!";
+            }
 
-        //    return RedirectToAction("Index");
-        //}
+            return RedirectToAction("DisplayCleanerList");
+        }
 
 
     }

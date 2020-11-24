@@ -11,6 +11,6 @@ namespace OCC.Models
 
         void SaveCleaner(Cleaner cleaner);
 
-        //Cleaner DeleteProduct(int cleanerID);
+        Cleaner DeleteCleaner(int cleanerID);
     }
 }

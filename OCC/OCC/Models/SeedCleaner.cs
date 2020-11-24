@@ -243,7 +243,56 @@ namespace OCC.Models
                         Evening = true,
                         Night = true,
                         Weekends = false
-                    }
+                    },
+
+                    new Cleaner
+                    {
+                        FirstName = "Mike",
+                        Email = "Mike@gmail.com",
+                        Location = "York",
+                        IsCleaner = true,
+                        ExperienceLevel = "Beginer",
+                        Certificate = "66455780",
+                        BankAccount = 4923335674,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = true,
+                        Weekends = false
+                    },
+                     new Cleaner
+                     {
+                         FirstName = "James",
+                         Email = "James@gmail.com",
+                         Location = "Tronto",
+                         IsCleaner = true,
+                         ExperienceLevel = "Beginer",
+                         Certificate = "664205780",
+                         BankAccount = 7293335674,
+                         Morning = true,
+                         Afternoon = true,
+                         Evening = true,
+                         Night = true,
+                         Weekends = false
+                     },
+
+                      new Cleaner
+                      {
+                          FirstName = "Eric",
+                          Email = "Eric@gmail.com",
+                          Location = "Tronto",
+                          IsCleaner = true,
+                          ExperienceLevel = "High",
+                          Certificate = "554205780",
+                          BankAccount = 6303335674,
+                          Morning = true,
+                          Afternoon = true,
+                          Evening = true,
+                          Night = true,
+                          Weekends = false
+                      }
+
+
 
                 );
 

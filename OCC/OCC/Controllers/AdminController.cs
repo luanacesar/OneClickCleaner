@@ -10,16 +10,16 @@ namespace OCC.Controllers
 {
     public class AdminController : Controller
     {
-        private ICleanerRepository repository;
+        private ICleanerRepository cleanerRepository;
 
         public AdminController(ICleanerRepository repo)
         {
-            repository = repo;
+            cleanerRepository = repo;
         }
-        public ViewResult DisplayCleanerList() => View(repository.Cleaners);
+        public ViewResult DisplayCleanerList() => View(cleanerRepository.Cleaners);
 
         public ViewResult Edit(int cleanerId) =>
-           View(repository.Cleaners
+           View(cleanerRepository.Cleaners
                .FirstOrDefault(p => p.CleanerId == cleanerId));
 
         [HttpPost]
@@ -27,7 +27,7 @@ namespace OCC.Controllers
         {
             if (ModelState.IsValid)
             {
-                repository.SaveCleaner(cleaner);
+                cleanerRepository.SaveCleaner(cleaner);
                 TempData["message"] = $"{cleaner.FirstName} has been saved!";
                 return RedirectToAction("DisplayCleanerList");
             }
@@ -42,7 +42,7 @@ namespace OCC.Controllers
         [HttpPost]
         public IActionResult Delete(int CleanerId)
         {
-            Cleaner deleteCleaner = repository.DeleteCleaner(CleanerId);
+            Cleaner deleteCleaner = cleanerRepository.DeleteCleaner(CleanerId);
 
             if (deleteCleaner != null)
             {

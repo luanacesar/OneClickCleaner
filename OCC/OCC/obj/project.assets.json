@@ -12711,11 +12711,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Centennial Collegue\\Fourth Semester\\Software Development Project I\\Project\\ChooseCleaners\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
-      "projectPath": "D:\\Centennial Collegue\\Fourth Semester\\Software Development Project I\\Project\\ChooseCleaners\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Centennial Collegue\\Fourth Semester\\Software Development Project I\\Project\\ChooseCleaners\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

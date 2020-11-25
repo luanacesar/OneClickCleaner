@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\vmware-host\\Shared Folders\\Desktop\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+    "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
-    "\\\\vmware-host\\Shared Folders\\Desktop\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+    "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\vmware-host\\Shared Folders\\Desktop\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectUniqueName": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-        "projectPath": "\\\\vmware-host\\Shared Folders\\Desktop\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectPath": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\cai\\.nuget\\packages\\",
-        "outputPath": "\\\\vmware-host\\Shared Folders\\Desktop\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "outputPath": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cai\\AppData\\Roaming\\NuGet\\NuGet.Config",

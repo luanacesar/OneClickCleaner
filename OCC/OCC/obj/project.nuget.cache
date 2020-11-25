@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+0iTmxqxQtA5I9cVqv36K7813kZ3gtBVdNRXej5GzDnTLWy9oICw87EHj3r+R87rm8ZchjNpx55+ORbUqHEoSw==",
+  "dgSpecHash": "BJvLCE0WOYPcx7szI8b++XuR1T1oIY+uTFKD2pfEjdjqtaDPEi/+665yxxN/+3Y9UqNc64ePrRnPIUV0b9YvIA==",
   "success": true,
-  "projectFilePath": "\\\\vmware-host\\Shared Folders\\Desktop\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+  "projectFilePath": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cai\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\cai\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

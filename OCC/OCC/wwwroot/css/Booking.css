@@ -1,106 +1,95 @@
-﻿/*booking page---calendar*/
-/*datepicker*/
+/* customer information*/
+
 .container {
+    max-width: 800px;
+    margin: auto;
 
-    width:1440px;
-    height:400px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #427fa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #427fa5;
+    }
+
+div {
+    border-radius: 5px;
+    padding:20px;
+    background-color: #f2f2f2;
   
-    margin:0 auto;
-}
-    .container .container_top {
-
-        width:800px;
-        height:60px;
-       
-        margin:0 auto;
-    }
-    .container .row {
-       
-        height:300px;
-        margin-top:40px;
-        margin-left:200px;
-        
-
-
-
-    }
-
-body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'arial', sans-serif;
-    background: #eeeeee;
 }
 
-.wrapper {
-    max-width: 560px;
-    margin: 100px auto;
+.header img{
+    float: left;
+    width:150px;
+    height: 150px;
+    margin-left:400px;
 }
-
-label {
+.header h1 {
     position: relative;
-    display: block;
+    top:30px;
+    left: 30px;
+}
+.title {
+    font-size: 3.5em;
 }
 
-    label > input {
-        position: relative;
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid #9e9e9e;
-        border-radius: 0;
-        outline: none;
-        height: 45px;
-        width: 100%;
-        font-size: 16px;
-        margin: 0 0 30px 0;
-        padding: 0;
-        box-shadow: none;
-        box-sizing: content-box;
-        transition: all .3s;
-    }
-
-        label > input:valid + span {
-            transform: translateY(-25px) scale(0.8);
-            transform-origin: 0;
-        }
-
-        label > input:valid {
-            border-bottom: 1px solid #3F51B5;
-            box-shadow: 0 1px 0 0 #3F51B5;
-        }
-
-    label > span {
-        color: #9e9e9e;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 16px;
-        cursor: text;
-        transition: .2s ease-out;
-    }
-
-    label > input:focus + span {
-        transform: translateY(-25px) scale(0.8);
-        transform-origin: 0;
-        color: #3F51B5;
-    }
-
-    label > input:focus {
-        border-bottom: 1px solid #3F51B5;
-        box-shadow: 0 1px 0 0 #3F51B5;
-    }
+p {
+    font-size: 25px;
+}
 
 
 
+.center {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
-/*calendar*/
+.center2 {
 
+margin-left: 90px;
+}
 
-
- #datepicker {
-
-     margin: auto;
-
- }

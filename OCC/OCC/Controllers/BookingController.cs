@@ -34,38 +34,51 @@ namespace OCC.Controllers
             
             if (ModelState.IsValid)
             {
-                Cleaner orderCleaner = new Cleaner();
+                IEnumerable<Cleaner> filterCustomerCleaner;
                 switch (order.ShiftTime)
                 {
                     case "Morning":
-                        orderCleaner.Morning = true;
+                        filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                                   where f.Location == order.Location &&
+                                                   f.Morning == true
+                                                   && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                                   && f.IsCleaner == true
+                                                   select f;
                         break;
                     case "Afternoon":                        
-                        orderCleaner.Afternoon = true;
+                        filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                                   where f.Location == order.Location &&
+                                                   f.Afternoon == true
+                                                   && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                                   && f.IsCleaner == true
+                                                   select f;
                         break;
                     case "Evening":
-                        orderCleaner.Evening = true;
-                        break;
-                    case "Night":
-                        orderCleaner.Night = true;
+                        filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                                   where f.Location == order.Location &&
+                                                   f.Evening == true
+                                                   && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                                   && f.IsCleaner == true
+                                                   select f;
                         break;
                     default:
+                        filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                                   where f.Location == order.Location &&
+                                                   f.Night == true
+                                                   && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                                   && f.IsCleaner == true
+                                                   select f;
                         break;
                 }
 
-                var filteCustomerCleaner = from f in cleanerRepository.Cleaners
-                                           where f.Location == order.Location &&
-                                           (f.Morning == orderCleaner.Morning || f.Afternoon == orderCleaner.Afternoon || f.Evening == orderCleaner.Evening || f.Night == orderCleaner.Night)
-                                           && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
-                                           && f.IsCleaner == true
-                                           select f;
-                var filterOrderCleaner = from cleanerTable in filteCustomerCleaner
+                
+                var filterOrderCleaner = from cleanerTable in filterCustomerCleaner
                              join ordertable in orderRepository.Orders on cleanerTable.CleanerId equals ordertable.CleanerId
-                             where ordertable.ServiceDay == order.ServiceDay && ordertable.ShiftTime==order.ShiftTime
+                             where ordertable.ServiceDay.Date == order.ServiceDay.Date && ordertable.ShiftTime==order.ShiftTime
                              select cleanerTable;
                 var availableCleaner = new List<Cleaner>();
                 bool noMatch = true;
-                foreach (var item in filteCustomerCleaner)
+                foreach (var item in filterCustomerCleaner)
                 {
                     foreach (var item1 in filterOrderCleaner)
                     {

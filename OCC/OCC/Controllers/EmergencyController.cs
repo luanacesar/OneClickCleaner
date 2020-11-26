@@ -40,7 +40,7 @@ namespace OCC.Controllers
             {
                 order.ServiceDay = DateTime.Now.Date;
                 TimeSpan timeOrder = DateTime.Now.TimeOfDay;
-                //TimeSpan timeOrder = new TimeSpan(7,0,0);
+                //TimeSpan timeOrder = new TimeSpan(23,0,0);
 
                 IEnumerable<Cleaner> filterCustomerCleaner;
                 if (timeOrder > new TimeSpan(6, 0, 0) && timeOrder < new TimeSpan(12, 0, 0))
@@ -65,7 +65,7 @@ namespace OCC.Controllers
                 }
                 else if (timeOrder >= new TimeSpan(18, 0, 0) && timeOrder < new TimeSpan(24, 0, 0))
                 {
-
+                    order.ServiceDay = order.ServiceDay.AddDays(1);
                     order.ShiftTime = "Night"; 
                     filterCustomerCleaner = from f in cleanerRepository.Cleaners
                                             where f.Location == order.Location &&

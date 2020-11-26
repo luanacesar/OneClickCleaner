@@ -3,9 +3,9 @@
     "",
     "\\OCC",
     "\\OCC\\OCC",
-    "\\OCC\\OCC\\Models",
-    "\\OCC\\OCC\\Views"
+    "\\OCC\\OCC\\Controllers",
+    "\\OCC\\OCC\\Models"
   ],
-  "SelectedNode": "\\OCC\\OCC\\Models\\EFCleanerRepository.cs",
+  "SelectedNode": "\\OCC\\OCC.sln",
   "PreviewInSolutionExplorer": false
 }

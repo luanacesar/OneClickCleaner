@@ -175,7 +175,7 @@ namespace OCC.Models
                         Email = "emma@gmail.com",
                         Location = "Peel",
                         IsCleaner = true,
-                        ExperienceLevel = "Medium",
+                        ExperienceLevel = "Intermediate",
                         Certificate = "3997521",
                         BankAccount = 1448286923,
                         Morning = true,
@@ -243,7 +243,114 @@ namespace OCC.Models
                         Evening = true,
                         Night = true,
                         Weekends = false
-                    }
+                    },
+                    new Cleaner
+                    {
+                        FirstName = "Ava",
+                        Email = "avaa@gmail.com",
+                        Location = "Halton",
+                        IsCleaner = false,
+                        ExperienceLevel = "Beginner",
+                        Certificate = "28255554",
+                        BankAccount = 7632100988,
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = true,
+                        Weekends = false
+                    },
+                     new Cleaner
+                     {
+                         FirstName = "Amanda",
+                         Email = "amy@gmail.com",
+                         Location = "York",
+                         IsCleaner = false,
+                         ExperienceLevel = "Beginner",
+                         Certificate = "18255458",
+                         BankAccount = 7632104568,
+                         Morning = true,
+                         Afternoon = true,
+                         Evening = true,
+                         Night = true,
+                         Weekends = false
+                     },
+                      new Cleaner
+                      {
+                          FirstName = "Paola",
+                          Email = "avaa@gmail.com",
+                          Location = "Durkham",
+                          IsCleaner = false,
+                          ExperienceLevel = "Beginner",
+                          Certificate = "45255534",
+                          BankAccount = 6632107345,
+                          Morning = true,
+                          Afternoon = true,
+                          Evening = true,
+                          Night = false,
+                          Weekends = true
+                      },
+                       new Cleaner
+                       {
+                           FirstName = "Alejandro",
+                           Email = "avaa@gmail.com",
+                           Location = "Durkham",
+                           IsCleaner = false,
+                           ExperienceLevel = "Intermediate",
+                           Certificate = "28255554",
+                           BankAccount = 3632200921,
+                           Morning = true,
+                           Afternoon = false,
+                           Evening = false,
+                           Night = true,
+                           Weekends = false
+                       },
+
+                       new Cleaner
+                       {
+                           FirstName = "Mike",
+                           Email = "Mike@gmail.com",
+                           Location = "York",
+                           IsCleaner = true,
+                           ExperienceLevel = "Beginer",
+                           Certificate = "66455780",
+                           BankAccount = 4923335674,
+                           Morning = true,
+                           Afternoon = true,
+                           Evening = true,
+                           Night = true,
+                           Weekends = false
+                       },
+                     new Cleaner
+                     {
+                         FirstName = "James",
+                         Email = "James@gmail.com",
+                         Location = "Tronto",
+                         IsCleaner = true,
+                         ExperienceLevel = "Beginer",
+                         Certificate = "664205780",
+                         BankAccount = 7293335674,
+                         Morning = true,
+                         Afternoon = true,
+                         Evening = true,
+                         Night = true,
+                         Weekends = false
+                     },
+
+                      new Cleaner
+                      {
+                          FirstName = "Eric",
+                          Email = "Eric@gmail.com",
+                          Location = "Tronto",
+                          IsCleaner = true,
+                          ExperienceLevel = "High",
+                          Certificate = "554205780",
+                          BankAccount = 6303335674,
+                          Morning = true,
+                          Afternoon = true,
+                          Evening = true,
+                          Night = true,
+                          Weekends = false
+                      }
 
                 );
 

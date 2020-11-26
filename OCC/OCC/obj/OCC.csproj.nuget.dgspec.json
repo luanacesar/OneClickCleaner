@@ -1,12 +1,7 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
->>>>>>> US11
   },
   "projects": {
     "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
@@ -14,28 +9,9 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-<<<<<<< HEAD
         "projectPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
-=======
-        "projectPath": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-        "packagesPath": "C:\\Users\\jorge\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jorge\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
-=======
-    "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-        "projectName": "OCC",
-        "projectPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
->>>>>>> Andrea
->>>>>>> US11
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",

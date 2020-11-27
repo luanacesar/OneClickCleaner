@@ -15,15 +15,17 @@ namespace OCC.Controllers
         private IOrderRepository orderRepository;
         private ICustomerRepository customerRepository;
         private IServiceRepository serviceRepository;
+        private ICleanerRepository cleanerRepository;
 
         private Customer customerCreatedRepo;
         
 
-        public EmergencyController( IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
+        public EmergencyController( IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo, ICleanerRepository cleanerRepo)
         {
             orderRepository = orderRepo;
             customerRepository = customerRepo;
-            serviceRepository = serviceRepo;            
+            serviceRepository = serviceRepo;
+            cleanerRepository = cleanerRepo;
         }
         
         public ViewResult ServiceDetail()
@@ -34,9 +36,91 @@ namespace OCC.Controllers
         [HttpPost]
         public IActionResult ServiceDetail(Order order)
         {
-            byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
-            HttpContext.Session.Set("order", jsonOrder);
+            if (ModelState.IsValid)
+            {
+                order.ServiceDay = DateTime.Now.Date;
+                TimeSpan timeOrder = DateTime.Now.TimeOfDay;
+                //TimeSpan timeOrder = new TimeSpan(23,0,0);
 
+                IEnumerable<Cleaner> filterCustomerCleaner;
+                if (timeOrder > new TimeSpan(6, 0, 0) && timeOrder < new TimeSpan(12, 0, 0))
+                {
+                    order.ShiftTime = "Afternoon";
+                    filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                            where f.Location == order.Location &&
+                                            f.Afternoon == true
+                                            && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                            && f.IsCleaner == true
+                                            select f;
+                }
+                else if (timeOrder >= new TimeSpan(12, 0, 0) && timeOrder < new TimeSpan(18, 0, 0))
+                {
+                    order.ShiftTime = "Evening";
+                    filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                            where f.Location == order.Location &&
+                                            f.Evening == true
+                                            && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                            && f.IsCleaner == true
+                                            select f;
+                }
+                else if (timeOrder >= new TimeSpan(18, 0, 0) && timeOrder < new TimeSpan(24, 0, 0))
+                {
+                    order.ServiceDay = order.ServiceDay.AddDays(1);
+                    order.ShiftTime = "Night"; 
+                    filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                            where f.Location == order.Location &&
+                                            f.Night == true
+                                            && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                            && f.IsCleaner == true
+                                            select f;
+                }
+                else
+                {
+                    order.ShiftTime = "Morning";
+                    filterCustomerCleaner = from f in cleanerRepository.Cleaners
+                                            where f.Location == order.Location &&
+                                            f.Morning == true
+                                            && f.Weekends == (order.ServiceDay.DayOfWeek == DayOfWeek.Sunday || order.ServiceDay.DayOfWeek == DayOfWeek.Saturday)
+                                            && f.IsCleaner == true
+                                            select f;
+                }               
+
+
+                var filterOrderCleaner = from cleanerTable in filterCustomerCleaner
+                                         join ordertable in orderRepository.Orders on cleanerTable.CleanerId equals ordertable.CleanerId
+                                         where ordertable.ServiceDay.Date == order.ServiceDay.Date && ordertable.ShiftTime == order.ShiftTime
+                                         select cleanerTable;
+                var availableCleaner = new List<Cleaner>();
+                bool noMatch = true;
+                foreach (var item in filterCustomerCleaner)
+                {
+                    foreach (var item1 in filterOrderCleaner)
+                    {
+                        if (item.CleanerId == item1.CleanerId)
+                        {
+                            noMatch = false;
+                        }
+                    }
+                    if (noMatch)
+                    {
+                        availableCleaner.Add(item);
+
+                    }
+                    noMatch = true;
+                }
+
+
+                if (!availableCleaner.Any())
+                {
+                    return View("NoCleanerAvailable");
+                }
+                order.CleanerId = availableCleaner.First<Cleaner>().CleanerId;
+
+                byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(order);
+                HttpContext.Session.Set("order", jsonOrder);
+
+                return RedirectToAction("Get", "Emergency");
+            }
             return RedirectToAction("Get", "Emergency");
         }
 

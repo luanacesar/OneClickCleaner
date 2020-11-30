@@ -23,4 +23,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/StateDiagram2.png)
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/StateDiagram3.png)
 
+## Activity Diagram
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Activity%20Diagram.jpg?raw=true)
+
 

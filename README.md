@@ -6,3 +6,10 @@
 
 
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Us11.png)
+
+
+
+
+
+## Package Diagram
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Client.Emergency%20package%20diagram.JPG)

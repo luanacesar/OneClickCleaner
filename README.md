@@ -13,3 +13,7 @@
 
 ## Package Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Client.Emergency%20package%20diagram.JPG)
+
+
+## Sequence Diagram
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Client%20Emergency%20Sequence%20Diagram.jpg)

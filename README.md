@@ -1,6 +1,4 @@
-# OneClickCleaner
+# Online Documentation of OneClickCleaner
 
-### As a Client, I do not need to choose the cleaner if I select Emergency Service so that I can proceed to the payment faster.
-
-__HRir__
+### As a Registered cleaner, I will click in the login page to enter in an exclusive area (logged in) to system so that the cleaner can see Cleaner page #14
 

@@ -30,4 +30,4 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Component%20Diagram.jpg)
 
 ## Deployment Diagram
-![Use case](https://online.visual-paradigm.com/w/spshcdwy/diagrams/#diagram:workspace=spshcdwy&proj=6&id=38)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Deployment%20diagram.jpg)

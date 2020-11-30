@@ -23,3 +23,6 @@
 
 ## Activity Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Activity%20Diagram.jpg?raw=true)
+
+## Component Diagram
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Component%20Diagram.jpg)

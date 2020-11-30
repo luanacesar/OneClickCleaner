@@ -12,3 +12,5 @@
 # Package Diagram
 
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/admin.JPG)
+
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Sequence%20Diagram%20Admin.vpd.jpg)

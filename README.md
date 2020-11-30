@@ -18,10 +18,11 @@
 ## Sequence Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Client%20Emergency%20Sequence%20Diagram.jpg)
 
-## State Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/StateDiagram1.png)
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/StateDiagram2.png)
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/StateDiagram3.png)
+## ERD Diagram
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/ERD.png)
+
+## Class Diagram
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Class.png)
 
 ## Activity Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Activity%20Diagram.jpg?raw=true)

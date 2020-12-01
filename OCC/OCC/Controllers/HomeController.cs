@@ -14,6 +14,10 @@ namespace OCC.Controllers
             return View();
         }    
 
+        public ViewResult PotentialCleanerForm()
+        {
+            return View();
+        }
        
 
         

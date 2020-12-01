@@ -6,6 +6,35 @@
 .navbar {
     font-size: 1.5em;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8f8f8f;
+    
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: white;
+        }
+.active {
+    background-color: #9ddef9;
+}
+
 #aboutus {
     background-color: #4e89ae;
     text-align: center;
@@ -74,3 +103,16 @@ h3 {
     height: 100px;
 }
 
+
+
+.imageRecipes {
+    width: 230px;
+    border-radius: 200px 200px;
+}
+.button {
+    display: none;
+}
+
+img:hover + .button {
+    display: inline-block;
+}

@@ -45,6 +45,11 @@ namespace OCC.Controllers
         //{
         //    return View();
         //}
+        [HttpGet]
+        public IActionResult RegisteredCleanerSignUp()
+        {
+            return View("RegisteredCleanerSignUp");
+        }
     }
 
  }

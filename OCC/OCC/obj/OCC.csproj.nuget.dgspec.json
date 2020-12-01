@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
+    "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
+    "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "projectUniqueName": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
         "projectName": "OCC",
-        "projectPath": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
-        "packagesPath": "C:\\Users\\cai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cai\\source\\repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\obj\\",
+        "projectPath": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+        "packagesPath": "C:\\Users\\celoe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\celoe\\OneDrive\\Documentos\\OneClickCleaner\\OCC\\OCC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\celoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

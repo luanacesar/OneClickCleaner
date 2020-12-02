@@ -35,3 +35,15 @@
 
 ## Deployment Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Deployment%20diagram.jpg)
+
+## Architecture Diagram
+
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Architecture%20Diagram.jpg?raw=true)
+
+
+
+
+
+
+
+

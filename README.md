@@ -5,7 +5,7 @@
 ## Use Case
 
 
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US14/Us14.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Us14.png)
 
 
 

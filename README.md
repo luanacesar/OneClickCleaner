@@ -25,7 +25,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Class.png)
 
 ## Object Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US14/Object14.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Object14.png)
 
 ## Activity Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Activity%20Diagram.jpg?raw=true)

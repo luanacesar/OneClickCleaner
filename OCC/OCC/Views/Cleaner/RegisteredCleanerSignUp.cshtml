@@ -1,1 +1,49 @@
-﻿@model Cleaner                                                                                                                                                                                                                                                                                                                 
+﻿@model Cleaner
+
+<link href="~/css/Login.css" rel="stylesheet" />
+
+<body>
+    <div id="all-page">
+        <article>
+            <div class="card-group">
+                @*Login*@
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Have an account?</h4>
+                        <form asp-action="#" method="get">
+                            <div class="col-sm-10">
+                                <label class="control-label col-sm-6">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" @*asp-for="@Model.Email"*@ required>
+                                <br />
+                                <label class="control-label col-sm-6">Password:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password" @*asp-for="@Model.Password"*@ required>
+                                <br /><br /><br /><br /><br /><br />
+                                <div class="center">
+                                    <button class="btn btn-success btn-lg " type="submit" asp-action="RegisteredCleanerSignUp">Login</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                @*Sign up*@
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Don't have an account?</h4>
+                        <br /><br />
+                        <p class="card-text">Don't worry! Here you can create your account.</p>
+                        <div class="center">
+                            <a asp-action="CleanerDetail" class="btn btn-danger btn-lg">
+                                Sign up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
+</body>
+
+

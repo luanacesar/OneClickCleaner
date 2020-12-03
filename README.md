@@ -10,7 +10,7 @@
 
 
 ## Package Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/US14_package%20diagram.JPG)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/US14_package%20diagram_.JPG)
 
 
 ## Sequence Diagram

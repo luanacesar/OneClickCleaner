@@ -277,7 +277,7 @@ namespace OCC.Models
                       new Cleaner
                       {
                           FirstName = "Paola",
-                          Email = "avaa@gmail.com",
+                          Email = "paolap@gmail.com",
                           Location = "Durkham",
                           IsCleaner = false,
                           ExperienceLevel = "Beginner",
@@ -292,7 +292,7 @@ namespace OCC.Models
                        new Cleaner
                        {
                            FirstName = "Alejandro",
-                           Email = "avaa@gmail.com",
+                           Email = "alejandro@gmail.com",
                            Location = "Durkham",
                            IsCleaner = false,
                            ExperienceLevel = "Intermediate",
@@ -308,10 +308,10 @@ namespace OCC.Models
                        new Cleaner
                        {
                            FirstName = "Mike",
-                           Email = "Mike@gmail.com",
+                           Email = "mike@gmail.com",
                            Location = "York",
                            IsCleaner = true,
-                           ExperienceLevel = "Beginer",
+                           ExperienceLevel = "Beginner",
                            Certificate = "66455780",
                            BankAccount = 4923335674,
                            Morning = true,
@@ -323,11 +323,11 @@ namespace OCC.Models
                      new Cleaner
                      {
                          FirstName = "James",
-                         Email = "James@gmail.com",
-                         Location = "Tronto",
+                         Email = "james@gmail.com",
+                         Location = "Toronto",
                          IsCleaner = true,
-                         ExperienceLevel = "Beginer",
-                         Certificate = "664205780",
+                         ExperienceLevel = "Beginner",
+                         Certificate = "64205780",
                          BankAccount = 7293335674,
                          Morning = true,
                          Afternoon = true,
@@ -340,7 +340,7 @@ namespace OCC.Models
                       {
                           FirstName = "Eric",
                           Email = "Eric@gmail.com",
-                          Location = "Tronto",
+                          Location = "Toronto",
                           IsCleaner = true,
                           ExperienceLevel = "High",
                           Certificate = "554205780",
@@ -351,7 +351,6 @@ namespace OCC.Models
                           Night = true,
                           Weekends = false
                       }
-
                 );
 
                 context.SaveChanges();

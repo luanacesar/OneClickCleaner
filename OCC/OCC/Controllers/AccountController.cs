@@ -70,7 +70,8 @@ namespace Users.Controllers
                         
                     }
                 }
-                
+                ModelState.AddModelError(nameof(LoginModel.Email),
+                    "Invalid user or password");
             }
             return View(details);
         }

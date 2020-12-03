@@ -1,14 +1,21 @@
 ﻿
 @model Order
+<link href="~/css/selectCleaner.css" rel="stylesheet" />
 
-<p>THANK YOU FOR YOUR ORDER!</p>
-@*<p>CustomerID: @Model.CustomerId</p>
-<p>OrderID:@Model.OrderId</p>
-<p>Location: @Model.Location</p>
-<p>Duration: @Model.Duration</p>*@
-
-@*<p>@Model.CustomerId</p>
-<p>@Model.OrderId</p>
-<p>@Model.Location</p>*@
-<a href="/Home/Index">New Service</a>
-
+<section class="our-webcoderskull padding-lg">
+    <div class="container">
+        <div class="card">
+            <div class="row heading heading-icon m-5 p-5">
+                <h2>THANK YOU FOR YOUR ORDER!</h2>
+                <p>Order ID:@Model.OrderId</p>
+                <p>Shift time: @Model.ShiftTime</p>
+                <p>Customer ID: @Model.CustomerId</p>
+                <p>Location: @Model.Location</p>
+                <a class="btn btn btn-info col-lg-12  " href="/Home/Index">New Service</a>
+            </div>
+        </div>
+    </div>
+    //order id
+    // cleaner name
+    // customer name
+</section>

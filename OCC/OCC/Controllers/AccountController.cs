@@ -6,8 +6,10 @@ using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http.Authentication;
 using System.Linq;
+using Microsoft.AspNetCore.Identity.UI.Pages.Account.Internal;
+using System.Text.Json;
 
-namespace Users.Controllers
+namespace OCC.Controllers
 {
 
     [Authorize]
@@ -56,21 +58,25 @@ namespace Users.Controllers
                         {
                             case "Cleaner":
                                 Cleaner cleaner = cleanerRepository.Cleaners.FirstOrDefault(o => o.Email == details.Email);
-                        return RedirectToAction("Index", "Home", cleaner.Email);
+                                //TempData["message"] = $"{cleaner.Email}";
+                                ////Serialize the order information in order to send to the next controller
+                                byte[] jsonUser = JsonSerializer.SerializeToUtf8Bytes(cleaner);
+                                HttpContext.Session.Set("cleaner", jsonUser);
+                                return RedirectToAction("Index", "Home");
 
                             case "Customer":
                                 Customer customer = customerRepository.Customers.FirstOrDefault(o => o.Email == details.Email);
                                 return RedirectToAction("RegisteredCleanerDetails", "Cleaner");
 
-                                
+
                             default:
                                 break;
 
                         }
-                        
                     }
                 }
-                
+                ModelState.AddModelError(nameof(LoginModel.Email),
+                    "Invalid user or password");
             }
             return View(details);
         }

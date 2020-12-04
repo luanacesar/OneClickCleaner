@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+
 namespace OCC.Models
 {
     public class Cleaner
@@ -32,7 +33,6 @@ namespace OCC.Models
         public bool Evening { get; set; }
         public bool Night { get; set; }
         public bool Weekends { get; set; }
-
     }
 }
 

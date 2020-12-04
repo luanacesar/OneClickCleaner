@@ -13,7 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-xl navbar-light badge-pill">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -22,9 +21,23 @@
                     <li><a class="nav-link" href="#">About Us</a></li>
                     <li><a class="nav-link" asp-controller="Cleaner" asp-action="CleanerDetail">| Work With Us |</a></li>
                     <li> <a class="nav-link" href="#">Company Police |</a></li>
-                    <li> <a class="nav-link" href="#"> Sign up/Login |</a></li>
-                    <li> <a class="nav-link" asp-controller="Admin" asp-action="DisplayCleanerList"> ADMIN (TESTING) |</a></li>               
+                    <li> <a class="nav-link" asp-controller="Admin" asp-action="DisplayCleanerList"> ADMIN (TESTING) |</a></li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="RegisteredCleanerDetails" asp-controller="Cleaner">Profile |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Logout" asp-controller="Account">Sign Out |</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li> <a class="nav-link" asp-controller="Account" asp-action="Login"> Sign up/Login |</a></li>
+                    }
                 </ul>
+
+                
             </div>
         </div>
     </nav>

@@ -1,23 +1,7 @@
-﻿@model Cleaner
-
-@{
+﻿
+@{ 
     Layout = "_Layout";
 }
-
-<section id="mainpage" style="text-align:right">
-    <div class="row">
-
-        @if (User.Identity.IsAuthenticated)
-        {
-            <div class="col-lg-6">
-                <h3>
-                    <br /><b>Welcome @Model.FirstName</b>
-                </h3>
-            </div>
-        }
-    </div>
-
-</section>
 <section id="mainpage">
     <p>Place the main banner here</p>
 </section>
@@ -25,9 +9,8 @@
 <section id="aboutus">
     <p>About us content</p>
 </section>
-
+ 
 <section id="features">
-
 
     <div class="justify-content-center">
         <h1>List of Service</h1>

@@ -215,7 +215,11 @@ namespace OCC.Models
             return RedirectToAction();
 
         }
+public async Task<IActionResult> SaveUser()
+        {            
+            return View("Profile", "Edit");
 
+        }
 
         public async Task<IActionResult> SaveAdminUser()
         {

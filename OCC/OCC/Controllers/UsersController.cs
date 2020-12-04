@@ -217,58 +217,7 @@ namespace OCC.Models
         }
 public async Task<IActionResult> SaveUser()
         {            
-            byte[] value;
-            bool isValueAvailable = HttpContext.Session.TryGetValue("cleaner", out value);
-           
-            if (isValueAvailable)
-            {
-                Cleaner cleaner1 = JsonSerializer.Deserialize<Cleaner>(value);
-                AppUser user = await userManager.FindByEmailAsync(cleaner1.Email);
-                if (user != null)
-                {
-                    user.Email = cleaner1.Email;
-                    IdentityResult validEmail
-                        = await userValidator.ValidateAsync(userManager, user);
-                    if (!validEmail.Succeeded)
-                    {
-                        AddErrorsFromResult(validEmail);
-                    }
-                    IdentityResult validPass = null;
-                    if (!string.IsNullOrEmpty(cleaner1.Password))
-                    {
-                        validPass = await passwordValidator.ValidateAsync(userManager,
-                            user, cleaner1.Password);
-                        if (validPass.Succeeded)
-                        {
-                            user.PasswordHash = passwordHasher.HashPassword(user,
-                                cleaner1.Password);
-                        }
-                        else
-                        {
-                            AddErrorsFromResult(validPass);
-                        }
-                    }
-                    if ((validEmail.Succeeded && validPass == null)
-                            || (validEmail.Succeeded
-                            && cleaner1.Password != string.Empty && validPass.Succeeded))
-                    {
-                        IdentityResult result = await userManager.UpdateAsync(user);
-                        if (result.Succeeded)
-                        {
-                            return RedirectToAction("Index", "Home");
-                        }
-                        else
-                        {
-                            AddErrorsFromResult(result);
-                        }
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError("", "User Not Found");
-                }
-            }
-            return View("Edit", "Admin");
+
         }
 
         public async Task<IActionResult> SaveAdminUser()

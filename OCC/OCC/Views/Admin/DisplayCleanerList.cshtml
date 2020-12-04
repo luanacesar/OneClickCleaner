@@ -32,15 +32,15 @@
                     <td>@item.FirstName</td>
                     <td>@item.Email</td>
                     <td>@item.Location</td>
-                    <td>@(item.IsCleaner ? "Yes":"No")</td>
+                    <td>@(item.IsCleaner ? "Yes" : "No")</td>
                     <td>@item.ExperienceLevel</td>
                     <td>@item.Certificate</td>
                     <td>@item.BankAccount</td>
-                    <td>@(item.Morning ? "Yes":"No")</td>
-                    <td>@(item.Afternoon ? "Yes":"No")</td>
-                    <td>@(item.Evening ? "Yes":"No")</td>
-                    <td>@(item.Night ? "Yes":"No")</td>
-                    <td>@(item.Weekends ? "Yes":"No")</td>
+                    <td>@(item.Morning ? "Yes" : "No")</td>
+                    <td>@(item.Afternoon ? "Yes" : "No")</td>
+                    <td>@(item.Evening ? "Yes" : "No")</td>
+                    <td>@(item.Night ? "Yes" : "No")</td>
+                    <td>@(item.Weekends ? "Yes" : "No")</td>
 
                     <td class="text-center">
                         <form asp-action="Delete" method="post">
@@ -73,7 +73,7 @@
             <th>BankAccount</th>
             <th>Morning</th>
             <th>Afternoon</th>
-             <th>Evening</th>
+            <th>Evening</th>
             <th>Night</th>
             <th>Weekends</th>
             <th>Actions</th>
@@ -85,34 +85,34 @@
         {
             @if (@item.IsCleaner == false)
             {
-    <tr>
-        <td class="text-right">@item.CleanerId</td> 
-        <td>@item.FirstName</td>
-        <td>@item.Email</td>
-        <td>@item.Location</td>
-        <td>@(item.IsCleaner ? "Yes" : "No")</td>
-        <td>@item.ExperienceLevel</td>
-        <td>@item.Certificate</td>
-        <td>@item.BankAccount</td>
-        <td>@(item.Morning ? "Yes" : "No")</td>
-        <td>@(item.Afternoon ? "Yes" : "No")</td>
-        <td>@(item.Evening ? "Yes" : "No")</td>
-        <td>@(item.Night ? "Yes" : "No")</td>
-        <td>@(item.Weekends ? "Yes" : "No")</td>
-        <td class="text-center">
-            <form asp-action="Delete" method="post">
-                <input type="hidden" name="CleanerId" value="@item.CleanerId" />
+                <tr>
+                    <td class="text-right">@item.CleanerId</td>
+                    <td>@item.FirstName</td>
+                    <td>@item.Email</td>
+                    <td>@item.Location</td>
+                    <td>@(item.IsCleaner ? "Yes" : "No")</td>
+                    <td>@item.ExperienceLevel</td>
+                    <td>@item.Certificate</td>
+                    <td>@item.BankAccount</td>
+                    <td>@(item.Morning ? "Yes" : "No")</td>
+                    <td>@(item.Afternoon ? "Yes" : "No")</td>
+                    <td>@(item.Evening ? "Yes" : "No")</td>
+                    <td>@(item.Night ? "Yes" : "No")</td>
+                    <td>@(item.Weekends ? "Yes" : "No")</td>
+                    <td class="text-center">
+                        <form asp-action="Delete" method="post">
+                            <input type="hidden" name="CleanerId" value="@item.CleanerId" />
 
-                <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-cleanerId="@item.CleanerId">
+                            <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-cleanerId="@item.CleanerId">
 
-                    Edit
-                </a>
-                <button type="submit" class="btn btn-danger btn-sm">
-                    Delete
-                </button>
-            </form>
-        </td>
-    </tr>
+                                Edit
+                            </a>
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Delete
+                            </button>
+                        </form>
+                    </td>
+                </tr>
             }
         }
     </table>
@@ -120,6 +120,7 @@
 
 <div class="d-flex justify-content-center">
     <a asp-action="Create" class="btn btn-success btn-lg">
-        Add New Cleaners</a>
+        Add New Cleaners
+    </a>
 </div>
 

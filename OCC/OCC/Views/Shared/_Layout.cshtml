@@ -25,7 +25,10 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
-                            <a class="nav-link btn btn-danger" asp-action="Logout" asp-controller="Account">Sign Out</a>
+                            <a class="nav-link" asp-action="RegisteredCleanerDetails" asp-controller="Cleaner">Profile |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Logout" asp-controller="Account">Sign Out |</a>
                         </li>
                     }
                     else
@@ -34,12 +37,7 @@
                     }
                 </ul>
 
-                @*@if (User.Identity.IsAuthenticated)
-                    {
-                        <span class="nav-item">
-                            <p>@nameUser</p>
-                        </span>
-                    }*@
+                
             </div>
         </div>
     </nav>

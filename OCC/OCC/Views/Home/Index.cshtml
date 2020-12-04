@@ -5,7 +5,18 @@
 }
 
 <section id="mainpage" style="text-align:right">
-    <p>@Model.FirstName</p>
+    <div class="row">
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="col-lg-6">
+                <h3>
+                    <br /><b>Welcome @Model.FirstName</b>
+                </h3>
+            </div>
+        }
+    </div>
+
 </section>
 <section id="mainpage">
     <p>Place the main banner here</p>

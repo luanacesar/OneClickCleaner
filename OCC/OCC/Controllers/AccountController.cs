@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http.Authentication;
 using System.Linq;
+using System.Text.Json;
 
 namespace Users.Controllers
 {
@@ -56,18 +57,22 @@ namespace Users.Controllers
                         {
                             case "Cleaner":
                                 Cleaner cleaner = cleanerRepository.Cleaners.FirstOrDefault(o => o.Email == details.Email);
-                        return RedirectToAction("Index", "Home", cleaner.Email);
+                                //TempData["message"] = $"{cleaner.Email}";
+                                ////Serialize the order information in order to send to the next controller
+                                byte[] jsonUser = JsonSerializer.SerializeToUtf8Bytes(cleaner);
+                                HttpContext.Session.Set("cleaner", jsonUser);
+                                return RedirectToAction("Index", "Home");
 
                             case "Customer":
                                 Customer customer = customerRepository.Customers.FirstOrDefault(o => o.Email == details.Email);
                                 return RedirectToAction("RegisteredCleanerDetails", "Cleaner");
 
-                                
+
                             default:
                                 break;
 
                         }
-                        
+
                     }
                 }
                 ModelState.AddModelError(nameof(LoginModel.Email),
@@ -75,7 +80,19 @@ namespace Users.Controllers
             }
             return View(details);
         }
+        public ViewResult CallHome()
+        {
+            byte[] value;
+            bool isValueAvailable = HttpContext.Session.TryGetValue("cleaner", out value);
 
+            if (isValueAvailable)
+            {
+                Cleaner cleaner = JsonSerializer.Deserialize<Cleaner>(value);
+                //orderRepository.SaveOrder(orderContact);
+                return View("Views/Home/Index", cleaner);
+            }
+            return View("Views/Home/Index", new Cleaner());
+        }
         [Authorize]
         public async Task<IActionResult> Logout()
         {

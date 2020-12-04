@@ -28,11 +28,13 @@ namespace OCC.Models
                         ExperienceLevel = "High",
                         Certificate = "3356289",
                         BankAccount = 0046448300,
-                        Morning=true,
-                        Afternoon=true,
-                        Evening=true,
-                        Night=false,
-                        Weekends= true
+                        Morning = true,
+                        Afternoon = true,
+                        Evening = true,
+                        Night = false,
+                        Weekends = true,
+                        UserName = "Mary",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -47,7 +49,10 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = false,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Jhosua",
+                        Password = "Cleaner123@"
+
                     },
                     new Cleaner
                     {
@@ -62,7 +67,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = false,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Rob",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -77,7 +84,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = true,
-                        Weekends = true
+                        Weekends = true,
+                        UserName = "Peter",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -92,7 +101,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = false,
                         Night = false,
-                        Weekends = true
+                        Weekends = true,
+                        UserName = "Maria",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -107,7 +118,9 @@ namespace OCC.Models
                         Afternoon = false,
                         Evening = false,
                         Night = true,
-                        Weekends = true
+                        Weekends = true,
+                        UserName = "Jake",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -122,7 +135,9 @@ namespace OCC.Models
                         Afternoon = false,
                         Evening = false,
                         Night = true,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Sophy",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -137,7 +152,9 @@ namespace OCC.Models
                         Afternoon = false,
                         Evening = false,
                         Night = true,
-                        Weekends = true
+                        Weekends = true,
+                        UserName = "Noah",
+                        Password = "Cleaner123@"
                     },
                      new Cleaner
                      {
@@ -152,7 +169,9 @@ namespace OCC.Models
                          Afternoon = true,
                          Evening = true,
                          Night = true,
-                         Weekends = true
+                         Weekends = true,
+                         UserName = "Mia",
+                         Password = "Cleaner123@"
                      },
                     new Cleaner
                     {
@@ -167,7 +186,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = false,
-                        Weekends = true
+                        Weekends = true,
+                        UserName = "Federic",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -182,7 +203,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = true,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Emma",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -198,6 +221,8 @@ namespace OCC.Models
                         Evening = true,
                         Night = false,
                         Weekends = true,
+                        UserName = "George",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -212,7 +237,9 @@ namespace OCC.Models
                         Afternoon = false,
                         Evening = true,
                         Night = true,
-                        Weekends = true
+                        Weekends = true,
+                        UserName = "Jhon",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -227,7 +254,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = false,
                         Night = false,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Annie",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -242,7 +271,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = true,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Steven",
+                        Password = "Cleaner123@"
                     },
                     new Cleaner
                     {
@@ -257,7 +288,9 @@ namespace OCC.Models
                         Afternoon = true,
                         Evening = true,
                         Night = true,
-                        Weekends = false
+                        Weekends = false,
+                        UserName = "Ava",
+                        Password = "Cleaner123@"
                     },
                      new Cleaner
                      {
@@ -272,12 +305,14 @@ namespace OCC.Models
                          Afternoon = true,
                          Evening = true,
                          Night = true,
-                         Weekends = false
+                         Weekends = false,
+                         UserName = "Amanda",
+                         Password = "Cleaner123@"
                      },
                       new Cleaner
                       {
                           FirstName = "Paola",
-                          Email = "paolap@gmail.com",
+                          Email = "avaa@gmail.com",
                           Location = "Durkham",
                           IsCleaner = false,
                           ExperienceLevel = "Beginner",
@@ -287,12 +322,14 @@ namespace OCC.Models
                           Afternoon = true,
                           Evening = true,
                           Night = false,
-                          Weekends = true
+                          Weekends = true,
+                          UserName = "Paola",
+                          Password = "Cleaner123@"
                       },
                        new Cleaner
                        {
                            FirstName = "Alejandro",
-                           Email = "alejandro@gmail.com",
+                           Email = "avaa@gmail.com",
                            Location = "Durkham",
                            IsCleaner = false,
                            ExperienceLevel = "Intermediate",
@@ -302,45 +339,51 @@ namespace OCC.Models
                            Afternoon = false,
                            Evening = false,
                            Night = true,
-                           Weekends = false
+                           Weekends = false,
+                           UserName = "Alejandro",
+                           Password = "Cleaner123@"
                        },
 
                        new Cleaner
                        {
                            FirstName = "Mike",
-                           Email = "mike@gmail.com",
+                           Email = "Mike@gmail.com",
                            Location = "York",
                            IsCleaner = true,
-                           ExperienceLevel = "Beginner",
+                           ExperienceLevel = "Beginer",
                            Certificate = "66455780",
                            BankAccount = 4923335674,
                            Morning = true,
                            Afternoon = true,
                            Evening = true,
                            Night = true,
-                           Weekends = false
+                           Weekends = false,
+                           UserName = "Mike",
+                           Password = "Cleaner123@"
                        },
                      new Cleaner
                      {
                          FirstName = "James",
-                         Email = "james@gmail.com",
-                         Location = "Toronto",
+                         Email = "James@gmail.com",
+                         Location = "Tronto",
                          IsCleaner = true,
-                         ExperienceLevel = "Beginner",
-                         Certificate = "64205780",
+                         ExperienceLevel = "Beginer",
+                         Certificate = "664205780",
                          BankAccount = 7293335674,
                          Morning = true,
                          Afternoon = true,
                          Evening = true,
                          Night = true,
-                         Weekends = false
+                         Weekends = false,
+                         UserName = "James",
+                         Password = "Cleaner123@"
                      },
 
                       new Cleaner
                       {
                           FirstName = "Eric",
                           Email = "Eric@gmail.com",
-                          Location = "Toronto",
+                          Location = "Tronto",
                           IsCleaner = true,
                           ExperienceLevel = "High",
                           Certificate = "554205780",
@@ -349,8 +392,11 @@ namespace OCC.Models
                           Afternoon = true,
                           Evening = true,
                           Night = true,
-                          Weekends = false
+                          Weekends = false,
+                          UserName = "Eric",
+                          Password = "Cleaner123@"
                       }
+
                 );
 
                 context.SaveChanges();

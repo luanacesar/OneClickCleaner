@@ -32,7 +32,15 @@ namespace OCC.Models
                     cleanerEntry.FirstName = cleaner.FirstName;
                     cleanerEntry.IsCleaner = cleaner.IsCleaner;
                     cleanerEntry.Email = cleaner.Email;
+                    cleanerEntry.Location = cleaner.Location;
+                    cleanerEntry.BankAccount = cleaner.BankAccount;
                     cleanerEntry.ExperienceLevel = cleaner.ExperienceLevel;
+                    cleanerEntry.Certificate = cleaner.Certificate;
+                    cleanerEntry.Weekends = cleaner.Weekends;
+                    cleanerEntry.Afternoon = cleaner.Afternoon;
+                    cleanerEntry.Morning = cleaner.Morning;
+                    cleanerEntry.Evening = cleaner.Evening;
+                    cleanerEntry.Night = cleaner.Night;
                 }
             }
             context.SaveChanges();

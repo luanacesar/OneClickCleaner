@@ -9782,7 +9782,6 @@
       "path": "system.linq.queryable/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -12711,11 +12710,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
-      "projectPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectPath": "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Source\\Repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

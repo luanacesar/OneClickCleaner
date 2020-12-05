@@ -27,9 +27,22 @@ namespace OCC.Controllers
         {
             if (ModelState.IsValid)
             {
-                cleanerRepository.SaveCleaner(cleaner);
-                TempData["message"] = $"{cleaner.FirstName} has been saved!";
-                return RedirectToAction("DisplayCleanerList");
+
+
+                byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(cleaner);
+                HttpContext.Session.Set("AdminCleaner", jsonCleanerEdit);
+                if (cleaner.CleanerId == 0)
+                {
+                    cleanerRepository.SaveCleaner(cleaner);
+                    TempData["message"] = $"{cleaner.FirstName} has been saved!";
+                    return RedirectToAction("Create", "Users");
+                }
+                else
+                {
+                    cleanerRepository.SaveCleaner(cleaner);
+                    TempData["message"] = $"{cleaner.FirstName} has been saved!";
+                    return RedirectToAction("SaveAdminUser", "Users");
+                }
             }
             else
             {
@@ -44,12 +57,15 @@ namespace OCC.Controllers
         {
             Cleaner deleteCleaner = cleanerRepository.DeleteCleaner(CleanerId);
 
+            byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(deleteCleaner);
+            HttpContext.Session.Set("AdminCleaner", jsonCleanerEdit);
+
             if (deleteCleaner != null)
             {
                 TempData["message"] = $"{deleteCleaner.FirstName} was deleted!";
             }
 
-            return RedirectToAction("DisplayCleanerList");
+            return RedirectToAction("Delete", "Users");
         }
 
 

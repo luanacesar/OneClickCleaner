@@ -60,11 +60,10 @@ namespace OCC.Controllers
 
             if (isValueAvailable)
             {
-
                 Cleaner cleaner = JsonSerializer.Deserialize<Cleaner>(value);
                 return View(cleaner);
             }
-            return View();
+            return View(new Cleaner());
         }
 
         [HttpPost]

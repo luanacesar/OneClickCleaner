@@ -9,21 +9,6 @@ namespace OCC.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AvailabilityCleaners",
-                columns: table => new
-                {
-                    AvailabilityCleanerId = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    CleanerId = table.Column<long>(nullable: false),
-                    StartTime = table.Column<DateTime>(nullable: false),
-                    EndTime = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AvailabilityCleaners", x => x.AvailabilityCleanerId);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Cleaners",
                 columns: table => new
                 {
@@ -31,6 +16,8 @@ namespace OCC.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     FirstName = table.Column<string>(nullable: false),
                     Email = table.Column<string>(nullable: false),
+                    UserName = table.Column<string>(nullable: false),
+                    Password = table.Column<string>(nullable: true),
                     Location = table.Column<string>(nullable: false),
                     IsCleaner = table.Column<bool>(nullable: false),
                     ExperienceLevel = table.Column<string>(nullable: false),
@@ -100,9 +87,6 @@ namespace OCC.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "AvailabilityCleaners");
-
             migrationBuilder.DropTable(
                 name: "Cleaners");
 

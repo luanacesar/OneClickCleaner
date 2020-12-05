@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+
 namespace OCC.Models
 {
     public class Cleaner
@@ -13,6 +14,9 @@ namespace OCC.Models
         [Required]
         public string Email { get; set; }
         [Required]
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        [Required]
         public string Location { get; set; }
         [Required]
         public bool IsCleaner { get; set; }
@@ -20,7 +24,7 @@ namespace OCC.Models
         public string ExperienceLevel { get; set; }
         [RegularExpression("^[0-9]{7,8}$", ErrorMessage = "Write Valid Certificate (7 to 8 digits)")]
         public string Certificate { get; set; }
-        
+
         [Required]
         public double BankAccount { get; set; }
 
@@ -29,7 +33,6 @@ namespace OCC.Models
         public bool Evening { get; set; }
         public bool Night { get; set; }
         public bool Weekends { get; set; }
-
     }
 }
 

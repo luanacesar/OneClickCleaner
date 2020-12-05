@@ -19,23 +19,6 @@ namespace OCC.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("OCC.Models.AvailabilityCleaner", b =>
-                {
-                    b.Property<long>("AvailabilityCleanerId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long>("CleanerId");
-
-                    b.Property<string>("EndTime");
-
-                    b.Property<DateTime>("StartTime");
-
-                    b.HasKey("AvailabilityCleanerId");
-
-                    b.ToTable("AvailabilityCleaners");
-                });
-
             modelBuilder.Entity("OCC.Models.Cleaner", b =>
                 {
                     b.Property<long>("CleanerId")
@@ -67,6 +50,11 @@ namespace OCC.Migrations
                     b.Property<bool>("Morning");
 
                     b.Property<bool>("Night");
+
+                    b.Property<string>("Password");
+
+                    b.Property<string>("UserName")
+                        .IsRequired();
 
                     b.Property<bool>("Weekends");
 

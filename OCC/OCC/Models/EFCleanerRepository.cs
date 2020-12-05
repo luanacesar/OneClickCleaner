@@ -41,6 +41,8 @@ namespace OCC.Models
                     cleanerEntry.Morning = cleaner.Morning;
                     cleanerEntry.Evening = cleaner.Evening;
                     cleanerEntry.Night = cleaner.Night;
+                    cleanerEntry.Password = cleaner.Password;
+                    cleanerEntry.UserName = cleaner.UserName;
                 }
             }
             context.SaveChanges();

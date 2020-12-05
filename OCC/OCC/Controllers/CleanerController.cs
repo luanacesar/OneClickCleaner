@@ -19,7 +19,7 @@ namespace OCC.Controllers
 
 
         public CleanerController(ICleanerRepository cleanerRepo)
-            //, IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
+        //, IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {
             cleanerRepository = cleanerRepo;
             //orderRepository = orderRepo;
@@ -30,11 +30,18 @@ namespace OCC.Controllers
         [HttpPost]
         public IActionResult CleanerDetail(Cleaner cleaner)
         {
+            cleaner.UserName = cleaner.FirstName;
+            cleaner.Password = "Cleaner123@";
+            //byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
+            //HttpContext.Session.Set("cleaner", jsonOrder);
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
-            HttpContext.Session.Set("cleaner", jsonOrder);
+            HttpContext.Session.Set("potentialCleaner", jsonOrder);
             cleanerRepository.SaveCleaner(cleaner);
+
             //return RedirectToAction("CleanerCheckOut", cleaner);
-            return View("CleanerCheckOut", cleaner);
+
+            return RedirectToAction("CreatePotentialCleaner", "Users");
+
         }
         [HttpGet]
         public IActionResult CleanerDetail()
@@ -45,7 +52,38 @@ namespace OCC.Controllers
         //{
         //    return View();
         //}
+        [HttpGet]
+        public IActionResult RegisteredCleanerDetails()
+        {
+            byte[] value;
+            bool isValueAvailable = HttpContext.Session.TryGetValue("cleaner", out value);
+
+            if (isValueAvailable)
+            {
+                Cleaner cleaner = JsonSerializer.Deserialize<Cleaner>(value);
+                return View(cleaner);
+            }
+            return View(new Cleaner());
+        }
+
+        [HttpPost]
+        public IActionResult RegisteredCleanerDetails(Cleaner cleaner)
+        {
+            if (ModelState.IsValid)
+            {
+                cleanerRepository.SaveCleaner(cleaner);
+                TempData["message"] = $"{cleaner.FirstName} has been saved!";
+
+                byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(cleaner);
+                HttpContext.Session.Set("cleaner", jsonCleanerEdit);
+                return RedirectToAction("SaveUser", "Users");
+            }
+            else
+            {
+                return View(cleaner);
+            }
+        }
     }
 
- }
+}
 

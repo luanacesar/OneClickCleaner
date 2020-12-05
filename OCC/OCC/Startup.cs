@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,7 +15,7 @@ namespace OCC
 {
     public class Startup
     {
-        
+
         //public property
         public IConfiguration Configuration { get; }
 
@@ -25,7 +26,13 @@ namespace OCC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:OneClickCleanerServices:ConnectionString"]));
-            
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:UsersOCCIdentity:ConnectionString"]));
+
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
+
+
             services.AddTransient<ICustomerRepository, EFCustomerRepository>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
             services.AddTransient<IServiceRepository, EFServiceRepository>();
@@ -52,6 +59,7 @@ namespace OCC
 
             SeedService.EnsurePopulated(app);
             SeedCleaner.EnsurePopulated(app);
+            IdentitySeedData.EnsurePopulated(app);
         }
     }
 }

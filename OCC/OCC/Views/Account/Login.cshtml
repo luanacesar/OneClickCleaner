@@ -1,44 +1,47 @@
 ﻿@model LoginModel
 
 
+
+<link href="~/css/Login.css" rel="stylesheet" />
+
 <div class="bg-primary m-1 p-1 text-white"><h4>Log In</h4></div>
-
 <div class="text-danger" asp-validation-summary="All"></div>
-
     <div id="all-page">
         <article>
             <div class="card-group">
                 @*Login*@
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Have an account?</h4>
                         <div class="text-danger" asp-validation-summary="All"></div>
-                        <form asp-action="Login" method="post">
-                            <div class="col-sm-10">
-                                <label class="control-label col-sm-6" asp-for="Email">Email:</label>
-                                <input class="form-control" placeholder="Enter email" asp-for="Email" required>
-                                <br />
-                                <label class="control-label col-sm-6" asp-for="Password">Password:</label>
-                                <input class="form-control" asp-for="Password" placeholder="Enter password" required>
-                                <br /><br /><br /><br /><br /><br />
-                                <label asp-for="UserType">Select Type of User</label>
-                                <select asp-for="UserType" class="form-control">
-                                    <option value=""></option>
-                                    <option value="Cleaner">Cleaner</option>
-                                    <option value="Customer">Customer</option>
+                           <h4 class="card-title">Have an account?</h4>
+                           <form asp-action="Login" method="post">
+                               <div class="col-sm-9">
+                                   <label class="control-label col-sm-9" asp-for="Email">Email:</label>
+                                   <input class="form-control" placeholder="Enter email" asp-for="Email" required>
+                                   <br />
+                                   <label class="control-label col-sm-9" asp-for="Password">Password:</label>
+                                   <input class="form-control" asp-for="Password" placeholder="Enter password" required>
+                               </div>
+                               <div class="col-sm-9">
+                                   <label asp-for="UserType">Select Type of User</label>
+                                   <select asp-for="UserType" class="form-control">
+                                       <option value=""></option>
+                                       <option value="Cleaner">Cleaner</option>
+                                       <option value="Customer">Customer</option>
+                                   </select>
+                               </div>
+                               <br />
+                               <div class="col-sm-9">
+                                   <div class="center">
+                                       <button class="btn btn-success btn-lg " type="submit"> Login</button>
 
-                                </select>
-                                <div class="center">
-                                    <button class="btn btn-success btn-lg " type="submit"> Login</button>
-                                </div>
-
-                            </div>
-                        </form>
+                                   </div>
+                               </div>
+                               <br />
+                           </form>
                     </div>
                 </div>
                 
             </div>
         </article>
     </div>
-    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
-

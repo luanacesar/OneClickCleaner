@@ -12709,11 +12709,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectUniqueName": "C:\\Users\\luana\\Source\\Repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "projectName": "OCC",
-      "projectPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+      "projectPath": "C:\\Users\\luana\\Source\\Repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
       "packagesPath": "C:\\Users\\luana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\",
+      "outputPath": "C:\\Users\\luana\\Source\\Repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\luana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -12728,6 +12728,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {}
         }
       },
@@ -12739,6 +12740,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.AspNet.WebApi.Client": {
             "target": "Package",
@@ -12780,16 +12782,8 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2YzcrkB+PgVhF+4a3rGtmRh4712AYPo5goGzhYyn9W7/F7xJ5wRr3IOBSWekeFmXEkE1jD42tupo3j//J0Vy7A==",
+  "dgSpecHash": "i7DtHSFu10DRQBeDqsXQ7uRaW1PgDpncwK22AH+krz3iNGYMGfhG9pUgWZJS6IRJgDuRUA3SYfl1Zoq8p7I6dA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
+  "projectFilePath": "C:\\Users\\luana\\Source\\Repos\\Comp231-S4G5\\OneClickCleaner\\OCC\\OCC\\OCC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luana\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\luana\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
@@ -302,12 +302,5 @@
     "C:\\Users\\luana\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\luana\\.nuget\\packages\\system.xml.xpath.xdocument\\4.3.0\\system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\luana\\source\\repos\\OneClickCleaner\\OCC\\OCC\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

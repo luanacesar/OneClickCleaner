@@ -12,7 +12,7 @@ namespace OCC.Controllers
     {
         private ICleanerRepository cleanerRepository;
 
-        //private IOrderRepository orderRepository;
+        
         //private ICustomerRepository customerRepository;
         //private IServiceRepository serviceRepository;
         //private Customer customerCreatedRepo;

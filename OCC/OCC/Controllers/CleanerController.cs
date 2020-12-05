@@ -30,8 +30,8 @@ namespace OCC.Controllers
         [HttpPost]
         public IActionResult CleanerDetail(Cleaner cleaner)
         {
-            cleaner.UserName = cleaner.FirstName;
-            cleaner.Password = "Cleaner123@";
+            //cleaner.UserName = cleaner.FirstName;
+            //cleaner.Password = "Cleaner123@";
             //byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
             //HttpContext.Session.Set("cleaner", jsonOrder);
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
@@ -64,7 +64,7 @@ namespace OCC.Controllers
                 Cleaner cleaner = JsonSerializer.Deserialize<Cleaner>(value);
                 return View(cleaner);
             }
-            return View();
+            return View(new Cleaner());
         }
 
         [HttpPost]

@@ -19,7 +19,6 @@ namespace Users.Controllers
         private ICleanerRepository cleanerRepository;
         private ICustomerRepository customerRepository;
 
-
         public AccountController(UserManager<AppUser> userMgr,
                 SignInManager<AppUser> signinMgr, ICleanerRepository cleanerRepo
             , ICustomerRepository customerRepo)
@@ -29,14 +28,11 @@ namespace Users.Controllers
             cleanerRepository = cleanerRepo;
             customerRepository = customerRepo;
         }
-
-
         [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -57,7 +53,7 @@ namespace Users.Controllers
                         {
                             case "Cleaner":
                                 Cleaner cleaner = cleanerRepository.Cleaners.FirstOrDefault(o => o.Email == details.Email);
-                                //TempData["message"] = $"{cleaner.Email}";
+                              
                                 ////Serialize the order information in order to send to the next controller
                                 byte[] jsonUser = JsonSerializer.SerializeToUtf8Bytes(cleaner);
                                 HttpContext.Session.Set("cleaner", jsonUser);
@@ -67,12 +63,10 @@ namespace Users.Controllers
                                 Customer customer = customerRepository.Customers.FirstOrDefault(o => o.Email == details.Email);
                                 return RedirectToAction("RegisteredCleanerDetails", "Cleaner");
 
-
                             default:
                                 break;
 
                         }
-
                     }
                 }
                 ModelState.AddModelError(nameof(LoginModel.Email),
@@ -88,7 +82,6 @@ namespace Users.Controllers
             if (isValueAvailable)
             {
                 Cleaner cleaner = JsonSerializer.Deserialize<Cleaner>(value);
-                //orderRepository.SaveOrder(orderContact);
                 return View("Views/Home/Index", cleaner);
             }
             return View("Views/Home/Index", new Cleaner());
@@ -99,13 +92,11 @@ namespace Users.Controllers
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
-
         [AllowAnonymous]
         public IActionResult AccessDenied()
         {
             return View();
         }
-
         [AllowAnonymous]
         public IActionResult GoogleLogin(string returnUrl)
         {

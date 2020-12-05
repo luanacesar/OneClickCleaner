@@ -27,8 +27,6 @@ namespace OCC.Controllers
         {
             if (ModelState.IsValid)
             {
-
-
                 byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(cleaner);
                 HttpContext.Session.Set("AdminCleaner", jsonCleanerEdit);
                 if (cleaner.CleanerId == 0)
@@ -49,7 +47,6 @@ namespace OCC.Controllers
                 return View(cleaner);
             }
         }
-
         public ViewResult Create() => View("Edit", new Cleaner());
 
         [HttpPost]
@@ -67,7 +64,5 @@ namespace OCC.Controllers
 
             return RedirectToAction("Delete", "Users");
         }
-
-
     }
 }

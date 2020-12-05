@@ -34,7 +34,6 @@ namespace OCC.Controllers
 
             return View(new Cleaner());
         }
-
         public ViewResult PotentialCleanerForm()
         {
             return View();
@@ -47,6 +46,5 @@ namespace OCC.Controllers
         {
             return View();
         }
-
     }
 }

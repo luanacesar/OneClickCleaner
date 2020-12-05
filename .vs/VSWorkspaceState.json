@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\OCC",
-    "\\OCC\\OCC"
+    "\\OCC\\OCC",
+    "\\OCC\\OCC\\Views"
   ],
   "SelectedNode": "\\OCC\\OCC.sln",
   "PreviewInSolutionExplorer": false

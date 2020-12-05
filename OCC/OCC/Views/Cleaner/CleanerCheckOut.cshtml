@@ -1,26 +1,23 @@
 ﻿
 @model Cleaner
 
-    <link href="~/css/selectCleaner.css" rel="stylesheet" />
+<link href="~/css/selectCleaner.css" rel="stylesheet" />
 
+<section class="our-webcoderskull padding-lg">
+    <div class="container p-4">
+        <div class="card">
+            <div class="row heading heading-icon m-5 p-5">
+                <h2>THANK YOU FOR applying!</h2>
 
+                <p>First Name: @Model.FirstName</p>
+                <p>Location: @Model.Location</p>
+                <p>Certificate: @Model.Certificate</p>
+                <p>Experience Level: @Model.ExperienceLevel</p>
 
-    <section class="our-webcoderskull padding-lg">
-        <div class="container p-4">
-            <div class="card">
-                <div class="row heading heading-icon m-5 p-5">
-                    <h2>THANK YOU FOR applying!</h2>
+                <a class="btn btn-info btn-lg" href="/Home/Index">New Service</a>
 
-                    <p>First Name: @Model.FirstName</p>
-                    @*<p>Email: @Model.Email</p>*@
-                    <p>Location: @Model.Location</p>
-                    <p>Certificate: @Model.Certificate</p>
-                    <p>Experience Level: @Model.ExperienceLevel</p>
-
-                    <a class="btn btn-info btn-lg"    href="/Home/Index">New Service</a>
-
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 

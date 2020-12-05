@@ -10,7 +10,7 @@ using OCC.Models;
 namespace OCC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201203032422_Initial")]
+    [Migration("20201204235401_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,23 +20,6 @@ namespace OCC.Migrations
                 .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("OCC.Models.AvailabilityCleaner", b =>
-                {
-                    b.Property<long>("AvailabilityCleanerId")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long>("CleanerId");
-
-                    b.Property<string>("EndTime");
-
-                    b.Property<DateTime>("StartTime");
-
-                    b.HasKey("AvailabilityCleanerId");
-
-                    b.ToTable("AvailabilityCleaners");
-                });
 
             modelBuilder.Entity("OCC.Models.Cleaner", b =>
                 {
@@ -69,6 +52,11 @@ namespace OCC.Migrations
                     b.Property<bool>("Morning");
 
                     b.Property<bool>("Night");
+
+                    b.Property<string>("Password");
+
+                    b.Property<string>("UserName")
+                        .IsRequired();
 
                     b.Property<bool>("Weekends");
 

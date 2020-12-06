@@ -15,7 +15,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/ERD%20US14.jpg)
 
 ## Class Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Class.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Class%20Diagram%20US14.jpg)
 
 ## Object Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Object14.png)

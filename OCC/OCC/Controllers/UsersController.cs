@@ -10,6 +10,11 @@ using OCC.Models.ViewModels;
 
 namespace OCC.Models
 {
+    // UserController will be responsible for creating the Identity and stored
+    // in the database. The infromation is received from Cleaner control in Jason
+    // file. The Admin will acceso to thus controller when edit or create new
+    // cleaner Identity. After saving data, depending from which controller
+    // the infromation was sending, the application will return to that controller.
     public class UsersController : Controller
     {
         private UserManager<AppUser> userManager;

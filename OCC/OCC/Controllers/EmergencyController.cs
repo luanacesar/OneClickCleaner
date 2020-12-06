@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 
 namespace OCC.Controllers
 {
-
+    //EmergencyController will create an order filling out Duration and
+    //Location. By LINQ queries cleaner will be selected automaticaly.
+    // Save method create the order in database.
     public class EmergencyController : Controller
     {
         private IOrderRepository orderRepository;

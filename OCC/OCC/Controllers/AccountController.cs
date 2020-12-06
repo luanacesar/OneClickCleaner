@@ -8,6 +8,11 @@ using Microsoft.AspNetCore.Http.Authentication;
 using System.Linq;
 using System.Text.Json;
 
+// AccountController used to validate credentials for Users Accounts
+// Users can select if they corresponds to Cleaner or Customer
+// If Cleaner's credentials validattion succeed, user will be addres to 
+// customized HomePage (return RedirectToAction("Index", "Home") in the Login Action;
+
 namespace Users.Controllers
 {
 

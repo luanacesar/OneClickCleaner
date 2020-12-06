@@ -12,7 +12,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Registered%20Cleaner%20Sequence%20Diagram.vpd.jpg)
 
 ## ERD Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/ERD.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/ERD%20US14.jpg)
 
 ## Class Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Class.png)

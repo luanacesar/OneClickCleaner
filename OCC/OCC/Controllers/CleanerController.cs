@@ -12,19 +12,9 @@ namespace OCC.Controllers
     {
         private ICleanerRepository cleanerRepository;
 
-        //private IOrderRepository orderRepository;
-        //private ICustomerRepository customerRepository;
-        //private IServiceRepository serviceRepository;
-        //private Customer customerCreatedRepo;
-
-
         public CleanerController(ICleanerRepository cleanerRepo)
-        //, IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {
             cleanerRepository = cleanerRepo;
-            //orderRepository = orderRepo;
-            //customerRepository = customerRepo;
-            //serviceRepository = serviceRepo;
         }
 
         [HttpPost]
@@ -32,13 +22,10 @@ namespace OCC.Controllers
         {
             cleaner.UserName = cleaner.FirstName;
             cleaner.Password = "Cleaner123@";
-            //byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
-            //HttpContext.Session.Set("cleaner", jsonOrder);
+      
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
             HttpContext.Session.Set("potentialCleaner", jsonOrder);
             cleanerRepository.SaveCleaner(cleaner);
-
-            //return RedirectToAction("CleanerCheckOut", cleaner);
 
             return RedirectToAction("CreatePotentialCleaner", "Users");
 
@@ -48,10 +35,7 @@ namespace OCC.Controllers
         {
             return View("CleanerDetail", new Cleaner());
         }
-        //public ViewResult CleanerCheckOut(Cleaner cleaner)
-        //{
-        //    return View();
-        //}
+  
         [HttpGet]
         public IActionResult RegisteredCleanerDetails()
         {
@@ -60,11 +44,10 @@ namespace OCC.Controllers
 
             if (isValueAvailable)
             {
-
                 Cleaner cleaner = JsonSerializer.Deserialize<Cleaner>(value);
                 return View(cleaner);
             }
-            return View();
+            return View(new Cleaner());
         }
 
         [HttpPost]

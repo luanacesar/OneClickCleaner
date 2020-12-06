@@ -7,12 +7,10 @@
     <div id="all-page">
         <article>
             <div class="text-md-left">
-                <div class="header">
-                    <img src="~/images/ambulance-emergency.png" />
-                    <h1 class="title">Emergency Service</h1>
+                <div>
+                    <h2 class="text-black-50"><i class="fas fa-ambulance fa-4x"></i>Emergency Service</h2>
                 </div>
             </div>
-            <br /><br />
             <p class="font-weight-normal justify-content-center">
                 Our Emergency service cleaner provides a very fast and quality of services.
                 First, you have to select how long you need a cleaner, so you can see the price.
@@ -60,9 +58,9 @@
                         <div class="card-body">
                             <h5 class="card-title">Select Location</h5>
                             <p class="card-text">Here you can selec the desired location of the service.</p>
-                            @*<form method="post" asp-action="ServiceDetail">*@
+                         
                             <fieldset>
-                                @*<legend>Select Location</legend>*@
+                              
                                 <select id="myList" asp-for="@Model.Location" required>
                                     <option value=""></option>
                                     <option value="Toronto">Toronto</option>
@@ -81,10 +79,7 @@
                 </div>
             </form>
         </article>
-    </div>
-    
-    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
-   
+    </div> 
 </body>
 
 

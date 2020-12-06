@@ -34,12 +34,17 @@ namespace OCC.Controllers
 
             return View(new Cleaner());
         }
-
         public ViewResult PotentialCleanerForm()
         {
             return View();
         }
-
-
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+        public ViewResult CompanyPolicy()
+        {
+            return View();
+        }
     }
 }

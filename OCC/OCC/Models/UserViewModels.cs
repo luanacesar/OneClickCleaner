@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Users.Controllers
+namespace OCC.Models
 {
     public class CreateModel
     {

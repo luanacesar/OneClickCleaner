@@ -22,11 +22,11 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Object16.png)
 
 ## Activity Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Activity%20Diagram.jpg?raw=true)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Activity%20Diagram.jpg?raw=true)
 
 
 ## Component Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Component%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Component%20Diagram.jpg)
 
 
 
@@ -34,6 +34,6 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us16/Architecture%20Diagram.jpg)
 
 

@@ -26,7 +26,7 @@
 
 
 ## Component Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Component%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US15/Component%20Diagram.jpg)
 
 
 ## Deployment Diagram

@@ -7,7 +7,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Us14.png)
 
 ## Package Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/US14_package%20diagram_.JPG)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Employees%20profile_Package_diagram_.JPG)
 
 ## Sequence Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Registered%20Cleaner%20Sequence%20Diagram.vpd.jpg)
@@ -35,6 +35,5 @@
 
 ## Architecture Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Architecture%20Diagram.jpg)
-=======
 
 

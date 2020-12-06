@@ -1,9 +1,7 @@
-# Online Web Application / Deployed: 
-
+# Unit Tests and other Test
 ## https://oneclickcleanercomp231.azurewebsites.net/
 
-## Unit test = Go to branch called "test"
 
-## Diagram / documentation = Go to branch called "docs" 
+
 
 

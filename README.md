@@ -4,7 +4,7 @@
 ## Registered Cleaner will be able to update personal details #16
 
 ## Use Case
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us16/Us16.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Us16.png)
 
 ## Package Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Employees%20profile_Package_diagram_.JPG)

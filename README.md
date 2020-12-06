@@ -10,7 +10,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Employees%20profile_Package_diagram_.JPG)
 
 ## Sequence Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Registered%20Cleaner%20Sequence%20Diagram.vpd.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Registered%20Cleaner_Update%20Profile%20Sequence%20Diagram.jpg)
 
 ## ERD Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/ERD%20US16.jpg)

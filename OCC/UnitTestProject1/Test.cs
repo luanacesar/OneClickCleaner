@@ -9,7 +9,7 @@ using System.Linq;
 namespace OCC.UnitTest
 {
     [TestClass]
-    public class AdminControllerTest
+    public class Test
     {
         private EFCleanerRepository repository;
         private Cleaner cleaner;
@@ -43,12 +43,43 @@ namespace OCC.UnitTest
             Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
             var action = (RedirectToActionResult)result;
             Assert.AreEqual(action.ControllerName, "Users");
-            Assert.AreEqual(action.ActionName, "Create");
+            Assert.AreEqual(action.ActionName, "Create");            
         }
 
         [TestMethod]
         public void TestAddCleaner()
         {
+            var controller = new AdminController(repository);
+            MvcMockHelpers.SetMockControllerContext(controller, null);
+            var result = controller.Edit(cleaner);
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var action = (RedirectToActionResult)result;
+            var savedCleaner = repository.Cleaners.FirstOrDefault();
+            Assert.AreEqual(cleaner.UserName, savedCleaner.UserName);
+        }
+
+        [TestMethod]
+        public void TestUpdateCleanerActions()
+        {
+            dbContext.Cleaners.Add(cleaner);
+            dbContext.SaveChanges();
+            var cleanerInDb = dbContext.Cleaners.FirstOrDefault();
+            cleanerInDb.Certificate = "new Certificate";
+            var controller = new AdminController(repository);
+            MvcMockHelpers.SetMockControllerContext(controller, null);
+            var result = controller.Edit(cleaner);
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var action = (RedirectToActionResult)result;
+            Assert.AreEqual(action.ControllerName, "Users");
+            Assert.AreEqual(action.ActionName, "SaveAdminUser");        }
+
+        [TestMethod]
+        public void TestUpdateSelectingCleaner()
+        {
+            dbContext.Cleaners.Add(cleaner);
+            dbContext.SaveChanges();
+            var cleanerInDb = dbContext.Cleaners.FirstOrDefault();
+            cleanerInDb.Certificate = "new Certificate";
             var controller = new AdminController(repository);
             MvcMockHelpers.SetMockControllerContext(controller, null);
             var result = controller.Edit(cleaner);

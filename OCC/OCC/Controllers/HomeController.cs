@@ -10,6 +10,9 @@ using OCC.Models;
 
 namespace OCC.Controllers
 {
+    //HomeController will mange the main page and the links to the different
+    // views and controllers depending of the users navigation.
+    // The Index will be customized once a user Signing In
     public class HomeController : Controller
     {
         private ICustomerRepository customerRepository;
@@ -34,12 +37,17 @@ namespace OCC.Controllers
 
             return View(new Cleaner());
         }
-
         public ViewResult PotentialCleanerForm()
         {
             return View();
         }
-
-
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
+        public ViewResult CompanyPolicy()
+        {
+            return View();
+        }
     }
 }

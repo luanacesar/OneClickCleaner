@@ -9,14 +9,15 @@ using System.Threading.Tasks;
 
 namespace OCC.Controllers
 {
-
+    //EmergencyController will create an order filling out Duration and
+    //Location. By LINQ queries cleaner will be selected automaticaly.
+    // Save method create the order in database.
     public class EmergencyController : Controller
     {
         private IOrderRepository orderRepository;
         private ICustomerRepository customerRepository;
         private IServiceRepository serviceRepository;
         private ICleanerRepository cleanerRepository;
-
         private Customer customerCreatedRepo;
         
 
@@ -27,12 +28,10 @@ namespace OCC.Controllers
             serviceRepository = serviceRepo;
             cleanerRepository = cleanerRepo;
         }
-        
         public ViewResult ServiceDetail()
         {
             return View(new Order());
         }
-
         [HttpPost]
         public IActionResult ServiceDetail(Order order)
         {
@@ -40,7 +39,7 @@ namespace OCC.Controllers
             {
                 order.ServiceDay = DateTime.Now.Date;
                 TimeSpan timeOrder = DateTime.Now.TimeOfDay;
-                //TimeSpan timeOrder = new TimeSpan(23,0,0);
+
 
                 IEnumerable<Cleaner> filterCustomerCleaner;
                 if (timeOrder > new TimeSpan(6, 0, 0) && timeOrder < new TimeSpan(12, 0, 0))
@@ -84,8 +83,6 @@ namespace OCC.Controllers
                                             && f.IsCleaner == true
                                             select f;
                 }               
-
-
                 var filterOrderCleaner = from cleanerTable in filterCustomerCleaner
                                          join ordertable in orderRepository.Orders on cleanerTable.CleanerId equals ordertable.CleanerId
                                          where ordertable.ServiceDay.Date == order.ServiceDay.Date && ordertable.ShiftTime == order.ShiftTime
@@ -123,8 +120,7 @@ namespace OCC.Controllers
             }
             return RedirectToAction("Get", "Emergency");
         }
-
-            //// GET
+            // GET
             [HttpGet("Emergency")]
         public IActionResult Get()
         {

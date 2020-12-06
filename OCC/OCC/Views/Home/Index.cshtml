@@ -3,39 +3,30 @@
 @{
     Layout = "_Layout";
 }
-
-<section id="mainpage" style="text-align:right">
-    <div class="row">
-
-        @if (User.Identity.IsAuthenticated)
-        {
-            <div class="col-lg-6">
-                <h3>
-                    <br /><b>Welcome @Model.FirstName</b>
-                </h3>
-            </div>
-        }
-    </div>
-
-</section>
+<link href="~/css/StyleSheet.css" rel="stylesheet" />
 <section id="mainpage">
-    <p>Place the main banner here</p>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="col-lg-6">
+            <h3>
+                <br /><b>Welcome @Model.FirstName</b>
+            </h3>
+        </div>
+    }
+    <div class="back-ground">
+        <div class="header">
+            <div class="header">
+                <h2 class="header">OnClick Cleaner</h2>
+            </div>
+        </div>
+    </div>
 </section>
-
-<section id="aboutus">
-    <p>About us content</p>
-</section>
-
 <section id="features">
-
-
     <div class="justify-content-center">
         <h1>List of Service</h1>
         <br /><br />
     </div>
-
     <div class="row">
-
         <div class="col-lg-6">
             <h3>
                 <a href="/Emergency/ServiceDetail"><i class="fas fa-ambulance fa-4x"></i></a>
@@ -53,8 +44,21 @@
     </div>
 
 </section>
-
-<section id="contactus">
-    <p>Contact us content</p>
+<section>
+    <div class="back-ground-contact">
+        <div class="row">
+            <div class="col-lg-6 p-3">
+                <img id="img" src="~/images/contact.JPG" />
+            </div>
+            <div class="col-lg-6">
+                <h2 class="header-cont">Contact Us</h2>
+                <h4 class="p-lg-2 text-white"><b>Mailling Address</b></h4>
+                <p class="p-lg-2 text-white">123 Anywhere St, Toronto, Ontario</p>
+                <h4 class="p-lg-2 text-white">Email Address:</h4>
+                <p class="p-lg-2 text-white">onclickcleaner@mycentennialcollege.ca</p>
+                <h4 class="p-lg-2 text-white">Phone Number</h4>
+                <p class="p-lg-2 text-white">(416) 289-5000</p>
+            </div>
+        </div>
+    </div>
 </section>
-

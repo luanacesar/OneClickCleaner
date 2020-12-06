@@ -4,7 +4,7 @@
 ## As a registered Cleaner, I will click Employees profile (in main menu) to see personal details  #15
 
 ## Use Case
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Us14.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US15/Us15.png)
 
 ## Package Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US15/profile_Package_diagram.JPG)

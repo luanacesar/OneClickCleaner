@@ -89,5 +89,33 @@ namespace OCC.UnitTest
             Assert.AreEqual(cleaner.UserName, savedCleaner.UserName);
         }
 
+        [TestMethod]
+        public void TestUpdateCertificateFieldCleaner()
+        {
+            dbContext.Cleaners.Add(cleaner);
+            dbContext.SaveChanges();
+            var cleanerInDb = dbContext.Cleaners.FirstOrDefault();
+            cleanerInDb.Certificate = "new Certificate";
+            var controller = new AdminController(repository);
+            MvcMockHelpers.SetMockControllerContext(controller, null);
+            var result = controller.Edit(cleaner);
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var action = (RedirectToActionResult)result;
+            var savedCleaner = repository.Cleaners.FirstOrDefault();
+            Assert.AreEqual(cleanerInDb.Certificate, savedCleaner.Certificate);
+        }
+
+        [TestMethod]
+        public void TestCleanerDetails()
+        {
+            var controller = new CleanerController(repository);
+            MvcMockHelpers.SetMockControllerContext(controller, null);
+            var result = controller.CleanerDetail(cleaner);
+            Assert.IsInstanceOfType(result, typeof(RedirectToActionResult));
+            var action = (RedirectToActionResult)result;
+            Assert.AreEqual(action.ControllerName, "Users");
+            Assert.AreEqual(action.ActionName, "CreatePotentialCleaner");
+        }
+
     }
 }

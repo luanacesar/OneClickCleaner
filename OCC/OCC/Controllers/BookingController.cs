@@ -8,6 +8,13 @@ using OCC.Models;
 
 namespace OCC.Controllers
 {
+    // The Booking controller allow customer to book a service filling out the 
+    // features of the service: Location, Date, service hours, 
+    //shift day(Morning, afternoon, evening, night).
+    // this information will be pass to create an order later.
+    // Also with the information provided the cleaner will be filterd accordingly,
+    // using LINQ queries to match the order and cleaner tables in the sslectingCleaner
+    // view. Once Customer choose cleaner the Order will be created.
     public class BookingController : Controller
     {
         private IOrderRepository orderRepository;

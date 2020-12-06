@@ -10,6 +10,11 @@ using OCC.Models.ViewModels;
 
 namespace OCC.Models
 {
+    // UserController will be responsible for creating the Identity and stored
+    // in the database. The infromation is received from Cleaner control in Jason
+    // file. The Admin will acceso to thus controller when edit or create new
+    // cleaner Identity. After saving data, depending from which controller
+    // the infromation was sending, the application will return to that controller.
     public class UsersController : Controller
     {
         private UserManager<AppUser> userManager;
@@ -32,10 +37,6 @@ namespace OCC.Models
         {
             return View(userManager.Users);
         }
-
-        //public ViewResult Create() => View();
-        //Metodo original:
-        //public async Task<IActionResult> Create(UserModel userModel)
         public async Task<IActionResult> Create()
         {
             if (ModelState.IsValid)
@@ -93,7 +94,6 @@ namespace OCC.Models
                         UserName = cleaner.UserName,
                         Email = cleaner.Email
                     };
-
                     IdentityResult result = await userManager.CreateAsync(
                         appUser, cleaner.Password);//User Manager is the one that contain appUser and password
 
@@ -112,7 +112,6 @@ namespace OCC.Models
             }
             return View("../Cleaner/CleanerDetail");
         }
-
         //Delete users
         public async Task<IActionResult> Delete()
         {
@@ -144,7 +143,6 @@ namespace OCC.Models
             return View("Edit", "Admin");
 
         }
-
         public async Task<IActionResult> Edit(string id)
         {
             AppUser user = await userManager.FindByIdAsync(id);
@@ -157,7 +155,6 @@ namespace OCC.Models
                 return RedirectToAction("Index");
             }
         }
-
         [HttpPost]
         public async Task<IActionResult> Edit()
         {
@@ -213,7 +210,6 @@ namespace OCC.Models
                 }
             }
             return RedirectToAction();
-
         }
 public async Task<IActionResult> SaveUser()
         {            
@@ -270,7 +266,6 @@ public async Task<IActionResult> SaveUser()
             }
             return View("Edit", "Admin");
         }
-
         public async Task<IActionResult> SaveAdminUser()
         {
             byte[] value;
@@ -327,15 +322,12 @@ public async Task<IActionResult> SaveUser()
             return View("Edit", "Admin");
 
         }
-
         private void AddErrorsFromResult(IdentityResult result)
         {
-            foreach (IdentityError error in result.Errors)//Maybe de password fail, email fail because there is a duplicate
+            foreach (IdentityError error in result.Errors)//Maybe password fail, email fail because there is a duplicate
             {
                 ModelState.AddModelError("", error.Description);
             }
         }
-
-
     }
 }

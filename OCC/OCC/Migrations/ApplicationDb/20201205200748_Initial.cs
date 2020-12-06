@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace OCC.Migrations
+namespace OCC.Migrations.ApplicationDb
 {
     public partial class Initial : Migration
     {

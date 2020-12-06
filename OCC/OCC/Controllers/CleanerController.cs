@@ -8,23 +8,20 @@ using System.Text.Json;
 
 namespace OCC.Controllers
 {
+    //Cleaner controller is used to provide Potential cleaner and Registered Cleaners
+    // the forms to fill out at first time and the form to edit for the already 
+    // registered. Once they submit the information is send it to UserController
+    // to create or update Identity profiles. In the case of potential cleaners
+    // a generic password is created. The list of cleaners is going to be stored
+    // in the database. 
+    // The identity will be created by sending the information to the controller by Jason serialization
     public class CleanerController : Controller
     {
         private ICleanerRepository cleanerRepository;
 
-        //private IOrderRepository orderRepository;
-        //private ICustomerRepository customerRepository;
-        //private IServiceRepository serviceRepository;
-        //private Customer customerCreatedRepo;
-
-
         public CleanerController(ICleanerRepository cleanerRepo)
-        //, IOrderRepository orderRepo, ICustomerRepository customerRepo, IServiceRepository serviceRepo)
         {
             cleanerRepository = cleanerRepo;
-            //orderRepository = orderRepo;
-            //customerRepository = customerRepo;
-            //serviceRepository = serviceRepo;
         }
 
         [HttpPost]
@@ -32,13 +29,10 @@ namespace OCC.Controllers
         {
             cleaner.UserName = cleaner.FirstName;
             cleaner.Password = "Cleaner123@";
-            //byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
-            //HttpContext.Session.Set("cleaner", jsonOrder);
+      
             byte[] jsonOrder = JsonSerializer.SerializeToUtf8Bytes(cleaner);
             HttpContext.Session.Set("potentialCleaner", jsonOrder);
             cleanerRepository.SaveCleaner(cleaner);
-
-            //return RedirectToAction("CleanerCheckOut", cleaner);
 
             return RedirectToAction("CreatePotentialCleaner", "Users");
 
@@ -48,10 +42,7 @@ namespace OCC.Controllers
         {
             return View("CleanerDetail", new Cleaner());
         }
-        //public ViewResult CleanerCheckOut(Cleaner cleaner)
-        //{
-        //    return View();
-        //}
+  
         [HttpGet]
         public IActionResult RegisteredCleanerDetails()
         {
@@ -65,24 +56,7 @@ namespace OCC.Controllers
             }
             return View(new Cleaner());
         }
-
-        [HttpPost]
-        public IActionResult RegisteredCleanerDetails(Cleaner cleaner)
-        {
-            if (ModelState.IsValid)
-            {
-                cleanerRepository.SaveCleaner(cleaner);
-                TempData["message"] = $"{cleaner.FirstName} has been saved!";
-
-                byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(cleaner);
-                HttpContext.Session.Set("cleaner", jsonCleanerEdit);
-                return RedirectToAction("SaveUser", "Users");
-            }
-            else
-            {
-                return View(cleaner);
-            }
-        }
+        
     }
 
 }

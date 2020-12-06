@@ -8,13 +8,9 @@
 <body>
     <div id="all-page">
         <article>
-            <div class="text-md-left">
-                <div class="header">
-                    <img src="~/images/calendar.png" />
-                    <h1 class="title">Booking Service</h1>
-                </div>
+            <div class="justify-content-center">
+                <h2 class="text-black-50"><i class="far fa-calendar-alt fa-4x"></i>Booking Service</h2>
             </div>
-            <br /><br />
             <p class="font-weight-normal justify-content-center">
                 Our Booking service cleaner provides a high quality of service,
                 first, you have to pick one of the locations in the Dropdown area,
@@ -48,7 +44,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Select the date</h5>
                             <p class="card-text ">Here you can select the preferred date of the service.</p>
-                            @*<form method="post" asp-action="ServiceDetail">*@
+
                             <div class="center2">
                                 <input class="col-lg-8" id="service-day" type="date" asp-for="@Model.ServiceDay" value="<?php echo date('Y-m-d'); ?>" required>
                             </div>
@@ -78,11 +74,7 @@
                                 </select>
                                 <span asp-validation-for="@Model.ShiftTime" class="text-danger field-validation-error"></span>
                                 <br /><br /><br /><br />
-
-
-
                             </fieldset>
-
                         </div>
                     </div>
                 </div>
@@ -117,7 +109,6 @@
                             <span asp-validation-for="@Model.Duration" class="text-danger field-validation-error"></span>
                         </div>
                     </div>
-
                     @*Calculation and display of total*@
                     <div class="card">
                         <div class="card-body">
@@ -125,7 +116,6 @@
                                 <h5 class="card-title">Total Price</h5>
                                 <div class="center2">
                                     <p class="btn-light col-lg-12 font-weight-bold " id="result">
-
                                     </p>
                                 </div>
                                 <br /><br />
@@ -136,12 +126,9 @@
                         </div>
                     </div>
                 </div>
-
             </form>
-
         </article>
-
-    </div>   <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
+    </div>
 </body>
 
 

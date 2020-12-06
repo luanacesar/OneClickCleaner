@@ -4,22 +4,22 @@
 ## Registered Cleaner will be able to update personal details #16
 
 ## Use Case
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Us14.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Us16.png)
 
 ## Package Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/US14_package%20diagram_.JPG)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Employees%20profile_Package_diagram_.JPG)
 
 ## Sequence Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Registered%20Cleaner%20Sequence%20Diagram.vpd.jpg)
 
 ## ERD Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/ERD.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/ERD%20US16.jpg)
 
 ## Class Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Class.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Class%20Diagram%20US16.jpg)
 
 ## Object Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Object14.png)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Object16.png)
 
 ## Activity Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Activity%20Diagram.jpg?raw=true)
@@ -35,6 +35,5 @@
 
 ## Architecture Diagram
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Architecture%20Diagram.jpg)
-=======
 
 

@@ -8,6 +8,12 @@ using System.Text.Json;
 
 namespace OCC.Controllers
 {
+    // AdminController used to manage the cleaner's CRUD profiles
+    // A list of cleaners will be displayed from the main action called
+    //DisplayCleanerList().
+    // Administrator could enable potential cleaners to be active employees 
+    // and will be available for booking
+
     public class AdminController : Controller
     {
         private ICleanerRepository cleanerRepository;

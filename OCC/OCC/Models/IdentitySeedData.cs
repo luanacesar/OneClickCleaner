@@ -24,8 +24,6 @@ namespace OCC.Models
         private const string cleaner3Email = "rob@gmail.com";
         public static async void EnsurePopulated(IApplicationBuilder app)
         {
-
-            //
             UserManager<AppUser> userManager = app.ApplicationServices
             .GetRequiredService<UserManager<AppUser>>();
 
@@ -42,7 +40,6 @@ namespace OCC.Models
                 IdentityResult result = await userManager.CreateAsync(
                        appUser, cleaner1Password);
             }
-
             //clean2 user
             AppUser user2 = await userManager.FindByNameAsync(cleaner2);
 
@@ -70,8 +67,6 @@ namespace OCC.Models
                 IdentityResult result = await userManager.CreateAsync(
                        appUser, cleaner3Password);
             }
-
-
         }
     }
 }

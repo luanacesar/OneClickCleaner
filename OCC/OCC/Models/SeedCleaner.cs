@@ -365,7 +365,7 @@ namespace OCC.Models
                      {
                          FirstName = "James",
                          Email = "James@gmail.com",
-                         Location = "Tronto",
+                         Location = "Toronto",
                          IsCleaner = true,
                          ExperienceLevel = "Beginer",
                          Certificate = "664205780",
@@ -383,7 +383,7 @@ namespace OCC.Models
                       {
                           FirstName = "Eric",
                           Email = "Eric@gmail.com",
-                          Location = "Tronto",
+                          Location = "Toronto",
                           IsCleaner = true,
                           ExperienceLevel = "High",
                           Certificate = "554205780",

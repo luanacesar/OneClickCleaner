@@ -34,6 +34,6 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us16/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Architecture%20Diagram%20(1).jpg)
 
 

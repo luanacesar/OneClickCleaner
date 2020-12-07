@@ -152,7 +152,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us15/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram.jpg)
 -------------------------------------------------------------------------------------------------------------
 ## User Story 16
 # Online Documentation of OneClickCleaner

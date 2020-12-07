@@ -182,7 +182,7 @@
 
 
 ## Component Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Component%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Component%20Diagram.jpg?raw=true)
 
 
 

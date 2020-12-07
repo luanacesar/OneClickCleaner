@@ -178,7 +178,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Object16.png)
 
 ## Activity Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US16/Activity%20Diagram.jpg?raw=true)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Activity%20Diagram.jpg)
 
 
 ## Component Diagram

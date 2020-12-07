@@ -56,7 +56,23 @@ namespace OCC.Controllers
             }
             return View(new Cleaner());
         }
-        
+        [HttpPost]
+        public IActionResult RegisteredCleanerDetails(Cleaner cleaner)
+        {
+            if (ModelState.IsValid)
+            {
+                cleanerRepository.SaveCleaner(cleaner);
+                TempData["message"] = $"{cleaner.FirstName} has been saved!";
+
+                byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(cleaner);
+                HttpContext.Session.Set("cleaner", jsonCleanerEdit);
+                return RedirectToAction("SaveUser", "Users");
+            }
+            else
+            {
+                return View(cleaner);
+            }
+        }
     }
 
 }

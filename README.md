@@ -37,7 +37,7 @@
 
 ## Architecture Diagram
 
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US9/Architecture%20Diagram.jpg?raw=true)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram%202.jpg)
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -79,7 +79,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram%202.jpg)
 
 -----------------------------------------------------------------------------------------------------------------------
 # Online Documentation of OneClickCleaner
@@ -120,7 +120,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/Us14/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram%202.jpg)
 ----------------------------------------------------------------------------------------------------------------------
 ## User Story 15
 ## As a registered Cleaner, I will click Employees profile (in main menu) to see personal details  #15
@@ -155,7 +155,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram%202.jpg)
 -------------------------------------------------------------------------------------------------------------
 ## User Story 16
 # Online Documentation of OneClickCleaner
@@ -193,7 +193,7 @@
 ![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/US11/Deployment%20diagram.jpg)
 
 ## Architecture Diagram
-![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram.jpg)
+![Use case](https://github.com/Comp231-S4G5/OneClickCleaner/blob/docs/Architecture%20Diagram%202.jpg)
 
 
 ## Diagram / documentation = Go to branch called "docs" 

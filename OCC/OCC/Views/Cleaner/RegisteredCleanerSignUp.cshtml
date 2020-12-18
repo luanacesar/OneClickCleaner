@@ -1,4 +1,5 @@
-﻿@model Cleaner
+﻿
+@model Cleaner
 
 <link href="~/css/Login.css" rel="stylesheet" />
 
@@ -13,20 +14,18 @@
                         <form asp-action="#" method="get">
                             <div class="col-sm-10">
                                 <label class="control-label col-sm-6">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" @*asp-for="@Model.Email"*@ required>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" @*asp-for="@Model.Email" *@ required>
                                 <br />
                                 <label class="control-label col-sm-6">Password:</label>
-                                <input type="password" class="form-control" id="password" placeholder="Enter password" @*asp-for="@Model.Password"*@ required>
+                                <input type="password" class="form-control" id="password" placeholder="Enter password" @*asp-for="@Model.Password" *@ required>
                                 <br /><br /><br /><br /><br /><br />
                                 <div class="center">
                                     <button class="btn btn-success btn-lg " type="submit" asp-action="RegisteredCleanerSignUp">Login</button>
                                 </div>
-
                             </div>
                         </form>
                     </div>
                 </div>
-
                 @*Sign up*@
                 <div class="card">
                     <div class="card-body">
@@ -43,7 +42,6 @@
             </div>
         </article>
     </div>
-    <footer><p>Footer Space <span>&bull;</span> Footer Space</p></footer>
 </body>
 
 

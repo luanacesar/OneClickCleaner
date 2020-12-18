@@ -5,16 +5,10 @@
 }
 .navbar {
     font-size: 1.5em;
+    text-align:center;
+    margin:auto;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #8f8f8f;
-    
-}
 
 li {
     float: left;
@@ -42,17 +36,14 @@ li {
 }
 
 #features {
+    width: 100%;
+    height: 700px;
     font-size: 1.5rem;
     text-align: center;
-    padding: 2em;
+    padding: 5em;
     color: #4e89ae;
 }
 
-#contactus {
-    background-color: #4e89ae;
-    text-align: center;
-    font-size: 50px;
-}
 
 
 .fa-ambulance {
@@ -103,16 +94,126 @@ h3 {
     height: 100px;
 }
 
-
-
-.imageRecipes {
-    width: 230px;
-    border-radius: 200px 200px;
-}
 .button {
     display: none;
 }
 
 img:hover + .button {
     display: inline-block;
+}
+
+/*Nav bar*/
+.back-ground {
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    margin: 0 auto;
+    background-image: url(/images/cleaner-0.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.transbox {
+    width: 800px;
+    height: 800px;
+    background-color: rgba(255,255,255,0.85);
+    margin: 0 auto;
+}
+
+.col-md-8 {
+    margin: 0 auto;
+}
+
+.control-lable {
+    margin: 0 auto;
+}
+
+.control-label col-sm-6 {
+    width: 100%;
+}
+
+.form-control {
+    width: 474px;
+    height: 40px;
+    border-color: white;
+    background-color: #2ca7bc;
+}
+
+.header{
+    color:white;
+    text-align:center;
+    padding:50px;
+    font-size:5rem;
+    height:inherit;
+}
+
+/*Contact us*/
+
+.back-ground-contact {
+    padding: 50px;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    margin: 0 auto;
+    background-color: #4e89ae;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+img {
+    padding-top:5%;
+    width: 60%;
+
+}
+#contactus {
+    text-align: right;
+    font-size: 20px;
+}
+.header-cont {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    height: inherit;
+}
+/*About us*/
+
+.back-ground-about {
+
+    padding: 50px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    background-color: #4e89ae;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.photo {    
+    width: 100%;
+}
+
+#pa {
+    color:white;
+    font-family:Arial;
+    text-indent: 30px;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 1cm;
+    padding: 15px;
+}
+.back-ground-policy {
+    height: 700px;
+    padding: 50px;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+    background-color: #4e89ae;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.photo2 {
+    width: 100%;
 }

@@ -15,7 +15,7 @@ namespace OCC
 {
     public class Startup
     {
-        
+
         //public property
         public IConfiguration Configuration { get; }
 
@@ -26,7 +26,13 @@ namespace OCC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration["Data:OneClickCleanerServices:ConnectionString"]));
-            
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:UsersOCCIdentity:ConnectionString"]));
+
+            services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
+                .AddDefaultTokenProviders();
+
+
             services.AddTransient<ICustomerRepository, EFCustomerRepository>();
             services.AddTransient<IOrderRepository, EFOrderRepository>();
             services.AddTransient<IServiceRepository, EFServiceRepository>();
@@ -49,10 +55,25 @@ namespace OCC
             app.UseStaticFiles();
             app.UseSession();
             app.UseAuthentication();
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
 
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+
+
+                routes.MapRoute(
+
+                    name: "Admin",
+                    template: "{controller=Admin}/{action=DisplayCleanerList}/{id?}");
+            }
+            );
             SeedService.EnsurePopulated(app);
             SeedCleaner.EnsurePopulated(app);
+            IdentitySeedData.EnsurePopulated(app);
+
+         
         }
     }
 }

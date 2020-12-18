@@ -8,6 +8,12 @@ using System.Text.Json;
 
 namespace OCC.Controllers
 {
+    // AdminController used to manage the cleaner's CRUD profiles
+    // A list of cleaners will be displayed from the main action called
+    //DisplayCleanerList().
+    // Administrator could enable potential cleaners to be active employees 
+    // and will be available for booking
+
     public class AdminController : Controller
     {
         private ICleanerRepository cleanerRepository;
@@ -27,8 +33,6 @@ namespace OCC.Controllers
         {
             if (ModelState.IsValid)
             {
-
-
                 byte[] jsonCleanerEdit = JsonSerializer.SerializeToUtf8Bytes(cleaner);
                 HttpContext.Session.Set("AdminCleaner", jsonCleanerEdit);
                 if (cleaner.CleanerId == 0)
@@ -49,7 +53,6 @@ namespace OCC.Controllers
                 return View(cleaner);
             }
         }
-
         public ViewResult Create() => View("Edit", new Cleaner());
 
         [HttpPost]
@@ -67,7 +70,5 @@ namespace OCC.Controllers
 
             return RedirectToAction("Delete", "Users");
         }
-
-
     }
 }
